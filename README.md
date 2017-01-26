@@ -1,2 +1,2 @@
 # i-have-a-theory
-Science based adventure-survival game
+A science based adventure-survival game.
