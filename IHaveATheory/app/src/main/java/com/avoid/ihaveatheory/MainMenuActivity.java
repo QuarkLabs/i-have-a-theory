@@ -1,9 +1,10 @@
 package com.avoid.ihaveatheory;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainMenuActivity extends AppCompatActivity {
+public class MainMenuActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
