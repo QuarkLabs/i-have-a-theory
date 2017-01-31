@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">I Have A Theory</string>
+    <string name="title_activity_credits">CreditsActivity</string>
 </resources>
