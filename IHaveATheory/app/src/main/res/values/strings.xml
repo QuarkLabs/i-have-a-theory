@@ -10,5 +10,11 @@
     <string name="medium_button_text">I'll manage</string>
     <string name="hard_button_text">I'm alone</string>
 
+    <string name="forest_text_view">Forest</string>
+    <string name="tundra_text_view">Tundra</string>
+    <string name="mountains_text_view">Mountains</string>
 
+    <string name="forest_con_des">Forest scenario</string>
+    <string name="tundra_con_des">Tundra scenario</string>
+    <string name="mountains_con_des">Mountains scenario</string>
 </resources>
