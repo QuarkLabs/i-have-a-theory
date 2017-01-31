@@ -1,9 +1,11 @@
 package com.avoid.ihaveatheory.view;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
-public class StoreActivity extends AppCompatActivity {
+import com.avoid.ihaveatheory.R;
+
+public class StoreActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

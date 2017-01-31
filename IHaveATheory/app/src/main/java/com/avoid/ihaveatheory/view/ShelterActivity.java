@@ -1,9 +1,10 @@
 package com.avoid.ihaveatheory.view;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
+import com.avoid.ihaveatheory.R;
 
-public class ShelterActivity extends AppCompatActivity {
+public class ShelterActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

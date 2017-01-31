@@ -9,7 +9,9 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         <activity
-            android:name=".view.MainMenuActivity"
+            android:name=".view.MainMenuActivity"/>
+        <activity android:name=".view.DifficultyActivity" />
+        <activity android:name=".view.ScenarioActivity"
             android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,8 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.DifficultyActivity" />
-        <activity android:name=".view.ScenarioActivity" />
         <activity android:name=".view.StoreActivity" />
         <activity android:name=".view.PurchaseActivity" />
         <activity android:name=".view.LeaderboardActivity" />

@@ -7,8 +7,8 @@
     <string name="options_button_text">Options</string>
 
     <string name="easy_button_text">Spoon feed me</string>
-    <string name="medium_button_text">I'll manage</string>
-    <string name="hard_button_text">I'm alone</string>
+    <string name="medium_button_text">Ill manage</string>
+    <string name="hard_button_text">Im alone</string>
 
     <string name="forest_text_view">Forest</string>
     <string name="tundra_text_view">Tundra</string>

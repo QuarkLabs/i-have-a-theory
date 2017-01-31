@@ -24,7 +24,6 @@
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="@null"
         android:contentDescription="@string/forest_con_des" />
 
     <ImageButton
@@ -38,7 +37,6 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="19dp"
         android:layout_marginEnd="19dp"
-        android:background="@null"
         android:contentDescription="@string/mountains_con_des" />
 
     <ImageButton
@@ -49,7 +47,6 @@
         android:id="@+id/imageButton2"
         android:layout_width="150dp"
         android:scaleType="fitXY"
-        android:background="@null"
         android:layout_alignTop="@+id/imageButton"
         android:layout_toRightOf="@+id/imageButton"
         android:layout_toEndOf="@+id/imageButton"
