@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">I Have A Theory</string>
     <string name="title_activity_credits">CreditsActivity</string>
+
+    <string name="new_game_button_text">New game</string>
+    <string name="continue_button_text">Continue</string>
+    <string name="options_button_text">Options</string>
+
+    <string name="easy_button_text">Spoon feed me</string>
+    <string name="medium_button_text">I'll manage</string>
+    <string name="hard_button_text">I'm alone</string>
+
+
 </resources>

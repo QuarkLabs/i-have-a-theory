@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         <activity
-            android:name=".MainMenuActivity"
+            android:name=".view.MainMenuActivity"
             android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,7 +31,13 @@
         <activity android:name=".view.ProfileActivity" />
         <activity android:name=".view.SettingsActivity" />
         <activity android:name=".view.ShelterActivity" />
-        <activity android:name=".view.IntroActivity"></activity>
+        <activity android:name=".view.IntroActivity" />
+        <activity android:name=".view.MapActivity" />
+        <activity android:name=".view.JournalActivity" />
+        <activity android:name=".view.GatherActivity" />
+        <activity android:name=".view.CookingPotActivity" />
+        <activity android:name=".view.GameOverActivity" />
+        <activity android:name=".view.HelpActivity"></activity>
     </application>
 
 </manifest>

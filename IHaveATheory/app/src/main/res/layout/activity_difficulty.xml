@@ -8,6 +8,38 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.avoid.ihaveatheory.view.DifficultyActivity">
+    tools:context="com.avoid.ihaveatheory.view.DifficultyActivity"
+
+    android:background="@drawable/bg_name">
+
+    <com.avoid.ihaveatheory.widget.ButtonA
+        android:text="@string/hard_button_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/hard_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.avoid.ihaveatheory.widget.ButtonA
+        android:text="@string/medium_button_text"
+        android:layout_height="wrap_content"
+        android:id="@+id/medium_button"
+        android:layout_width="200dp"
+        android:layout_above="@+id/hard_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp" />
+
+    <com.avoid.ihaveatheory.widget.ButtonA
+        android:text="@string/easy_button_text"
+        android:layout_height="wrap_content"
+        android:id="@+id/easy_button"
+        android:fontFamily="sans-serif-medium"
+        android:layout_width="200dp"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/medium_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
