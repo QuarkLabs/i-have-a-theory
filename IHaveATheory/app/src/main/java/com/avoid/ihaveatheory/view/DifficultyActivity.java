@@ -16,14 +16,5 @@ public class DifficultyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_difficulty);
-
-        Typeface acmanBoldFont = FontCache.getTypeface(Font.ACTION_MAN_BOLD_FONT, this);
-        TextView forestTextView = (TextView) findViewById(R.id.forest_text_view);
-        forestTextView.setTypeface(acmanBoldFont);
-        TextView tundraTextView = (TextView) findViewById(R.id.tundra_text_view);
-        tundraTextView.setTypeface(acmanBoldFont);
-        TextView mountainsTextView = (TextView) findViewById(R.id.mountain_text_view);
-        mountainsTextView.setTypeface(acmanBoldFont);
-
     }
 }

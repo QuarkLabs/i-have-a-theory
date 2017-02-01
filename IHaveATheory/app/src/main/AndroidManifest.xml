@@ -7,7 +7,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+
         <activity
             android:name=".view.MainMenuActivity"/>
         <activity android:name=".view.DifficultyActivity" />

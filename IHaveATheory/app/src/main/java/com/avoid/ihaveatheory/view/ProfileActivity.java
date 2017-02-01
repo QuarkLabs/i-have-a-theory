@@ -1,10 +1,11 @@
 package com.avoid.ihaveatheory.view;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
 import com.avoid.ihaveatheory.R;
 
-public class ProfileActivity extends Activity {
+public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
