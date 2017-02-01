@@ -11,7 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.avoid.ihaveatheory.view.LeaderboardActivity"
 
-    android:background="@drawable/bg_name">
+    android:background="@drawable/app_background">
 
     <ImageView
         android:layout_width="fill_parent"
