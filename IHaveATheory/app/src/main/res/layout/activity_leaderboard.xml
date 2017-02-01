@@ -20,9 +20,9 @@
         app:srcCompat="@drawable/leaderboard_scoreboard"
         android:scaleType="fitXY"
         android:layout_marginBottom="25dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
         />
 
     <LinearLayout
@@ -35,10 +35,11 @@
         android:layout_alignTop="@+id/scoreboard_imageview"
         android:layout_marginBottom="30dp"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginLeft="80dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="100dp"
         android:weightSum="1"
-        android:scrollIndicators="right">
+        android:scrollIndicators="right"
+        android:id="@+id/linearLayout">
 
         <TextView
             android:text="Ivantha\nSumedhe\nPramodya\nKawinda\nChangumee"
@@ -63,6 +64,18 @@
             android:textColor="@android:color/white" />
 
     </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Leaderboard"
+        android:ems="10"
+        android:id="@+id/leaderboard_title_text"
+
+        android:layout_marginTop="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
