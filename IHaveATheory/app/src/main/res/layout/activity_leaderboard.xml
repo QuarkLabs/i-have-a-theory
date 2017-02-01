@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_leaderboard"
     android:layout_width="match_parent"
@@ -11,5 +12,58 @@
     tools:context="com.avoid.ihaveatheory.view.LeaderboardActivity"
 
     android:background="@drawable/app_background">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:srcCompat="@drawable/scoreboard"
+        android:id="@+id/woodboard_image_view"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/woodboard_image_view"
+        android:layout_alignRight="@+id/woodboard_image_view"
+        android:layout_alignEnd="@+id/woodboard_image_view"
+        android:layout_alignTop="@+id/woodboard_image_view"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="50dp"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Ivantha\nSumedhe\nPramodya\nKawinda\nChangumee"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/score_text_view"
+            android:layout_weight="0.33"
+            android:textSize="24sp"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:text="500\n400\n800\n300\n700"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/names_text_view"
+            android:layout_weight="0.67"
+            android:textAlignment="textEnd"
+            android:layout_gravity="end"
+            android:textSize="24sp"
+            android:fontFamily="monospace"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>

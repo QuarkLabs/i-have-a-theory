@@ -23,7 +23,10 @@
 
         <activity android:name=".view.StoreActivity" />
         <activity android:name=".view.PurchaseActivity" />
-        <activity android:name=".view.LeaderboardActivity" />
+        <activity android:name=".view.LeaderboardActivity"
+            android:exported="true"
+            android:screenOrientation="sensorLandscape"
+            />
         <activity android:name=".view.DashboardActivity" />
         <activity
             android:name=".view.CreditsActivity"
