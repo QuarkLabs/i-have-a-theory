@@ -17,4 +17,7 @@
     <string name="forest_con_des">Forest scenario</string>
     <string name="tundra_con_des">Tundra scenario</string>
     <string name="mountains_con_des">Mountains scenario</string>
+
+    <string name="forward_button_text">Forward</string>
+    <string name="back_button_text">Back</string>
 </resources>

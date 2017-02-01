@@ -2,8 +2,6 @@ package com.avoid.ihaveatheory.widget;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.os.Build;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.widget.Button;
 
@@ -11,22 +9,22 @@ import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Font;
 import com.avoid.ihaveatheory.util.FontCache;
 
-public class ButtonA extends Button {
-    public ButtonA(Context context) {
+public class MainButtonA extends Button {
+    public MainButtonA(Context context) {
         super(context);
         applyCustomFont(context);
         applyCustomShape(context);
         applyFontColor(context);
     }
 
-    public ButtonA(Context context, AttributeSet attrs) {
+    public MainButtonA(Context context, AttributeSet attrs) {
         super(context, attrs);
         applyCustomFont(context);
         applyCustomShape(context);
         applyFontColor(context);
     }
 
-    public ButtonA(Context context, AttributeSet attrs, int defStyleAttr) {
+    public MainButtonA(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         applyCustomFont(context);
         applyCustomShape(context);
@@ -39,7 +37,7 @@ public class ButtonA extends Button {
     }
 
     private void applyCustomShape(Context context){
-        setBackgroundResource(R.drawable.button_a);
+        setBackgroundResource(R.drawable.app_main_button_a);
     }
 
     private void applyFontColor(Context context){

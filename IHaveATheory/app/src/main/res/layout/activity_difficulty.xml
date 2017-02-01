@@ -10,9 +10,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.avoid.ihaveatheory.view.DifficultyActivity"
 
-    android:background="@drawable/bg_name">
+    android:background="@drawable/app_background">
 
-    <com.avoid.ihaveatheory.widget.ButtonA
+    <com.avoid.ihaveatheory.widget.MainButtonA
         android:text="@string/easy_button_text"
         android:layout_height="wrap_content"
         android:id="@+id/easy_button"
@@ -23,7 +23,7 @@
         android:layout_alignStart="@+id/medium_button"
         android:layout_marginBottom="20dp" />
 
-    <com.avoid.ihaveatheory.widget.ButtonA
+    <com.avoid.ihaveatheory.widget.MainButtonA
         android:text="@string/hard_button_text"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp" />
 
-    <com.avoid.ihaveatheory.widget.ButtonA
+    <com.avoid.ihaveatheory.widget.MainButtonA
         android:text="@string/medium_button_text"
         android:layout_height="wrap_content"
         android:id="@+id/medium_button"
@@ -40,5 +40,14 @@
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/hard_button"
         android:layout_alignStart="@+id/hard_button" />
+
+    <com.avoid.ihaveatheory.widget.BackButton
+        android:text="@string/back_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/back_button" />
 
 </RelativeLayout>
