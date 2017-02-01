@@ -20,4 +20,14 @@
 
     <string name="forward_button_text">Forward</string>
     <string name="back_button_text">Back</string>
+
+    <string name="send_an_sos_text">Send an SOS</string>
+    <string name="preserve_meat_text">Find a way to Preserve Meat</string>
+
+    <string name="send_an_sos_des">It has to come to my attention that all the extra meat that I find is getting wasted.\n
+            I need some kind of preservative to save it for later.</string>
+    <string name="preserve_meat_des">The only chance of survival is if someone finds out that I am lost there.\n
+            If only I could send a message...\n\n
+            HINT: What about a balloon?"></string>
+
 </resources>
