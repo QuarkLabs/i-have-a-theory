@@ -15,7 +15,12 @@
         <activity android:name=".view.ScenarioActivity"/>
         <activity android:name=".view.StoreActivity" />
         <activity android:name=".view.PurchaseActivity" />
-        <activity android:name=".view.LeaderboardActivity" />
+        <activity android:name=".view.LeaderboardActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".view.DashboardActivity"
             android:screenOrientation="sensorLandscape">
             <intent-filter>
@@ -29,7 +34,12 @@
         <activity android:name=".view.BackpackActivity" />
         <activity android:name=".view.ProfileActivity" />
         <activity android:name=".view.SettingsActivity" />
-        <activity android:name=".view.ShelterActivity" />
+        <activity android:name=".view.ShelterActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".view.IntroActivity" />
         <activity android:name=".view.MapActivity" />
         <activity android:name=".view.JournalActivity" />
