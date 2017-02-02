@@ -8,6 +8,20 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.avoid.ihaveatheory.view.ShelterActivity">
+    tools:context="com.avoid.ihaveatheory.view.ShelterActivity"
 
+    android:background="@drawable/app_background">
+
+    <com.avoid.ihaveatheory.widget.HexButton
+        android:text="Rest"
+        android:id="@+id/shelter_rest_button"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_width="250dp"
+        android:gravity="center|bottom"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp" />
 </RelativeLayout>
