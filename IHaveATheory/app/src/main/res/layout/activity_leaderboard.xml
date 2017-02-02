@@ -13,32 +13,33 @@
 
     android:background="@drawable/app_background">
 
-
     <ImageView
+        android:id="@+id/scoreboard_imageview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        app:srcCompat="@drawable/scoreboard"
-        android:id="@+id/woodboard_image_view"
+        app:srcCompat="@drawable/leaderboard_scoreboard"
         android:scaleType="fitXY"
         android:layout_marginBottom="25dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
         />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignBottom="@+id/woodboard_image_view"
-        android:layout_alignRight="@+id/woodboard_image_view"
-        android:layout_alignEnd="@+id/woodboard_image_view"
-        android:layout_alignTop="@+id/woodboard_image_view"
+        android:layout_alignBottom="@+id/scoreboard_imageview"
+        android:layout_alignRight="@+id/scoreboard_imageview"
+        android:layout_alignEnd="@+id/scoreboard_imageview"
+        android:layout_alignTop="@+id/scoreboard_imageview"
         android:layout_marginBottom="30dp"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginLeft="50dp"
-        android:weightSum="1">
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="100dp"
+        android:weightSum="1"
+        android:scrollIndicators="right"
+        android:id="@+id/linearLayout">
 
         <TextView
             android:text="Ivantha\nSumedhe\nPramodya\nKawinda\nChangumee"
@@ -60,10 +61,21 @@
             android:layout_gravity="end"
             android:textSize="24sp"
             android:fontFamily="monospace"
-            android:textStyle="normal|bold"
             android:textColor="@android:color/white" />
 
     </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Leaderboard"
+        android:ems="10"
+        android:id="@+id/leaderboard_title_text"
+
+        android:layout_marginTop="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
