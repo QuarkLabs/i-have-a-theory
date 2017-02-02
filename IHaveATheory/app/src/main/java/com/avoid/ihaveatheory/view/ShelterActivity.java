@@ -15,5 +15,11 @@ public class ShelterActivity extends AppCompatActivity {
 
         HexButton restButton = (HexButton) findViewById(R.id.shelter_rest_button);
         restButton.setIcon(R.drawable.shelter_resting);
+
+        HexButton sleepButton = (HexButton)findViewById(R.id.shelter_sleep_button);
+        sleepButton.setIcon(R.drawable.shelter_sleeping);
+
+        HexButton campButton = (HexButton)findViewById(R.id.shelter_camp_button);
+        campButton.setIcon(R.drawable.shelter_camp);
     }
 }
