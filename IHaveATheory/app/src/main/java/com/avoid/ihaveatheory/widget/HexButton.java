@@ -1,6 +1,7 @@
 package com.avoid.ihaveatheory.widget;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.Button;
@@ -42,5 +43,7 @@ public class HexButton extends Button{
     private void applyCustomFont(Context context){
         Typeface customFont = FontCache.getTypeface(Font.KOMIKAX_FONT, context);
         setTypeface(customFont);
+
+        setTextColor(Color.WHITE);
     }
 }
