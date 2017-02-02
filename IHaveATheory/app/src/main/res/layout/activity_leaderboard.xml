@@ -65,17 +65,21 @@
 
     </LinearLayout>
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="Leaderboard"
         android:ems="10"
         android:id="@+id/leaderboard_title_text"
-
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="60dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="#113B3A" />
 
 
 </RelativeLayout>
