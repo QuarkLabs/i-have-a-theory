@@ -14,7 +14,7 @@
 
 
     <com.avoid.ihaveatheory.widget.LabelTextView
-        android:text="@string/shelter_label_text"
+        android:text="@string/shelter_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/shelter_rest_button"

@@ -69,7 +69,7 @@
         android:layout_alignStart="@+id/gather_water_button" />
 
     <com.avoid.ihaveatheory.widget.LabelTextView
-        android:text="@string/gather_label_text"
+        android:text="@string/gather_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/gather_text_view"

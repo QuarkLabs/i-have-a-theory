@@ -2,25 +2,28 @@
     <string name="app_name">I Have A Theory</string>
     <string name="title_activity_credits">CreditsActivity</string>
 
-    <string name="new_game_button_text">New game</string>
-    <string name="continue_button_text">Continue</string>
-    <string name="options_button_text">Options</string>
+    <string name="forward_button_text">Forward</string>
+    <string name="back_button_text">Back</string>
 
-    <string name="easy_button_text">Spoon feed me</string>
-    <string name="medium_button_text">Ill manage</string>
-    <string name="hard_button_text">Im alone</string>
+    //Main menu
+    <string name="new_game_button">New game</string>
+    <string name="continue_button">Continue</string>
+    <string name="options_button">Options</string>
 
+    //Difficulty
+    <string name="easy_button">Spoon feed me</string>
+    <string name="medium_button">Ill manage</string>
+    <string name="hard_button">Im alone</string>
+
+    //Scenario
     <string name="forest_text_view">Forest</string>
     <string name="tundra_text_view">Tundra</string>
     <string name="mountains_text_view">Mountains</string>
-
     <string name="forest_con_des">Forest scenario</string>
     <string name="tundra_con_des">Tundra scenario</string>
     <string name="mountains_con_des">Mountains scenario</string>
 
-    <string name="forward_button_text">Forward</string>
-    <string name="back_button_text">Back</string>
-
+    //Dashboard hex buttons
     <string name="dashboard_gather">Gather</string>
     <string name="dashboard_craft">Craft</string>
     <string name="dashboard_backpack">Backpack</string>
@@ -31,24 +34,28 @@
     <string name="dashboard_shelter">Shelter</string>
     <string name="dashboard_journal">Journal</string>
 
+    //Dashboard HUD
     <string name="dashboard_health">Health</string>
     <string name="dashboard_stamina">Stamina</string>
     <string name="dashboard_heat">Heat</string>
     <string name="dashboard_hunger">Hunger</string>
     <string name="dashboard_thirst">Thirst</string>
 
-    <string name="shelter_label_text">Shelter</string>
+    //Shelter
+    <string name="shelter_label">Shelter</string>
     <string name="shelter_rest">Rest (1h)</string>
     <string name="shelter_sleep">Sleep (4h)</string>
     <string name="shelter_make_camp">Make a camp (2h)</string>
 
-    <string name="gather_label_text">Gather</string>
+    //Gather
+    <string name="gather_label">Gather</string>
     <string name="gather_berries_button">Find berries (30m)</string>
     <string name="gather_water_button">Collect water (15m)</string>
     <string name="gather_hunt_button">Hunt (2h)</string>
     <string name="gather_wood_button">Gather wood (30m)</string>
 
-
+    //Craft
+    <string name="craft_label">Craft</string>
 
 
     <string name="send_an_sos_text">Send an SOS</string>

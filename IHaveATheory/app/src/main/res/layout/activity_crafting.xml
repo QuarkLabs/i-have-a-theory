@@ -12,4 +12,98 @@
     android:background="@drawable/dashboard_background">
 
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.avoid.ihaveatheory.widget.ListItemButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bow"/>
+
+                    <com.avoid.ihaveatheory.widget.ListItemButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arrow set"/>
+
+                    <com.avoid.ihaveatheory.widget.ListItemButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Snare"/>
+
+                    <com.avoid.ihaveatheory.widget.ListItemButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stone knife"/>
+
+                    <com.avoid.ihaveatheory.widget.ListItemButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Grass slippers"/>
+
+                    <com.avoid.ihaveatheory.widget.ListItemButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Grass hat"/>
+
+                    <com.avoid.ihaveatheory.widget.ListItemButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Walking stick"/>
+
+                    <com.avoid.ihaveatheory.widget.ListItemButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pouch"/>
+
+                    <com.avoid.ihaveatheory.widget.ListItemButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Small pouch"/>
+
+                    <com.avoid.ihaveatheory.widget.ListItemButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hay blanket"/>
+
+                    <com.avoid.ihaveatheory.widget.ListItemButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fish hook"/>
+
+                    <com.avoid.ihaveatheory.widget.ListItemButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rope"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
