@@ -10,18 +10,53 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.avoid.ihaveatheory.view.ShelterActivity"
 
-    android:background="@drawable/app_background">
+    android:background="@drawable/dashboard_background">
+
+
+    <com.avoid.ihaveatheory.widget.HexButton
+        android:text="Sleep"
+        android:id="@+id/shelter_sleep_button"
+        android:layout_width="200dp"
+        android:gravity="center|bottom"
+        android:layout_height="200dp"
+        android:layout_marginTop="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <com.avoid.ihaveatheory.widget.HexButton
         android:text="Rest"
         android:id="@+id/shelter_rest_button"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_width="250dp"
+        android:layout_width="200dp"
         android:gravity="center|bottom"
-        android:layout_height="250dp"
+        android:layout_height="200dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
+    <com.avoid.ihaveatheory.widget.HexButton
+        android:text="Make a Camp"
+        android:id="@+id/shelter_camp_button"
+        android:layout_width="200dp"
+        android:gravity="center|bottom"
+        android:layout_height="200dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.avoid.ihaveatheory.widget.LabelTextView
+        android:text="Shelter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shelter_rest_button"
+        android:layout_alignStart="@+id/shelter_rest_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/shelter_title"
+        android:textSize="30sp" />
+
 </RelativeLayout>
