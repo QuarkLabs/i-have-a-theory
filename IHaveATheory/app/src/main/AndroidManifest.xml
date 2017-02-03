@@ -22,7 +22,11 @@
         <activity android:name=".view.BackpackActivity" />
         <activity android:name=".view.ProfileActivity" />
         <activity android:name=".view.SettingsActivity" />
-        <activity android:name=".view.ShelterActivity"
+        <activity android:name=".view.ShelterActivity"/>
+        <activity android:name=".view.IntroActivity" />
+        <activity android:name=".view.MapActivity" />
+        <activity android:name=".view.JournalActivity" />
+        <activity android:name=".view.GatherActivity"
             android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,10 +34,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.IntroActivity" />
-        <activity android:name=".view.MapActivity" />
-        <activity android:name=".view.JournalActivity" />
-        <activity android:name=".view.GatherActivity" />
         <activity android:name=".view.CookingPotActivity" />
         <activity android:name=".view.GameOverActivity" />
         <activity android:name=".view.HelpActivity"></activity>

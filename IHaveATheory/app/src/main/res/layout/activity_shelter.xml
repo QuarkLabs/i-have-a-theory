@@ -14,7 +14,7 @@
 
 
     <com.avoid.ihaveatheory.widget.LabelTextView
-        android:text="Shelter"
+        android:text="@string/shelter_label_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/shelter_rest_button"
@@ -26,7 +26,7 @@
         android:textSize="30sp" />
 
     <com.avoid.ihaveatheory.widget.HexButton
-        android:text="@string/dashboard_make_camp"
+        android:text="@string/shelter_make_camp"
         android:id="@+id/shelter_camp_button"
         android:layout_width="200dp"
         android:gravity="center|bottom"
@@ -47,7 +47,7 @@
         android:id="@+id/back_button" />
 
     <com.avoid.ihaveatheory.widget.HexButton
-        android:text="@string/dashboard_sleep"
+        android:text="@string/shelter_sleep"
         android:id="@+id/shelter_sleep_button"
         android:layout_width="200dp"
         android:gravity="center|bottom"
@@ -60,7 +60,7 @@
         android:layout_toEndOf="@+id/shelter_title" />
 
     <com.avoid.ihaveatheory.widget.HexButton
-        android:text="@string/dashboard_rest"
+        android:text="@string/shelter_rest"
         android:id="@+id/shelter_rest_button"
         android:layout_width="200dp"
         android:gravity="center|bottom"
