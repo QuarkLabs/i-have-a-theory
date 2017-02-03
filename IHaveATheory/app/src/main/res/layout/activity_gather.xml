@@ -8,6 +8,73 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.avoid.ihaveatheory.view.GatherActivity">
+    tools:context="com.avoid.ihaveatheory.view.GatherActivity"
+    android:background="@drawable/dashboard_background">
 
+
+    <com.avoid.ihaveatheory.widget.HexButton
+        android:text="@string/gather_berries_button"
+        android:layout_alignTop="@+id/gather_water_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="144dp"
+        android:layout_marginEnd="144dp"
+        android:id="@+id/gather_berries_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:gravity="center|bottom"/>
+
+    <com.avoid.ihaveatheory.widget.BackButton
+        android:text="@string/back_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/back_button" />
+
+    <com.avoid.ihaveatheory.widget.HexButton
+        android:text="@string/gather_water_button"
+        android:id="@+id/gather_water_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_above="@+id/gather_hunt_button"
+        android:layout_toLeftOf="@+id/gather_berries_button"
+        android:layout_toStartOf="@+id/gather_berries_button"
+        android:gravity="center|bottom"/>
+
+    <com.avoid.ihaveatheory.widget.HexButton
+        android:text="@string/gather_hunt_button"
+        android:id="@+id/gather_hunt_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:gravity="center|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/gather_berries_button"
+        android:layout_alignStart="@+id/gather_berries_button" />
+
+    <com.avoid.ihaveatheory.widget.HexButton
+        android:text="@string/gather_wood_button"
+        android:id="@+id/gather_wood_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:gravity="center|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/gather_water_button"
+        android:layout_alignStart="@+id/gather_water_button" />
+
+    <com.avoid.ihaveatheory.widget.LabelTextView
+        android:text="@string/gather_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gather_text_view"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

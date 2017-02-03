@@ -13,7 +13,7 @@
     android:background="@drawable/app_background">
 
     <com.avoid.ihaveatheory.widget.MainButton
-        android:text="@string/easy_button_text"
+        android:text="@string/easy_button"
         android:layout_height="wrap_content"
         android:id="@+id/easy_button"
         android:fontFamily="sans-serif-medium"
@@ -24,7 +24,7 @@
         android:layout_marginBottom="20dp" />
 
     <com.avoid.ihaveatheory.widget.MainButton
-        android:text="@string/hard_button_text"
+        android:text="@string/hard_button"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/hard_button"
@@ -33,7 +33,7 @@
         android:layout_marginTop="22dp" />
 
     <com.avoid.ihaveatheory.widget.MainButton
-        android:text="@string/medium_button_text"
+        android:text="@string/medium_button"
         android:layout_height="wrap_content"
         android:id="@+id/medium_button"
         android:layout_width="200dp"
