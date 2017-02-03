@@ -56,6 +56,20 @@
 
     //Craft
     <string name="craft_label">Craft</string>
+    <string name="craft_bow_button">Bow</string>
+    <string name="craft_arrow_button">Arrow set</string>
+    <string name="craft_snare_button">Snare</string>
+    <string name="craft_knife_button">Stone knife</string>
+    <string name="craft_slippers_button">Grass slippers</string>
+    <string name="craft_hat_button">Grass hat</string>
+    <string name="craft_walking_stick_button">Walking stick</string>
+    <string name="craft_small_pouch_button">Small pouch</string>
+    <string name="craft_pouch_button">Pouch</string>
+    <string name="craft_blanket_button">Hay blanket</string>
+    <string name="craft_hook_button">Fish hook</string>
+    <string name="craft_rope_button">Grass rope</string>
+
+    <string name="craft_make_button">Make</string>
 
 
     <string name="send_an_sos_text">Send an SOS</string>
