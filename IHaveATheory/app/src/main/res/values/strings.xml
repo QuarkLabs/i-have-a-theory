@@ -37,6 +37,10 @@
     <string name="dashboard_hunger">Hunger</string>
     <string name="dashboard_thirst">Thirst</string>
 
+    <string name="dashboard_rest">Rest (1h)</string>
+    <string name="dashboard_sleep">Sleep (4h)</string>
+    <string name="dashboard_make_camp">Make a camp (2h)</string>
+
     <string name="send_an_sos_text">Send an SOS</string>
     <string name="preserve_meat_text">Find a way to Preserve Meat</string>
 
