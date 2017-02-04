@@ -7,6 +7,7 @@ import android.widget.RelativeLayout;
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.Scenario;
 
 public class BackpackActivity extends AppCompatActivity implements PlaybleActivity{
 
@@ -19,6 +20,6 @@ public class BackpackActivity extends AppCompatActivity implements PlaybleActivi
     @Override
     public void setBackground() {
         RelativeLayout layout =(RelativeLayout)findViewById(R.id.activity_backpack);
-        layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
+        layout.setBackgroundResource(((Scenario)(Session.currentSaveFile.getScenario())).getDayBackground());
     }
 }
