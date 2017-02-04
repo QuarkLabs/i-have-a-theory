@@ -29,4 +29,9 @@ public class MapActivity extends AppCompatActivity implements PlaybleActivity{
         RelativeLayout layout =(RelativeLayout)findViewById(R.id.activity_map);
         layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
     }
+
+    @Override
+    public void setIcons() {
+
+    }
 }

@@ -24,24 +24,24 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="bottom|center"
-            android:text="@string/dashboard_shelter"
-            android:onClick="onClickShelterButton" />
+            android:onClick="onClickShelterButton"
+            android:text="@string/dashboard_shelter" />
 
         <com.avoid.ihaveatheory.widget.HexButton
             android:id="@+id/journal_button"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="bottom|center"
-            android:text="@string/dashboard_journal"
-            android:onClick="onClickJournalButton" />
+            android:onClick="onClickJournalButton"
+            android:text="@string/dashboard_journal" />
 
         <com.avoid.ihaveatheory.widget.HexButton
             android:id="@+id/shop_button"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="bottom|center"
-            android:text="@string/dashboard_shop"
-            android:onClick="onClickShopButton" />
+            android:onClick="onClickShopButton"
+            android:text="@string/dashboard_shop" />
     </LinearLayout>
 
     <LinearLayout
@@ -57,98 +57,30 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="bottom|center"
-            android:text="@string/dashboard_map"
-            android:onClick="onClickMapButton" />
+            android:onClick="onClickMapButton"
+            android:text="@string/dashboard_map" />
 
         <com.avoid.ihaveatheory.widget.HexButton
             android:id="@+id/explore_button"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="bottom|center"
-            android:text="@string/dashboard_explore"
-            android:onClick="onClickExploreButton" />
+            android:onClick="onClickExploreButton"
+            android:text="@string/dashboard_explore" />
 
         <com.avoid.ihaveatheory.widget.HexButton
             android:id="@+id/cooking_pot_button"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="bottom|center"
-            android:text="@string/dashboard_cooking_pot"
-            android:onClick="onClickCookingPotButton" />
+            android:onClick="onClickCookingPotButton"
+            android:text="@string/dashboard_cooking_pot" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="250dp"
         android:layout_height="100dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <com.avoid.ihaveatheory.widget.CircularProgressBar
-                android:id="@+id/health_progress_bar"
-                style="?android:attr/progressBarStyleLarge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:max="100"
-                android:progress="75" />
-
-            <com.avoid.ihaveatheory.widget.LabelTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/dashboard_health"
-                android:textAlignment="center" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <com.avoid.ihaveatheory.widget.CircularProgressBar
-                android:id="@+id/stamina_progress_bar"
-                style="?android:attr/progressBarStyleLarge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <com.avoid.ihaveatheory.widget.LabelTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/dashboard_stamina"
-                android:textAlignment="center" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <com.avoid.ihaveatheory.widget.CircularProgressBar
-                android:id="@+id/heat_progress_bar"
-                style="?android:attr/progressBarStyleLarge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <com.avoid.ihaveatheory.widget.LabelTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/dashboard_heat"
-                android:textAlignment="center" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -162,10 +94,8 @@
 
             <com.avoid.ihaveatheory.widget.LabelTextView
                 android:id="@+id/hunger_text_view"
-                android:layout_width="0dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingRight="10dp"
                 android:text="@string/dashboard_hunger" />
 
             <com.avoid.ihaveatheory.widget.LinearProgressBar
@@ -173,7 +103,14 @@
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <com.avoid.ihaveatheory.widget.LabelTextView
+                android:id="@+id/hunger_value_text_view"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
         <LinearLayout
@@ -183,11 +120,9 @@
             android:orientation="horizontal">
 
             <com.avoid.ihaveatheory.widget.LabelTextView
-                android:id="@+id/thirst_text_vew"
-                android:layout_width="0dp"
+                android:id="@+id/thirst_text_view"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingRight="10dp"
                 android:text="@string/dashboard_thirst" />
 
             <com.avoid.ihaveatheory.widget.LinearProgressBar
@@ -195,41 +130,129 @@
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <com.avoid.ihaveatheory.widget.LabelTextView
+                android:id="@+id/thirst_value_text_view"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.avoid.ihaveatheory.widget.LabelTextView
+                android:id="@+id/health_text_view"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dashboard_health" />
+
+            <com.avoid.ihaveatheory.widget.LinearProgressBar
+                android:id="@+id/health_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <com.avoid.ihaveatheory.widget.LabelTextView
+                android:id="@+id/health_value_text_view"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.avoid.ihaveatheory.widget.LabelTextView
+                android:id="@+id/stamina_text_view"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dashboard_stamina" />
+
+            <com.avoid.ihaveatheory.widget.LinearProgressBar
+                android:id="@+id/stamina_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <com.avoid.ihaveatheory.widget.LabelTextView
+                android:id="@+id/stamina_value_text_view"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.avoid.ihaveatheory.widget.LabelTextView
+                android:id="@+id/heat_text_view"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dashboard_heat" />
+
+            <com.avoid.ihaveatheory.widget.LinearProgressBar
+                android:id="@+id/heat_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <com.avoid.ihaveatheory.widget.LabelTextView
+                android:id="@+id/heat_value_text_view"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
 
         <com.avoid.ihaveatheory.widget.HexButton
             android:id="@+id/gather_button"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="bottom|center"
-            android:text="@string/dashboard_gather"
-            android:onClick="onClickGatherButton" />
+            android:onClick="onClickGatherButton"
+            android:text="@string/dashboard_gather" />
 
         <com.avoid.ihaveatheory.widget.HexButton
             android:id="@+id/craft_button"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="bottom|center"
-            android:text="@string/dashboard_craft"
-            android:onClick="onClickCraftButton" />
+            android:onClick="onClickCraftButton"
+            android:text="@string/dashboard_craft" />
 
         <com.avoid.ihaveatheory.widget.HexButton
             android:id="@+id/backpack_button"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="bottom|center"
-            android:text="@string/dashboard_backpack"
-            android:onClick="onClickBackpackButton" />
+            android:onClick="onClickBackpackButton"
+            android:text="@string/dashboard_backpack" />
     </LinearLayout>
 
 </RelativeLayout>

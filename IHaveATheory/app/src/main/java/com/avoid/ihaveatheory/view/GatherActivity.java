@@ -1,7 +1,9 @@
 package com.avoid.ihaveatheory.view;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
@@ -34,5 +36,15 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
     public void setBackground() {
         RelativeLayout layout =(RelativeLayout)findViewById(R.id.activity_gather);
         layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
+    }
+
+    @Override
+    public void setIcons() {
+
+    }
+
+
+    public void onClickBackButton(View view) {
+        startActivity(new Intent(GatherActivity.this, DashboardActivity.class));
     }
 }

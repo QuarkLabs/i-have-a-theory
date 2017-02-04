@@ -29,4 +29,9 @@ public class JournalActivity extends AppCompatActivity implements PlaybleActivit
         RelativeLayout layout =(RelativeLayout)findViewById(R.id.activity_journal);
         layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
     }
+
+    @Override
+    public void setIcons() {
+
+    }
 }
