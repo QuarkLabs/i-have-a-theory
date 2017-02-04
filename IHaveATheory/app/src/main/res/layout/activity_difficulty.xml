@@ -21,7 +21,8 @@
         android:layout_above="@+id/medium_button"
         android:layout_alignLeft="@+id/medium_button"
         android:layout_alignStart="@+id/medium_button"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:onClick="onClickEasyButton" />
 
     <com.avoid.ihaveatheory.widget.MainButton
         android:text="@string/hard_button"
@@ -30,7 +31,8 @@
         android:id="@+id/hard_button"
         android:layout_below="@+id/medium_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp" />
+        android:layout_marginTop="22dp"
+        android:onClick="onClickHardButton" />
 
     <com.avoid.ihaveatheory.widget.MainButton
         android:text="@string/medium_button"
@@ -39,12 +41,12 @@
         android:layout_width="200dp"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/hard_button"
-        android:layout_alignStart="@+id/hard_button" />
+        android:layout_alignStart="@+id/hard_button"
+        android:onClick="onClickMediumButton" />
 
     <com.avoid.ihaveatheory.widget.BackButton
-        android:text="@string/back_button_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"

@@ -121,8 +121,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true" />
 
-            <TextView
-                android:text="TextView"
+            <com.avoid.ihaveatheory.widget.DescriptionTextView
+                android:text="Description"
                 android:layout_width="match_parent"
                 android:layout_below="@+id/item_image_view"
                 android:layout_alignParentLeft="true"
@@ -146,7 +146,8 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:id="@+id/back_button" />
+                android:id="@+id/back_button"
+                android:onClick="onClickBackButton" />
         </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

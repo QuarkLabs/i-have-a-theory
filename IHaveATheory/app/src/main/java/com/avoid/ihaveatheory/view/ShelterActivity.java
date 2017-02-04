@@ -1,12 +1,18 @@
 package com.avoid.ihaveatheory.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
+import com.avoid.ihaveatheory.global.Session;
+import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.Scenario;
 import com.avoid.ihaveatheory.widget.HexButton;
 
-public class ShelterActivity extends AppCompatActivity {
+public class ShelterActivity extends AppCompatActivity implements PlaybleActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,5 +27,27 @@ public class ShelterActivity extends AppCompatActivity {
 
         HexButton campButton = (HexButton)findViewById(R.id.shelter_camp_button);
         campButton.setIcon(R.drawable.shelter_camp);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        Session.saveFileHandler.saveGame();
+    }
+
+    @Override
+    public void setBackground() {
+        RelativeLayout layout =(RelativeLayout)findViewById(R.id.activity_shelter);
+        layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
+    }
+
+    @Override
+    public void setIcons() {
+
+    }
+
+    public void onClickBackButton(View view) {
+        startActivity(new Intent(ShelterActivity.this, DashboardActivity.class));
     }
 }
