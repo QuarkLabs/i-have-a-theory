@@ -27,13 +27,6 @@ public class MainMenuActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        Session.saveFileHandler.saveGame();
-    }
-
     public void onClickContinueButton(View view) {
         Session.saveFileHandler.loadGame();
 

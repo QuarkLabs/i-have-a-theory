@@ -7,6 +7,7 @@ import android.widget.RelativeLayout;
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.Scenario;
 
 public class CookingPotActivity extends AppCompatActivity implements PlaybleActivity{
 

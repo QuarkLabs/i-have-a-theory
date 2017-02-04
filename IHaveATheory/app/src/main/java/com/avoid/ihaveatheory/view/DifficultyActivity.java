@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.avoid.ihaveatheory.R;
-import com.avoid.ihaveatheory.difficulty.EasyDifficulty;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.Difficulty;
 
@@ -20,7 +19,7 @@ public class DifficultyActivity extends AppCompatActivity {
     }
 
     public void onClickEasyButton(View view) {
-        Difficulty difficulty = new EasyDifficulty();
+        Difficulty difficulty = new Difficulty();
         Session.currentSaveFile.setDifficulty(difficulty);
         startActivity(new Intent(DifficultyActivity.this, DashboardActivity.class));
     }

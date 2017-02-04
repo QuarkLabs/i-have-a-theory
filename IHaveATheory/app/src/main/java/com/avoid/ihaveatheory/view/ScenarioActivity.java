@@ -13,9 +13,6 @@ import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Font;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.Scenario;
-import com.avoid.ihaveatheory.scenario.ForestScenario;
-import com.avoid.ihaveatheory.scenario.MountainsScenario;
-import com.avoid.ihaveatheory.scenario.TundraScenario;
 import com.avoid.ihaveatheory.util.FontCache;
 
 public class ScenarioActivity extends AppCompatActivity {
@@ -44,13 +41,6 @@ public class ScenarioActivity extends AppCompatActivity {
         forestImageButton = (ImageButton) findViewById(R.id.forest_image_button);
         tundraImageButton = (ImageButton) findViewById(R.id.tundra_image_button);
         mountainsImageButton = (ImageButton) findViewById(R.id.mountains_image_button);
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        Session.saveFileHandler.saveGame();
     }
 
     public void onClickForestImageButton(View view) {
@@ -130,15 +120,13 @@ public class ScenarioActivity extends AppCompatActivity {
     }
 
     public void onClickForwardButton(View view) {
-        Scenario scenario;
+        Scenario scenario = new Scenario();
         if (isForestClicked) {
-            scenario = new ForestScenario();
+            scenario.setForestScenario();
         } else if (isTundraClicked) {
-            scenario = new TundraScenario();
             Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
             return;
         } else if (isMountainsClicked) {
-            scenario = new MountainsScenario();
             Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
             return;
         } else {

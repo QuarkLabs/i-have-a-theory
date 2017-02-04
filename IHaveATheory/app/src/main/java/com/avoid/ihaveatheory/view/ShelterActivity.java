@@ -7,6 +7,7 @@ import android.widget.RelativeLayout;
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.Scenario;
 import com.avoid.ihaveatheory.widget.HexButton;
 
 public class ShelterActivity extends AppCompatActivity implements PlaybleActivity {
