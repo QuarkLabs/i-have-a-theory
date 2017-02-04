@@ -67,13 +67,12 @@
         android:layout_alignParentEnd="true" />
 
     <com.avoid.ihaveatheory.widget.BackButton
-        android:text="@string/back_button_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:id="@+id/back_button"
         android:onClick="onClickBackButton"
-        android:layout_alignBaseline="@+id/gather_wood_button"
-        android:layout_alignBottom="@+id/gather_wood_button"
-        android:layout_alignRight="@+id/gather_text_view"
-        android:layout_alignEnd="@+id/gather_text_view" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        />
 </RelativeLayout>
