@@ -1,16 +1,15 @@
 package com.avoid.ihaveatheory.view;
 
-import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.avoid.ihaveatheory.R;
-
-import com.avoid.ihaveatheory.global.Font;
-import com.avoid.ihaveatheory.util.FontCache;
+import com.avoid.ihaveatheory.difficulty.EasyDifficulty;
+import com.avoid.ihaveatheory.global.Session;
+import com.avoid.ihaveatheory.model.Difficulty;
 
 public class DifficultyActivity extends AppCompatActivity {
 
@@ -21,6 +20,9 @@ public class DifficultyActivity extends AppCompatActivity {
     }
 
     public void onClickEasyButton(View view) {
+        Difficulty difficulty = new EasyDifficulty();
+        Session.currentSaveFile.setDifficulty(difficulty);
+        startActivity(new Intent(DifficultyActivity.this, DashboardActivity.class));
     }
 
     public void onClickMediumButton(View view) {
