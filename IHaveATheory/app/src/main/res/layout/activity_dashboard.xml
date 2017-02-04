@@ -79,76 +79,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <com.avoid.ihaveatheory.widget.CircularProgressBar
-                android:id="@+id/health_progress_bar"
-                style="?android:attr/progressBarStyleLarge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:max="100"
-                android:progress="75" />
-
-            <com.avoid.ihaveatheory.widget.LabelTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/dashboard_health"
-                android:textAlignment="center" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <com.avoid.ihaveatheory.widget.CircularProgressBar
-                android:id="@+id/stamina_progress_bar"
-                style="?android:attr/progressBarStyleLarge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <com.avoid.ihaveatheory.widget.LabelTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/dashboard_stamina"
-                android:textAlignment="center" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <com.avoid.ihaveatheory.widget.CircularProgressBar
-                android:id="@+id/heat_progress_bar"
-                style="?android:attr/progressBarStyleLarge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <com.avoid.ihaveatheory.widget.LabelTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/dashboard_heat"
-                android:textAlignment="center" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="100dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -183,7 +115,7 @@
             android:orientation="horizontal">
 
             <com.avoid.ihaveatheory.widget.LabelTextView
-                android:id="@+id/thirst_text_vew"
+                android:id="@+id/thirst_text_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -192,6 +124,72 @@
 
             <com.avoid.ihaveatheory.widget.LinearProgressBar
                 android:id="@+id/thirst_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.avoid.ihaveatheory.widget.LabelTextView
+                android:id="@+id/health_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:text="@string/dashboard_health" />
+
+            <com.avoid.ihaveatheory.widget.LinearProgressBar
+                android:id="@+id/health_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.avoid.ihaveatheory.widget.LabelTextView
+                android:id="@+id/stamina_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:text="@string/dashboard_stamina" />
+
+            <com.avoid.ihaveatheory.widget.LinearProgressBar
+                android:id="@+id/stamina_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.avoid.ihaveatheory.widget.LabelTextView
+                android:id="@+id/heat_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:text="@string/dashboard_heat" />
+
+            <com.avoid.ihaveatheory.widget.LinearProgressBar
+                android:id="@+id/heat_progress_bar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

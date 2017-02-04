@@ -20,7 +20,11 @@ public class DifficultyActivity extends AppCompatActivity {
 
     public void onClickEasyButton(View view) {
         Difficulty difficulty = new Difficulty();
+        difficulty.setEasyDifficulty();
         Session.currentSaveFile.setDifficulty(difficulty);
+
+        initializeGame();
+
         startActivity(new Intent(DifficultyActivity.this, DashboardActivity.class));
     }
 
@@ -30,5 +34,13 @@ public class DifficultyActivity extends AppCompatActivity {
 
     public void onClickHardButton(View view) {
         Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
+    }
+
+    private void initializeGame(){
+        Session.currentSaveFile.setHealth(Session.currentSaveFile.getDifficulty().getMAX_HEALTH());
+        Session.currentSaveFile.setStamina(Session.currentSaveFile.getDifficulty().getMAX_STAMINA());
+        Session.currentSaveFile.setHeat(Session.currentSaveFile.getDifficulty().getMAX_HEAT());
+        Session.currentSaveFile.setHunger(Session.currentSaveFile.getDifficulty().getMAX_HUNGER());
+        Session.currentSaveFile.setThirst(Session.currentSaveFile.getDifficulty().getMAX_THIRST());
     }
 }

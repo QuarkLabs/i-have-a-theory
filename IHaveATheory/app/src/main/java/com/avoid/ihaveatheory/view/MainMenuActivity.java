@@ -18,7 +18,7 @@ public class MainMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-        initialize();
+        Session.saveFileHandler = new SaveFileHandler(getApplicationContext());
 
         //Enable Continue button if a save file exists.
         if (Session.saveFileHandler.saveExists()) {
@@ -41,9 +41,5 @@ public class MainMenuActivity extends AppCompatActivity {
 
     public void onClickOptionsButton(View view) {
         Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
-    }
-
-    public void initialize(){
-        Session.saveFileHandler = new SaveFileHandler(getApplicationContext());
     }
 }

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -85,7 +86,9 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickExploreButton(View view) {
-
+        ProgressBar p = (ProgressBar) findViewById(R.id.health_progress_bar);
+        p.setMax(100);
+        p.setProgress(75);
     }
 
     public void onClickCookingPotButton(View view) {
