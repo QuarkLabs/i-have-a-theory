@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -48,7 +47,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
         staminaValueTextView = (LabelTextView) findViewById(R.id.stamina_value_text_view);
         heatValueTextView = (LabelTextView) findViewById(R.id.heat_value_text_view);
 
-        setDefaultStats();
+        refreshStats();
     }
 
     @Override
@@ -130,27 +129,45 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
         journalButton.setIcon(R.drawable.dashboard_journal);
     }
 
-    private void setDefaultStats() {
+    private void refreshStats() {
+        refreshHunger();
+        refreshThirst();
+        refreshHealth();
+        refreshStamina();
+        refreshHeat();
+    }
+
+    private void refreshHunger(){
         hungerProgressBar.setMax(Session.currentSaveFile.getHunger());
-        thirstProgressBar.setMax(Session.currentSaveFile.getThirst());
-        healthProgressBar.setMax(Session.currentSaveFile.getHealth());
-        staminaProgressBar.setMax(Session.currentSaveFile.getStamina());
-        heatProgressBar.setMax(Session.currentSaveFile.getHeat());
-
         hungerProgressBar.setProgress(Session.currentSaveFile.getHunger());
-        thirstProgressBar.setProgress(Session.currentSaveFile.getThirst());
-        healthProgressBar.setProgress(Session.currentSaveFile.getHealth());
-        staminaProgressBar.setProgress(Session.currentSaveFile.getStamina());
-        heatProgressBar.setProgress(Session.currentSaveFile.getHeat());
-
         hungerValueTextView.setText(String.valueOf(Session.currentSaveFile.getHunger()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_HUNGER()));
+    }
+
+    private void refreshThirst(){
+        thirstProgressBar.setMax(Session.currentSaveFile.getThirst());
+        thirstProgressBar.setProgress(Session.currentSaveFile.getThirst());
         thirstValueTextView.setText(String.valueOf(Session.currentSaveFile.getThirst()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_THIRST()));
+    }
+
+    private void refreshHealth(){
+        healthProgressBar.setMax(Session.currentSaveFile.getHealth());
+        healthProgressBar.setProgress(Session.currentSaveFile.getHealth());
         healthValueTextView.setText(String.valueOf(Session.currentSaveFile.getHealth()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_HEALTH()));
+    }
+
+    private void refreshStamina(){
+        staminaProgressBar.setMax(Session.currentSaveFile.getStamina());
+        staminaProgressBar.setProgress(Session.currentSaveFile.getStamina());
         staminaValueTextView.setText(String.valueOf(Session.currentSaveFile.getStamina()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_STAMINA()));
+    }
+
+    private void refreshHeat(){
+        heatProgressBar.setMax(Session.currentSaveFile.getHeat());
+        heatProgressBar.setProgress(Session.currentSaveFile.getHeat());
         heatValueTextView.setText(String.valueOf(Session.currentSaveFile.getHeat()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_HEAT()));
     }
