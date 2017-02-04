@@ -38,6 +38,11 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
         layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
     }
 
+    @Override
+    public void setIcons() {
+
+    }
+
 
     public void onClickBackButton(View view) {
         startActivity(new Intent(GatherActivity.this, DashboardActivity.class));

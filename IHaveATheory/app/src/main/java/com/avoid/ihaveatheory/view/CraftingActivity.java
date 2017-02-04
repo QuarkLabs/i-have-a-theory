@@ -25,6 +25,11 @@ public class CraftingActivity extends AppCompatActivity implements PlaybleActivi
         layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
     }
 
+    @Override
+    public void setIcons() {
+
+    }
+
 
     public void onClickBackButton(View view) {
         startActivity(new Intent(CraftingActivity.this, DashboardActivity.class));

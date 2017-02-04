@@ -22,4 +22,9 @@ public class BackpackActivity extends AppCompatActivity implements PlaybleActivi
         RelativeLayout layout =(RelativeLayout)findViewById(R.id.activity_backpack);
         layout.setBackgroundResource(((Scenario)(Session.currentSaveFile.getScenario())).getDayBackground());
     }
+
+    @Override
+    public void setIcons() {
+
+    }
 }

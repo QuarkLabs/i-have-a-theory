@@ -42,6 +42,11 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
         layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
     }
 
+    @Override
+    public void setIcons() {
+
+    }
+
     public void onClickBackButton(View view) {
         startActivity(new Intent(ShelterActivity.this, DashboardActivity.class));
     }

@@ -22,4 +22,9 @@ public class CookingPotActivity extends AppCompatActivity implements PlaybleActi
         RelativeLayout layout =(RelativeLayout)findViewById(R.id.activity_cooking_pot);
         layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
     }
+
+    @Override
+    public void setIcons() {
+
+    }
 }
