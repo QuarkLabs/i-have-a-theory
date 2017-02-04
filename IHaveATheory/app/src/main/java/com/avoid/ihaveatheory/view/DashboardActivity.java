@@ -2,7 +2,9 @@ package com.avoid.ihaveatheory.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.widget.HexButton;
@@ -41,5 +43,36 @@ public class DashboardActivity extends AppCompatActivity {
 
         HexButton journalButton = (HexButton) findViewById(R.id.journal_button);
         journalButton.setIcon(R.drawable.dashboard_journal);
+    }
+
+    public void onClickGatherButton(View view) {
+    }
+
+    public void onClickCraftButton(View view) {
+    }
+
+    public void onClickBackpackButton(View view) {
+    }
+
+    public void onClickShelterButton(View view) {
+    }
+
+    public void onClickJournalButton(View view) {
+        Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
+    }
+
+    public void onClickShopButton(View view) {
+        Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
+    }
+
+    public void onClickMapButton(View view) {
+        Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
+    }
+
+    public void onClickExploreButton(View view) {
+    }
+
+    public void onClickCookingPotButton(View view) {
+        Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
     }
 }
