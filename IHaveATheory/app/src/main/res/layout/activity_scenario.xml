@@ -108,9 +108,8 @@
     </LinearLayout>
 
     <com.avoid.ihaveatheory.widget.BackButton
-        android:text="@string/back_button_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -118,9 +117,8 @@
         android:onClick="onClickBackButton" />
 
     <com.avoid.ihaveatheory.widget.ForwardButton
-        android:text="@string/forward_button_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
