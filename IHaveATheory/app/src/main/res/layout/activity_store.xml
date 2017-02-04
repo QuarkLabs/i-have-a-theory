@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_store"
     android:layout_width="match_parent"
@@ -8,6 +9,68 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/app_background_notext"
     tools:context="com.avoid.ihaveatheory.view.StoreActivity">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/store_water"
+        android:id="@+id/water_image"
+        android:layout_alignTop="@+id/beer_image"
+        android:layout_alignLeft="@+id/backpack_image"
+        android:layout_alignStart="@+id/backpack_image" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/store_rope"
+        android:id="@+id/rope_image"
+        android:layout_alignTop="@+id/backpack_image"
+        android:layout_alignLeft="@+id/food_image"
+        android:layout_alignStart="@+id/food_image" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/store_fire"
+        android:id="@+id/fire_image"
+        android:layout_alignTop="@+id/rope_image"
+        android:layout_alignLeft="@+id/beer_image"
+        android:layout_alignStart="@+id/beer_image" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/store_backpack"
+        android:id="@+id/backpack_image"
+        android:layout_marginBottom="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/rope_image"
+        android:layout_toEndOf="@+id/rope_image"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/store_food"
+        android:id="@+id/food_image"
+        android:layout_marginBottom="59dp"
+        android:layout_above="@+id/rope_image"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/store_beer"
+        android:id="@+id/beer_image"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_alignTop="@+id/food_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 
 </RelativeLayout>
