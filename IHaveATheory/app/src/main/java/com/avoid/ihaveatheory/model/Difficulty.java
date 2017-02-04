@@ -1,5 +1,5 @@
 package com.avoid.ihaveatheory.model;
 
-public class Difficulty {
+public abstract class Difficulty {
 
 }

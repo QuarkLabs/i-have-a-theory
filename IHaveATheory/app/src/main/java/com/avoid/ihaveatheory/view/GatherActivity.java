@@ -2,10 +2,14 @@ package com.avoid.ihaveatheory.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.RelativeLayout;
+
 import com.avoid.ihaveatheory.R;
+import com.avoid.ihaveatheory.global.Session;
+import com.avoid.ihaveatheory.model.PlaybleActivity;
 import com.avoid.ihaveatheory.widget.HexButton;
 
-public class GatherActivity extends AppCompatActivity {
+public class GatherActivity extends AppCompatActivity implements PlaybleActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,5 +27,11 @@ public class GatherActivity extends AppCompatActivity {
 
         HexButton huntButton = (HexButton)findViewById(R.id.gather_hunt_button);
         huntButton.setIcon(R.drawable.gather_hunt);
+    }
+
+    @Override
+    public void setBackground() {
+        RelativeLayout layout =(RelativeLayout)findViewById(R.id.activity_gather);
+        layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
     }
 }

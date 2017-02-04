@@ -3,6 +3,8 @@ package com.avoid.ihaveatheory.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.provider.Settings;
+import android.util.Log;
 
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.SaveFile;
@@ -24,12 +26,14 @@ public class SaveFileHandler {
 
     public void loadGame() {
         String json = preferences.getString("save_file", "");
+        Log.d("readddddddddddddd", json);
         Session.currentSaveFile = gson.fromJson(json, SaveFile.class);
     }
 
     public void saveGame(){
         SharedPreferences.Editor prefsEditor = preferences.edit();
         String json = gson.toJson(Session.currentSaveFile);
+        Log.d("jsonnnnnn", json);
         prefsEditor.putString("save_file", json);
         prefsEditor.commit();
     }

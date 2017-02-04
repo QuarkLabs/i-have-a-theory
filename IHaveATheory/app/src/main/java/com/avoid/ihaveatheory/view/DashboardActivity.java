@@ -1,16 +1,17 @@
 package com.avoid.ihaveatheory.view;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.avoid.ihaveatheory.R;
+import com.avoid.ihaveatheory.global.Session;
+import com.avoid.ihaveatheory.model.PlaybleActivity;
 import com.avoid.ihaveatheory.widget.HexButton;
-import com.avoid.ihaveatheory.widget.draw.HexButtonDrawable;
 
-public class DashboardActivity extends AppCompatActivity {
+public class DashboardActivity extends AppCompatActivity implements PlaybleActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,15 @@ public class DashboardActivity extends AppCompatActivity {
 
         HexButton journalButton = (HexButton) findViewById(R.id.journal_button);
         journalButton.setIcon(R.drawable.dashboard_journal);
+
+        setBackground();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        Session.saveFileHandler.saveGame();
     }
 
     public void onClickGatherButton(View view) {
@@ -74,5 +84,11 @@ public class DashboardActivity extends AppCompatActivity {
 
     public void onClickCookingPotButton(View view) {
         Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void setBackground() {
+        RelativeLayout layout =(RelativeLayout)findViewById(R.id.activity_dashboard);
+        layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
     }
 }

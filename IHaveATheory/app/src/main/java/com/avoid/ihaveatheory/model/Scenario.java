@@ -1,5 +1,6 @@
 package com.avoid.ihaveatheory.model;
 
-public class Scenario {
-
+public abstract class Scenario {
+    public abstract int getDayBackground();
+    public abstract int getNightBackground();
 }
