@@ -13,4 +13,21 @@
     tools:context="com.avoid.ihaveatheory.view.PurchaseActivity">
 
 
+    <com.avoid.ihaveatheory.widget.BackButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/purchase_forward_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <com.avoid.ihaveatheory.widget.ForwardButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/purchase_back_putton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
