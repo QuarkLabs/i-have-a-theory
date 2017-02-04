@@ -1,7 +1,9 @@
 package com.avoid.ihaveatheory.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
@@ -38,5 +40,9 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
     public void setBackground() {
         RelativeLayout layout =(RelativeLayout)findViewById(R.id.activity_shelter);
         layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
+    }
+
+    public void onClickBackButton(View view) {
+        startActivity(new Intent(ShelterActivity.this, DashboardActivity.class));
     }
 }

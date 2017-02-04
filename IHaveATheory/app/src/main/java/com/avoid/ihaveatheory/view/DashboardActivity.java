@@ -1,5 +1,6 @@
 package com.avoid.ihaveatheory.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -56,15 +57,19 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickGatherButton(View view) {
+        startActivity(new Intent(DashboardActivity.this, GatherActivity.class));
     }
 
     public void onClickCraftButton(View view) {
+        startActivity(new Intent(DashboardActivity.this, CraftingActivity.class));
     }
 
     public void onClickBackpackButton(View view) {
+        startActivity(new Intent(DashboardActivity.this, BackpackActivity.class));
     }
 
     public void onClickShelterButton(View view) {
+        startActivity(new Intent(DashboardActivity.this, ShelterActivity.class));
     }
 
     public void onClickJournalButton(View view) {
@@ -80,6 +85,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickExploreButton(View view) {
+
     }
 
     public void onClickCookingPotButton(View view) {
