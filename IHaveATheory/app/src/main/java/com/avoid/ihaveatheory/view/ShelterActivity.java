@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.avoid.ihaveatheory.R;
+import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.widget.HexButton;
 
 public class ShelterActivity extends AppCompatActivity {
@@ -21,5 +22,12 @@ public class ShelterActivity extends AppCompatActivity {
 
         HexButton campButton = (HexButton)findViewById(R.id.shelter_camp_button);
         campButton.setIcon(R.drawable.shelter_camp);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        Session.saveFileHandler.saveGame();
     }
 }

@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Font;
+import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.util.FontCache;
 
 public class ScenarioActivity extends AppCompatActivity {
@@ -38,6 +39,13 @@ public class ScenarioActivity extends AppCompatActivity {
         forestImageButton = (ImageButton) findViewById(R.id.forest_image_button);
         tundraImageButton = (ImageButton) findViewById(R.id.tundra_image_button);
         mountainsImageButton = (ImageButton) findViewById(R.id.mountains_image_button);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        Session.saveFileHandler.saveGame();
     }
 
     public void onClickForestImageButton(View view) {
