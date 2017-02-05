@@ -4,9 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
@@ -48,7 +46,13 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
         staminaValueTextView = (LabelTextView) findViewById(R.id.stamina_value_text_view);
         heatValueTextView = (LabelTextView) findViewById(R.id.heat_value_text_view);
 
-        setDefaultStats();
+        refreshStats();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        refreshStats();
     }
 
     @Override
@@ -63,7 +67,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickCraftButton(View view) {
-        startActivity(new Intent(DashboardActivity.this, CraftingActivity.class));
+        startActivity(new Intent(DashboardActivity.this, CraftActivity.class));
     }
 
     public void onClickBackpackButton(View view) {
@@ -75,15 +79,15 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickJournalButton(View view) {
-        Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(DashboardActivity.this, JournalActivity.class));
     }
 
     public void onClickShopButton(View view) {
-        Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(DashboardActivity.this, StoreActivity.class));
     }
 
     public void onClickMapButton(View view) {
-        Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(DashboardActivity.this, MapActivity.class));
     }
 
     public void onClickExploreButton(View view) {
@@ -91,7 +95,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickCookingPotButton(View view) {
-        Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(DashboardActivity.this, CookingPotActivity.class));
     }
 
     @Override
@@ -130,27 +134,45 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
         journalButton.setIcon(R.drawable.dashboard_journal);
     }
 
-    private void setDefaultStats() {
-        hungerProgressBar.setMax(Session.currentSaveFile.getHunger());
-        thirstProgressBar.setMax(Session.currentSaveFile.getThirst());
-        healthProgressBar.setMax(Session.currentSaveFile.getHealth());
-        staminaProgressBar.setMax(Session.currentSaveFile.getStamina());
-        heatProgressBar.setMax(Session.currentSaveFile.getHeat());
+    private void refreshStats() {
+        refreshHunger();
+        refreshThirst();
+        refreshHealth();
+        refreshStamina();
+        refreshHeat();
+    }
 
+    private void refreshHunger(){
+        hungerProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_HUNGER());
         hungerProgressBar.setProgress(Session.currentSaveFile.getHunger());
-        thirstProgressBar.setProgress(Session.currentSaveFile.getThirst());
-        healthProgressBar.setProgress(Session.currentSaveFile.getHealth());
-        staminaProgressBar.setProgress(Session.currentSaveFile.getStamina());
-        heatProgressBar.setProgress(Session.currentSaveFile.getHeat());
-
         hungerValueTextView.setText(String.valueOf(Session.currentSaveFile.getHunger()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_HUNGER()));
+    }
+
+    private void refreshThirst(){
+        thirstProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_THIRST());
+        thirstProgressBar.setProgress(Session.currentSaveFile.getThirst());
         thirstValueTextView.setText(String.valueOf(Session.currentSaveFile.getThirst()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_THIRST()));
+    }
+
+    private void refreshHealth(){
+        healthProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_HEALTH());
+        healthProgressBar.setProgress(Session.currentSaveFile.getHealth());
         healthValueTextView.setText(String.valueOf(Session.currentSaveFile.getHealth()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_HEALTH()));
+    }
+
+    private void refreshStamina(){
+        staminaProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_STAMINA());
+        staminaProgressBar.setProgress(Session.currentSaveFile.getStamina());
         staminaValueTextView.setText(String.valueOf(Session.currentSaveFile.getStamina()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_STAMINA()));
+    }
+
+    private void refreshHeat(){
+        heatProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_HEAT());
+        heatProgressBar.setProgress(Session.currentSaveFile.getHeat());
         heatValueTextView.setText(String.valueOf(Session.currentSaveFile.getHeat()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_HEAT()));
     }

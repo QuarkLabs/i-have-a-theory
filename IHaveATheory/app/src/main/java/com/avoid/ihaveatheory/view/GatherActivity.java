@@ -47,4 +47,16 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
     public void onClickBackButton(View view) {
         startActivity(new Intent(GatherActivity.this, DashboardActivity.class));
     }
+
+    public void onClickGatherWaterButton(View view) {
+    }
+
+    public void onClickGatherBerriesButton(View view) {
+    }
+
+    public void onClickGatherWoodButton(View view) {
+    }
+
+    public void onClickHuntButton(View view) {
+    }
 }

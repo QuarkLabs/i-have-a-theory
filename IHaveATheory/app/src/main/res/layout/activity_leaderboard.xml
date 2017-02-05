@@ -55,7 +55,7 @@
             android:text="500\n400\n800\n300\n700"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:id="@+id/names_text_view"
+            android:id="@+id/name_text_view"
             android:layout_weight="0.67"
             android:textAlignment="textEnd"
             android:layout_gravity="end"

@@ -1,6 +1,8 @@
 package com.avoid.ihaveatheory.model;
 
 public class SaveFile {
+    //----------------------------------------------------------------------------------------------
+
     private String name = "default";
     private Scenario scenario = null;
     private Difficulty difficulty = null;
@@ -29,6 +31,19 @@ public class SaveFile {
         this.difficulty = difficulty;
     }
 
+    //----------------------------------------------------------------------------------------------
+
+    private Backpack backpack = null;
+
+    public Backpack getBackpack() {
+        return backpack;
+    }
+
+    public void setBackpack(Backpack backpack) {
+        this.backpack = backpack;
+    }
+
+    //----------------------------------------------------------------------------------------------
 
     private int health = 0;
     private int stamina = 0;
@@ -41,7 +56,13 @@ public class SaveFile {
     }
 
     public void setHealth(int health) {
-        this.health = health;
+        if (health > difficulty.getMAX_HEALTH()) {
+            this.health = difficulty.getMAX_HEALTH();
+        } else if (health < 0) {
+            this.health = 0;
+        } else {
+            this.health = health;
+        }
     }
 
     public int getStamina() {
@@ -49,7 +70,13 @@ public class SaveFile {
     }
 
     public void setStamina(int stamina) {
-        this.stamina = stamina;
+        if (stamina > difficulty.getMAX_STAMINA()) {
+            this.stamina = difficulty.getMAX_STAMINA();
+        } else if (stamina < 0) {
+            this.stamina = 0;
+        } else {
+            this.stamina = stamina;
+        }
     }
 
     public int getHeat() {
@@ -57,7 +84,13 @@ public class SaveFile {
     }
 
     public void setHeat(int heat) {
-        this.heat = heat;
+        if (heat > difficulty.getMAX_HEAT()) {
+            this.heat = difficulty.getMAX_HEAT();
+        } else if (heat < 0) {
+            this.heat = 0;
+        } else {
+            this.heat = heat;
+        }
     }
 
     public int getHunger() {
@@ -65,7 +98,13 @@ public class SaveFile {
     }
 
     public void setHunger(int hunger) {
-        this.hunger = hunger;
+        if (hunger > difficulty.getMAX_HUNGER()) {
+            this.hunger = difficulty.getMAX_HUNGER();
+        } else if (hunger < 0) {
+            this.hunger = 0;
+        } else {
+            this.hunger = hunger;
+        }
     }
 
     public int getThirst() {
@@ -73,6 +112,14 @@ public class SaveFile {
     }
 
     public void setThirst(int thirst) {
-        this.thirst = thirst;
+        if (thirst > difficulty.getMAX_THIRST()) {
+            this.thirst = difficulty.getMAX_THIRST();
+        } else if (thirst < 0) {
+            this.thirst = 0;
+        } else {
+            this.thirst = thirst;
+        }
     }
+
+    //----------------------------------------------------------------------------------------------
 }

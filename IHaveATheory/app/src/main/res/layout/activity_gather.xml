@@ -22,7 +22,8 @@
         android:layout_above="@+id/gather_hunt_button"
         android:layout_toLeftOf="@+id/gather_berries_button"
         android:layout_toStartOf="@+id/gather_berries_button"
-        android:gravity="center|bottom"/>
+        android:gravity="center|bottom"
+        android:onClick="onClickGatherWaterButton" />
 
     <com.avoid.ihaveatheory.widget.HexButton
         android:text="@string/gather_hunt_button"
@@ -32,7 +33,8 @@
         android:gravity="center|bottom"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/gather_berries_button"
-        android:layout_alignStart="@+id/gather_berries_button" />
+        android:layout_alignStart="@+id/gather_berries_button"
+        android:onClick="onClickHuntButton" />
 
     <com.avoid.ihaveatheory.widget.HexButton
         android:text="@string/gather_wood_button"
@@ -42,7 +44,8 @@
         android:gravity="center|bottom"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/gather_water_button"
-        android:layout_alignStart="@+id/gather_water_button" />
+        android:layout_alignStart="@+id/gather_water_button"
+        android:onClick="onClickGatherWoodButton" />
 
     <com.avoid.ihaveatheory.widget.LabelTextView
         android:text="@string/gather_label"
@@ -64,7 +67,8 @@
         android:gravity="center|bottom"
         android:layout_above="@+id/gather_hunt_button"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="onClickGatherBerriesButton" />
 
     <com.avoid.ihaveatheory.widget.BackButton
         android:layout_width="50dp"
