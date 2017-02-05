@@ -130,7 +130,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:id="@+id/make_button" />
+                android:id="@+id/make_button"
+                android:onClick="onClickMakeButton" />
 
             <com.avoid.ihaveatheory.widget.BackButton
                 android:layout_width="50dp"
@@ -144,7 +145,6 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_below="@+id/item_image_view"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="16dp"
