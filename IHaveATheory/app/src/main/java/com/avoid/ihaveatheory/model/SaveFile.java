@@ -1,6 +1,8 @@
 package com.avoid.ihaveatheory.model;
 
 public class SaveFile {
+    //----------------------------------------------------------------------------------------------
+
     private String name = "default";
     private Scenario scenario = null;
     private Difficulty difficulty = null;
@@ -29,6 +31,19 @@ public class SaveFile {
         this.difficulty = difficulty;
     }
 
+    //----------------------------------------------------------------------------------------------
+
+    private Backpack backpack = null;
+
+    public Backpack getBackpack() {
+        return backpack;
+    }
+
+    public void setBackpack(Backpack backpack) {
+        this.backpack = backpack;
+    }
+
+    //----------------------------------------------------------------------------------------------
 
     private int health = 0;
     private int stamina = 0;
@@ -105,4 +120,6 @@ public class SaveFile {
             this.thirst = thirst;
         }
     }
+
+    //----------------------------------------------------------------------------------------------
 }

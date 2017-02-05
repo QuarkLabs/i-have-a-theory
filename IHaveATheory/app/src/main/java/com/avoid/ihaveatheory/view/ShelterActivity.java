@@ -12,20 +12,21 @@ import com.avoid.ihaveatheory.model.PlaybleActivity;
 import com.avoid.ihaveatheory.widget.HexButton;
 
 public class ShelterActivity extends AppCompatActivity implements PlaybleActivity {
+    HexButton restButton;
+    HexButton sleepButton;
+    HexButton campButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shelter);
 
-        HexButton restButton = (HexButton) findViewById(R.id.shelter_rest_button);
-        restButton.setIcon(R.drawable.shelter_resting);
+        restButton = (HexButton) findViewById(R.id.shelter_rest_button);
+        sleepButton = (HexButton) findViewById(R.id.shelter_sleep_button);
+        campButton = (HexButton) findViewById(R.id.shelter_camp_button);
 
-        HexButton sleepButton = (HexButton)findViewById(R.id.shelter_sleep_button);
-        sleepButton.setIcon(R.drawable.shelter_sleeping);
-
-        HexButton campButton = (HexButton)findViewById(R.id.shelter_camp_button);
-        campButton.setIcon(R.drawable.shelter_camp);
+        setBackground();
+        setIcons();
     }
 
     @Override
@@ -37,13 +38,15 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
 
     @Override
     public void setBackground() {
-        RelativeLayout layout =(RelativeLayout)findViewById(R.id.activity_shelter);
+        RelativeLayout layout = (RelativeLayout) findViewById(R.id.activity_shelter);
         layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
     }
 
     @Override
     public void setIcons() {
-
+        restButton.setIcon(R.drawable.shelter_resting);
+        sleepButton.setIcon(R.drawable.shelter_sleeping);
+        campButton.setIcon(R.drawable.shelter_camp);
     }
 
     public void onClickBackButton(View view) {
