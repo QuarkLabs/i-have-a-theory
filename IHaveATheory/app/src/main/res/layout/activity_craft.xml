@@ -124,25 +124,6 @@
             android:layout_marginLeft="20dp" >
 
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:srcCompat="@drawable/default_icon_png"
-                android:layout_marginTop="23dp"
-                android:id="@+id/item_image_view"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
-
-            <com.avoid.ihaveatheory.widget.DescriptionTextView
-                android:text="Description"
-                android:layout_width="match_parent"
-                android:layout_below="@+id/item_image_view"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="20dp"
-                android:id="@+id/item_des_text_view"
-                android:layout_height="120dp" />
-
             <com.avoid.ihaveatheory.widget.OptionButton
                 android:text="@string/craft_make_button"
                 android:layout_width="wrap_content"
@@ -159,6 +140,41 @@
                 android:layout_alignParentEnd="true"
                 android:id="@+id/back_button"
                 android:onClick="onClickBackButton" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/item_image_view"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/default_icon_png"
+                    android:id="@+id/item_image_view"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <com.avoid.ihaveatheory.widget.DescriptionTextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/item_name_text_view" />
+
+                <com.avoid.ihaveatheory.widget.DescriptionTextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:id="@+id/item_des_text_view" />
+            </LinearLayout>
+
+
         </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

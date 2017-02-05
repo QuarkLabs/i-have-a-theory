@@ -1,76 +1,75 @@
 package com.avoid.ihaveatheory.model;
 
 import com.avoid.ihaveatheory.R;
-import com.avoid.ihaveatheory.util.MyApp;
 
 public enum ItemType {
-    BOW(MyApp.context.getResources().getString(R.string.item_bow_name),
-            MyApp.context.getResources().getString(R.string.item_bow_des),
-            100),
+    BOW(R.string.item_bow_name,
+            R.string.item_bow_des,
+            R.drawable.default_icon_png),
 
-    ARROW(MyApp.context.getResources().getString(R.string.item_arrow_name),
-            MyApp.context.getResources().getString(R.string.item_arrow_des),
-            100),
+    ARROW(R.string.item_arrow_name,
+            R.string.item_arrow_des,
+            R.drawable.default_icon_png),
 
-    SNARE(MyApp.context.getResources().getString(R.string.item_snare_name),
-            MyApp.context.getResources().getString(R.string.item_snare_des),
-            100),
+    SNARE(R.string.item_snare_name,
+            R.string.item_snare_des,
+            R.drawable.default_icon_png),
 
-    KNIFE(MyApp.context.getResources().getString(R.string.item_knife_name),
-            MyApp.context.getResources().getString(R.string.item_knife_des),
-            100),
+    KNIFE(R.string.item_knife_name,
+            R.string.item_knife_des,
+            R.drawable.default_icon_png),
 
-    SLIPPERS(MyApp.context.getResources().getString(R.string.item_slippers_name),
-            MyApp.context.getResources().getString(R.string.item_slippers_des),
-            100),
+    SLIPPERS(R.string.item_slippers_name,
+            R.string.item_slippers_des,
+            R.drawable.default_icon_png),
 
-    HAT(MyApp.context.getResources().getString(R.string.item_hat_name),
-            MyApp.context.getResources().getString(R.string.item_hat_des),
-            100),
+    HAT(R.string.item_hat_name,
+            R.string.item_hat_des,
+            R.drawable.default_icon_png),
 
-    WALKING_STICK(MyApp.context.getResources().getString(R.string.item_walking_stick_name),
-            MyApp.context.getResources().getString(R.string.item_walking_stick_des),
-            100),
+    WALKING_STICK(R.string.item_walking_stick_name,
+            R.string.item_walking_stick_des,
+            R.drawable.default_icon_png),
 
-    SAMLL_POUCH(MyApp.context.getResources().getString(R.string.item_small_pouch_name),
-            MyApp.context.getResources().getString(R.string.item_small_pouch_des),
-            100),
+    SAMLL_POUCH(R.string.item_small_pouch_name,
+            R.string.item_small_pouch_des,
+            R.drawable.default_icon_png),
 
-    POUCH(MyApp.context.getResources().getString(R.string.item_pouch_name),
-            MyApp.context.getResources().getString(R.string.item_pouch_des),
-            100),
+    POUCH(R.string.item_pouch_name,
+            R.string.item_pouch_des,
+            R.drawable.default_icon_png),
 
-    BLANKET(MyApp.context.getResources().getString(R.string.item_blanket_name),
-            MyApp.context.getResources().getString(R.string.item_blanket_des),
-            100),
+    BLANKET(R.string.item_blanket_name,
+            R.string.item_blanket_des,
+            R.drawable.default_icon_png),
 
-    HOOK(MyApp.context.getResources().getString(R.string.item_hook_name),
-            MyApp.context.getResources().getString(R.string.item_hook_des),
-            100),
+    HOOK(R.string.item_hook_name,
+            R.string.item_hook_des,
+            R.drawable.default_icon_png),
 
-    ROPE(MyApp.context.getResources().getString(R.string.item_rope_name),
-            MyApp.context.getResources().getString(R.string.item_rope_des),
-            100);
+    ROPE(R.string.item_rope_name,
+            R.string.item_rope_des,
+            R.drawable.default_icon_png);
 
-    private String name;
-    private String description;
-    private int craftTime;
+    private int name;
+    private int description;
+    private int itemImage;
 
-    ItemType(String name, String description, int craftTime) {
+    ItemType(int name, int description, int itemImage) {
         this.name = name;
         this.description = description;
-        this.craftTime = craftTime;
+        this.itemImage = itemImage;
     }
 
-    public String getName() {
+    public int getName() {
         return name;
     }
 
-    public String getDescription() {
+    public int getDescription() {
         return description;
     }
 
-    public int getCraftTime() {
-        return craftTime;
+    public int getItemImage() {
+        return itemImage;
     }
 }
