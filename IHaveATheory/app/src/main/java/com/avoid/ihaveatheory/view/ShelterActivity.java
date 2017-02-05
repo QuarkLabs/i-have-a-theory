@@ -61,6 +61,11 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
     }
 
     public void onClickShelterSleepButton(View view) {
+        Session.currentSaveFile.setStamina(Session.currentSaveFile.getStamina() + 100);
+        Session.currentSaveFile.setHunger(Session.currentSaveFile.getHunger() - 20);
+        Session.currentSaveFile.setThirst(Session.currentSaveFile.getThirst() - 35);
+
+        startActivity(new Intent(ShelterActivity.this, ProgressActivity.class));
     }
 
     public void onClickShelterCampButton(View view) {

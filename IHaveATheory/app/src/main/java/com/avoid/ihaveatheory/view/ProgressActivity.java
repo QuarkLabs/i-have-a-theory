@@ -1,9 +1,8 @@
 package com.avoid.ihaveatheory.view;
 
-import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
@@ -36,7 +35,7 @@ public class ProgressActivity extends AppCompatActivity implements PlaybleActivi
                         }
                     });
                     try {
-                        Thread.sleep(50);
+                        Thread.sleep(30);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
