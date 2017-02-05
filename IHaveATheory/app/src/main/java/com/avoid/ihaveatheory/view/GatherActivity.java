@@ -1,15 +1,16 @@
 package com.avoid.ihaveatheory.view;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
+import com.avoid.ihaveatheory.game.Gather;
 import com.avoid.ihaveatheory.global.Session;
+import com.avoid.ihaveatheory.model.ItemType;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
-import com.avoid.ihaveatheory.model.Scenario;
 import com.avoid.ihaveatheory.widget.HexButton;
 
 public class GatherActivity extends AppCompatActivity implements PlaybleActivity{
@@ -49,14 +50,30 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
     }
 
     public void onClickGatherWaterButton(View view) {
+        int waterCount = Gather.getInstance().findWater();
+        Session.currentSaveFile.getBackpack().addItem(ItemType.WATER_BOTTLE, waterCount);
+
+        startActivity(new Intent(GatherActivity.this, ProgressActivity.class));
     }
 
     public void onClickGatherBerriesButton(View view) {
+        int berryCount = Gather.getInstance().findBerries();
+        Session.currentSaveFile.getBackpack().addItem(ItemType.BERRIES, berryCount);
+
+        startActivity(new Intent(GatherActivity.this, ProgressActivity.class));
     }
 
     public void onClickGatherWoodButton(View view) {
+        int woodCount = Gather.getInstance().findWood();
+        Session.currentSaveFile.getBackpack().addItem(ItemType.WOOD, woodCount);
+
+        startActivity(new Intent(GatherActivity.this, ProgressActivity.class));
     }
 
     public void onClickHuntButton(View view) {
+        int rabbitCount = Gather.getInstance().findRabbits();
+        Session.currentSaveFile.getBackpack().addItem(ItemType.MEAT, rabbitCount);
+
+        startActivity(new Intent(GatherActivity.this, ProgressActivity.class));
     }
 }
