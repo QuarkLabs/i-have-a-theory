@@ -29,7 +29,6 @@ public class CraftActivity extends AppCompatActivity implements PlaybleActivity{
 
     }
 
-
     public void onClickBackButton(View view) {
         startActivity(new Intent(CraftActivity.this, DashboardActivity.class));
     }

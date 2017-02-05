@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
+import com.avoid.ihaveatheory.model.Backpack;
 import com.avoid.ihaveatheory.model.Difficulty;
 
 public class DifficultyActivity extends AppCompatActivity {
@@ -37,6 +38,9 @@ public class DifficultyActivity extends AppCompatActivity {
     }
 
     private void initializeGame(){
+        Backpack backpack = new Backpack();
+        Session.currentSaveFile.setBackpack(backpack);
+
         Session.currentSaveFile.setHunger(Session.currentSaveFile.getDifficulty().getMAX_HUNGER());
         Session.currentSaveFile.setThirst(Session.currentSaveFile.getDifficulty().getMAX_THIRST() / 2);
         Session.currentSaveFile.setHealth(Session.currentSaveFile.getDifficulty().getMAX_HEALTH() / 4 * 3);
