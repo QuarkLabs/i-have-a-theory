@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -62,7 +63,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickCraftButton(View view) {
-        startActivity(new Intent(DashboardActivity.this, CraftingActivity.class));
+        startActivity(new Intent(DashboardActivity.this, CraftActivity.class));
     }
 
     public void onClickBackpackButton(View view) {
@@ -78,7 +79,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickShopButton(View view) {
-        Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(DashboardActivity.this, StoreActivity.class));
     }
 
     public void onClickMapButton(View view) {
@@ -86,7 +87,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickExploreButton(View view) {
-
+        startActivity(new Intent(DashboardActivity.this, ProgressActivity.class));
     }
 
     public void onClickCookingPotButton(View view) {

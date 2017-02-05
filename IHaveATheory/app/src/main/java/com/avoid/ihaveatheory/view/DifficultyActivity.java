@@ -43,4 +43,8 @@ public class DifficultyActivity extends AppCompatActivity {
         Session.currentSaveFile.setHunger(Session.currentSaveFile.getDifficulty().getMAX_HUNGER());
         Session.currentSaveFile.setThirst(Session.currentSaveFile.getDifficulty().getMAX_THIRST());
     }
+
+    public void onClickBackButton(View view) {
+        startActivity(new Intent(DifficultyActivity.this, ScenarioActivity.class));
+    }
 }

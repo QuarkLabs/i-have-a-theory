@@ -9,14 +9,13 @@ import android.widget.RelativeLayout;
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
-import com.avoid.ihaveatheory.model.Scenario;
 
-public class CraftingActivity extends AppCompatActivity implements PlaybleActivity{
+public class CraftActivity extends AppCompatActivity implements PlaybleActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_crafting);
+        setContentView(R.layout.activity_craft);
     }
 
     @Override
@@ -32,6 +31,6 @@ public class CraftingActivity extends AppCompatActivity implements PlaybleActivi
 
 
     public void onClickBackButton(View view) {
-        startActivity(new Intent(CraftingActivity.this, DashboardActivity.class));
+        startActivity(new Intent(CraftActivity.this, DashboardActivity.class));
     }
 }

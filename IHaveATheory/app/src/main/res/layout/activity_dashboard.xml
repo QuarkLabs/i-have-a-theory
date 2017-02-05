@@ -50,7 +50,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2">
 
         <com.avoid.ihaveatheory.widget.HexButton
             android:id="@+id/map_button"
