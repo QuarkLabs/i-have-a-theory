@@ -3,14 +3,12 @@ package com.avoid.ihaveatheory.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
-import com.avoid.ihaveatheory.model.Scenario;
 import com.avoid.ihaveatheory.widget.HexButton;
 
 public class ShelterActivity extends AppCompatActivity implements PlaybleActivity {
@@ -69,5 +67,10 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
     }
 
     public void onClickShelterCampButton(View view) {
+        Session.currentSaveFile.setStamina(Session.currentSaveFile.getStamina() - 100);
+        Session.currentSaveFile.setHunger(Session.currentSaveFile.getHunger() - 50);
+        Session.currentSaveFile.setThirst(Session.currentSaveFile.getThirst() - 100);
+
+        startActivity(new Intent(ShelterActivity.this, ProgressActivity.class));
     }
 }

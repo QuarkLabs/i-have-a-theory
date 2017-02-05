@@ -41,9 +41,11 @@ public class SaveFile {
     }
 
     public void setHealth(int health) {
-        if(health > difficulty.getMAX_HEALTH()){
+        if (health > difficulty.getMAX_HEALTH()) {
             this.health = difficulty.getMAX_HEALTH();
-        }else {
+        } else if (health < 0) {
+            this.health = 0;
+        } else {
             this.health = health;
         }
     }
@@ -53,9 +55,11 @@ public class SaveFile {
     }
 
     public void setStamina(int stamina) {
-        if(stamina > difficulty.getMAX_STAMINA()){
+        if (stamina > difficulty.getMAX_STAMINA()) {
             this.stamina = difficulty.getMAX_STAMINA();
-        }else {
+        } else if (stamina < 0) {
+            this.stamina = 0;
+        } else {
             this.stamina = stamina;
         }
     }
@@ -65,9 +69,11 @@ public class SaveFile {
     }
 
     public void setHeat(int heat) {
-        if(heat > difficulty.getMAX_HEAT()){
+        if (heat > difficulty.getMAX_HEAT()) {
             this.heat = difficulty.getMAX_HEAT();
-        }else {
+        } else if (heat < 0) {
+            this.heat = 0;
+        } else {
             this.heat = heat;
         }
     }
@@ -77,9 +83,11 @@ public class SaveFile {
     }
 
     public void setHunger(int hunger) {
-        if(hunger > difficulty.getMAX_HUNGER()){
+        if (hunger > difficulty.getMAX_HUNGER()) {
             this.hunger = difficulty.getMAX_HUNGER();
-        }else {
+        } else if (hunger < 0) {
+            this.hunger = 0;
+        } else {
             this.hunger = hunger;
         }
     }
@@ -89,9 +97,11 @@ public class SaveFile {
     }
 
     public void setThirst(int thirst) {
-        if(thirst > difficulty.getMAX_THIRST()){
+        if (thirst > difficulty.getMAX_THIRST()) {
             this.thirst = difficulty.getMAX_THIRST();
-        }else {
+        } else if (thirst < 0) {
+            this.thirst = 0;
+        } else {
             this.thirst = thirst;
         }
     }
