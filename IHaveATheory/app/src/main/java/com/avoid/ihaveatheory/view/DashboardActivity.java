@@ -81,7 +81,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickJournalButton(View view) {
-        Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(DashboardActivity.this, JournalActivity.class));
     }
 
     public void onClickShopButton(View view) {
@@ -89,7 +89,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickMapButton(View view) {
-        Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(DashboardActivity.this, MapActivity.class));
     }
 
     public void onClickExploreButton(View view) {
@@ -97,7 +97,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickCookingPotButton(View view) {
-        Toast.makeText(getApplicationContext(), "This feature is not yet implemented.", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(DashboardActivity.this, CookingPotActivity.class));
     }
 
     @Override

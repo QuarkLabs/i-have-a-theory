@@ -116,7 +116,7 @@ public class ScenarioActivity extends AppCompatActivity {
     }
 
     public void onClickBackButton(View view) {
-        startActivity(new Intent(ScenarioActivity.this, MainMenuActivity.class));
+        finish();
     }
 
     public void onClickForwardButton(View view) {

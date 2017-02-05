@@ -49,8 +49,6 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
     }
 
     public void onClickBackButton(View view) {
-//        startActivity(new Intent(ShelterActivity.this, DashboardActivity.class));
-        Log.d("x", String.valueOf(Session.currentSaveFile.getHunger()));
         finish();
     }
 
