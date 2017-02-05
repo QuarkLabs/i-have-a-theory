@@ -13,8 +13,8 @@
 
     <com.avoid.ihaveatheory.widget.MainButton
         android:text="@string/options_button"
+        android:layout_height="50dp"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
         android:id="@+id/options_button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
@@ -23,9 +23,9 @@
 
     <com.avoid.ihaveatheory.widget.MainButton
         android:text="@string/new_game_button"
-        android:layout_height="wrap_content"
-        android:id="@+id/new_game_button"
+        android:layout_height="50dp"
         android:layout_width="200dp"
+        android:id="@+id/new_game_button"
         android:layout_above="@+id/options_button"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -34,10 +34,9 @@
 
     <com.avoid.ihaveatheory.widget.MainButton
         android:text="@string/continue_button"
-        android:layout_height="wrap_content"
-        android:id="@+id/continue_button"
-        android:fontFamily="sans-serif-medium"
+        android:layout_height="50dp"
         android:layout_width="200dp"
+        android:id="@+id/continue_button"
         android:layout_marginBottom="11dp"
         android:layout_above="@+id/new_game_button"
         android:layout_alignParentRight="true"
