@@ -41,7 +41,7 @@ public class ProgressActivity extends AppCompatActivity implements PlaybleActivi
                         e.printStackTrace();
                     }
                 }
-                startActivity(new Intent(ProgressActivity.this, DashboardActivity.class));
+                finish();
             }
         }).start();
     }

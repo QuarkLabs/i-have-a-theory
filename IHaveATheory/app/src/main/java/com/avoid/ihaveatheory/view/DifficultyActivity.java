@@ -37,11 +37,11 @@ public class DifficultyActivity extends AppCompatActivity {
     }
 
     private void initializeGame(){
-        Session.currentSaveFile.setHealth(Session.currentSaveFile.getDifficulty().getMAX_HEALTH());
-        Session.currentSaveFile.setStamina(Session.currentSaveFile.getDifficulty().getMAX_STAMINA());
-        Session.currentSaveFile.setHeat(Session.currentSaveFile.getDifficulty().getMAX_HEAT());
         Session.currentSaveFile.setHunger(Session.currentSaveFile.getDifficulty().getMAX_HUNGER());
-        Session.currentSaveFile.setThirst(Session.currentSaveFile.getDifficulty().getMAX_THIRST());
+        Session.currentSaveFile.setThirst(Session.currentSaveFile.getDifficulty().getMAX_THIRST() / 2);
+        Session.currentSaveFile.setHealth(Session.currentSaveFile.getDifficulty().getMAX_HEALTH() / 4 * 3);
+        Session.currentSaveFile.setStamina(Session.currentSaveFile.getDifficulty().getMAX_STAMINA());
+        Session.currentSaveFile.setHeat(Session.currentSaveFile.getDifficulty().getMAX_HEAT() / 5 * 3);
     }
 
     public void onClickBackButton(View view) {

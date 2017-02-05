@@ -33,4 +33,40 @@ public class CraftActivity extends AppCompatActivity implements PlaybleActivity{
     public void onClickBackButton(View view) {
         startActivity(new Intent(CraftActivity.this, DashboardActivity.class));
     }
+
+    public void onClickCraftBowButton(View view) {
+    }
+
+    public void onClickCraftArrowButton(View view) {
+    }
+
+    public void onClickCraftSnareButton(View view) {
+    }
+
+    public void onClickCraftKnifeButton(View view) {
+    }
+
+    public void onClickCraftSlippersButton(View view) {
+    }
+
+    public void onClickCraftHatButton(View view) {
+    }
+
+    public void onClickCraftWalkingStickButton(View view) {
+    }
+
+    public void onClickCraftSmallPouchButton(View view) {
+    }
+
+    public void onClickCraftPouchButton(View view) {
+    }
+
+    public void onClickCraftBlanketButton(View view) {
+    }
+
+    public void onClickCraftHookButton(View view) {
+    }
+
+    public void onClickCraftRopeButton(View view) {
+    }
 }

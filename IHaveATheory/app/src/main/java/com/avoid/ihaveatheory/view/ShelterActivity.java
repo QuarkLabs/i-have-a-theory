@@ -3,6 +3,7 @@ package com.avoid.ihaveatheory.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
 
@@ -48,6 +49,22 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
     }
 
     public void onClickBackButton(View view) {
-        startActivity(new Intent(ShelterActivity.this, DashboardActivity.class));
+//        startActivity(new Intent(ShelterActivity.this, DashboardActivity.class));
+        Log.d("x", String.valueOf(Session.currentSaveFile.getHunger()));
+        finish();
+    }
+
+    public void onClickShelterRestButton(View view) {
+        Session.currentSaveFile.setStamina(Session.currentSaveFile.getStamina() + 50);
+        Session.currentSaveFile.setHunger(Session.currentSaveFile.getHunger() - 10);
+        Session.currentSaveFile.setThirst(Session.currentSaveFile.getThirst() - 20);
+
+        startActivity(new Intent(ShelterActivity.this, ProgressActivity.class));
+    }
+
+    public void onClickShelterSleepButton(View view) {
+    }
+
+    public void onClickShelterCampButton(View view) {
     }
 }
