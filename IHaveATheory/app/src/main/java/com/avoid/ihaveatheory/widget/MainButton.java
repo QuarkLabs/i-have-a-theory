@@ -1,6 +1,7 @@
 package com.avoid.ihaveatheory.widget;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.Button;
@@ -34,6 +35,9 @@ public class MainButton extends Button {
     private void applyCustomFont(Context context){
         Typeface customFont = FontCache.getTypeface(Font.KOMIKAX_FONT, context);
         setTypeface(customFont);
+        setTextSize(20);
+
+        setTextColor(Color.parseColor("#331F00"));
     }
 
     private void applyCustomShape(Context context){
