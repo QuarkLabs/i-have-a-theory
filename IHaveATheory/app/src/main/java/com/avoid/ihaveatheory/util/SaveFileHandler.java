@@ -33,6 +33,8 @@ public class SaveFileHandler {
         String json = gson.toJson(Session.currentSaveFile);
         prefsEditor.putString("save_file", json);
         prefsEditor.commit();
+
+        Log.d(">>>>>>>>>>>>>>>>",json);
     }
 
     public boolean saveExists(){

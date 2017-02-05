@@ -31,7 +31,7 @@ public enum ItemType {
             R.string.item_walking_stick_des,
             R.drawable.default_icon_png),
 
-    SAMLL_POUCH(R.string.item_small_pouch_name,
+    SMALL_POUCH(R.string.item_small_pouch_name,
             R.string.item_small_pouch_des,
             R.drawable.default_icon_png),
 
@@ -49,6 +49,22 @@ public enum ItemType {
 
     ROPE(R.string.item_rope_name,
             R.string.item_rope_des,
+            R.drawable.default_icon_png),
+
+    WATER_BOTTLE(R.string.item_water_name,
+            R.string.item_water_des,
+            R.drawable.default_icon_png),
+
+    BERRIES(R.string.item_berries_name,
+            R.string.item_berries_des,
+            R.drawable.default_icon_png),
+
+    WOOD(R.string.item_wood_name,
+            R.string.item_wood_des,
+            R.drawable.default_icon_png),
+
+    MEAT(R.string.item_meat_name,
+            R.string.item_meat_des,
             R.drawable.default_icon_png);
 
     private int name;

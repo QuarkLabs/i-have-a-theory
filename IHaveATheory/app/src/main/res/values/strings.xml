@@ -108,6 +108,18 @@
     <string name="item_rope_name">Grass rope</string>
     <string name="item_rope_des">Just a random grass rope.</string>
 
+    <string name="item_water_name">Water bottle</string>
+    <string name="item_water_des">Just a random water bottle.</string>
+
+    <string name="item_berries_name">Berries</string>
+    <string name="item_berries_des">Just a random berries.</string>
+
+    <string name="item_wood_name">Wood</string>
+    <string name="item_wood_des">Just a random wood.</string>
+
+    <string name="item_meat_name">Meat</string>
+    <string name="item_meat_des">Just a random meat.</string>
+
 
     <string name="send_an_sos_text">Send an SOS</string>
     <string name="preserve_meat_text">Find a way to Preserve Meat</string>

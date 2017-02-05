@@ -78,7 +78,7 @@ public class CraftActivity extends AppCompatActivity implements PlaybleActivity{
     }
 
     public void onClickCraftSmallPouchButton(View view) {
-        changeItem(ItemType.SAMLL_POUCH);
+        changeItem(ItemType.SMALL_POUCH);
     }
 
     public void onClickCraftPouchButton(View view) {
