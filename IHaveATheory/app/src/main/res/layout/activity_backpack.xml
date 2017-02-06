@@ -1,16 +1,389 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_backpack"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/dashboard_background"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.avoid.ihaveatheory.view.BackpackActivity"
 
-    android:background="@drawable/dashboard_background">
+    tools:context="com.avoid.ihaveatheory.view.BackpackActivity">
+
+    <ScrollView
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_00_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_01_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_02_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_03_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_04_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_05_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_06_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_07_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_08_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_09_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_10_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_11_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_12_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_13_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_14_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_15_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_16_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_17_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_18_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_19_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_20_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_21_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_22_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_23_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_24_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_25_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_26_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_27_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_28_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+
+                <com.avoid.ihaveatheory.widget.BackpackFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/item_29_frame_layout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                </com.avoid.ihaveatheory.widget.BackpackFrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.avoid.ihaveatheory.widget.BackButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickBackButton" />
+
 
 
 </RelativeLayout>

@@ -2,6 +2,7 @@ package com.avoid.ihaveatheory.view;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
@@ -25,5 +26,9 @@ public class BackpackActivity extends AppCompatActivity implements PlaybleActivi
     @Override
     public void setIcons() {
 
+    }
+
+    public void onClickBackButton(View view) {
+        finish();
     }
 }
