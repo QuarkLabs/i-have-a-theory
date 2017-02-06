@@ -7,9 +7,11 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.avoid.ihaveatheory.R;
+import com.avoid.ihaveatheory.global.BackgroundMusic;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.util.SaveFileHandler;
 import com.avoid.ihaveatheory.widget.MainButton;
+
 
 public class MainMenuActivity extends AppCompatActivity {
 
@@ -25,6 +27,12 @@ public class MainMenuActivity extends AppCompatActivity {
             MainButton continueMainButton = (MainButton) findViewById(R.id.continue_button);
             continueMainButton.setEnabled(true);
         }
+
+
+        // Start Background Music
+        Intent svc=new Intent(this, BackgroundMusic.class);
+        startService(svc);
+
     }
 
     public void onClickContinueButton(View view) {

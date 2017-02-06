@@ -13,10 +13,14 @@
             android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:enabled="true"
+            android:name="com.avoid.ihaveatheory.global.BackgroundMusic" />
+
         <activity
             android:name=".view.DifficultyActivity"
             android:screenOrientation="sensorLandscape" />
