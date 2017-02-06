@@ -4,7 +4,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageButton;
 
-import com.avoid.ihaveatheory.util.listener.BackpackTouchListener;
+import com.avoid.ihaveatheory.listener.BackpackDragListener;
+import com.avoid.ihaveatheory.listener.BackpackTouchListener;
 import com.avoid.ihaveatheory.widget.draw.HexButtonDrawable;
 
 public class BackpackItemButton extends ImageButton {
@@ -13,6 +14,7 @@ public class BackpackItemButton extends ImageButton {
     public BackpackItemButton(Context context) {
         super(context);
         this.setOnTouchListener(new BackpackTouchListener());
+        this.setOnDragListener(new BackpackDragListener());
         applyCustomShape(context);
     }
 
@@ -36,6 +38,4 @@ public class BackpackItemButton extends ImageButton {
         drawable = new HexButtonDrawable(context);
         setBackground(drawable);
     }
-
-
 }

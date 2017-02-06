@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.AbsoluteLayout;
 
-import com.avoid.ihaveatheory.util.listener.BackpackDragListener;
+import com.avoid.ihaveatheory.listener.BackpackDragListener;
 
 public class BackpackMixLayout extends AbsoluteLayout {
     public BackpackMixLayout(Context context) {
