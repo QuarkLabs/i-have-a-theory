@@ -26,6 +26,8 @@ public class SaveFileHandler {
     public void loadGame() {
         String json = preferences.getString("save_file", "");
         Session.currentSaveFile = gson.fromJson(json, SaveFile.class);
+
+        Log.d("<<load>>",json);
     }
 
     public void saveGame(){
@@ -34,7 +36,7 @@ public class SaveFileHandler {
         prefsEditor.putString("save_file", json);
         prefsEditor.commit();
 
-        Log.d(">>>>>>>>>>>>>>>>",json);
+        Log.d("<<save>>",json);
     }
 
     public boolean saveExists(){
