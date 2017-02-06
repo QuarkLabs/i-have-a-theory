@@ -54,6 +54,7 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
     }
 
     public void onClickShelterRestButton(View view) {
+        MainMenuActivity.playClickSound();
         Session.currentSaveFile.setStamina(Session.currentSaveFile.getStamina() + 50);
         Session.currentSaveFile.setHunger(Session.currentSaveFile.getHunger() - 10);
         Session.currentSaveFile.setThirst(Session.currentSaveFile.getThirst() - 20);
@@ -62,6 +63,7 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
     }
 
     public void onClickShelterSleepButton(View view) {
+        MainMenuActivity.playClickSound();
         Session.currentSaveFile.setStamina(Session.currentSaveFile.getStamina() + 100);
         Session.currentSaveFile.setHunger(Session.currentSaveFile.getHunger() - 20);
         Session.currentSaveFile.setThirst(Session.currentSaveFile.getThirst() - 35);
@@ -70,6 +72,7 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
     }
 
     public void onClickShelterCampButton(View view) {
+        MainMenuActivity.playClickSound();
         Session.currentSaveFile.setStamina(Session.currentSaveFile.getStamina() - 100);
         Session.currentSaveFile.setHunger(Session.currentSaveFile.getHunger() - 50);
         Session.currentSaveFile.setThirst(Session.currentSaveFile.getThirst() - 100);

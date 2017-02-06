@@ -46,10 +46,12 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
 
 
     public void onClickBackButton(View view) {
+        MainMenuActivity.playClickSound();
         startActivity(new Intent(GatherActivity.this, DashboardActivity.class));
     }
 
     public void onClickGatherWaterButton(View view) {
+        MainMenuActivity.playClickSound();
         int waterCount = Gather.getInstance().findWater();
         Session.currentSaveFile.getBackpack().addItem(ItemType.WATER_BOTTLE, waterCount);
 
@@ -57,6 +59,7 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
     }
 
     public void onClickGatherBerriesButton(View view) {
+        MainMenuActivity.playClickSound();
         int berryCount = Gather.getInstance().findBerries();
         Session.currentSaveFile.getBackpack().addItem(ItemType.BERRIES, berryCount);
 
@@ -64,6 +67,7 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
     }
 
     public void onClickGatherWoodButton(View view) {
+        MainMenuActivity.playClickSound();
         int woodCount = Gather.getInstance().findWood();
         Session.currentSaveFile.getBackpack().addItem(ItemType.WOOD, woodCount);
 
@@ -71,6 +75,7 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
     }
 
     public void onClickHuntButton(View view) {
+        MainMenuActivity.playClickSound();
         int rabbitCount = Gather.getInstance().findRabbits();
         Session.currentSaveFile.getBackpack().addItem(ItemType.MEAT, rabbitCount);
 

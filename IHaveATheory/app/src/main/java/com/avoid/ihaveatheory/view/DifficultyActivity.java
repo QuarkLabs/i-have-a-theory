@@ -20,6 +20,7 @@ public class DifficultyActivity extends AppCompatActivity {
     }
 
     public void onClickEasyButton(View view) {
+        MainMenuActivity.playClickSound();
         Difficulty difficulty = new Difficulty();
         difficulty.setEasyDifficulty();
         Session.currentSaveFile.setDifficulty(difficulty);
@@ -49,6 +50,7 @@ public class DifficultyActivity extends AppCompatActivity {
     }
 
     public void onClickBackButton(View view) {
+        MainMenuActivity.playClickSound();
         startActivity(new Intent(DifficultyActivity.this, ScenarioActivity.class));
     }
 }

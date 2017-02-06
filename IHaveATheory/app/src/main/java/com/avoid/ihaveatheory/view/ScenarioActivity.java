@@ -44,18 +44,21 @@ public class ScenarioActivity extends AppCompatActivity {
     }
 
     public void onClickForestImageButton(View view) {
+        MainMenuActivity.playClickSound();
         enableForest();
         disableTundra();
         disableMountains();
     }
 
     public void onClickTundraImageButton(View view) {
+        MainMenuActivity.playClickSound();
         disableForest();
         enableTundra();
         disableMountains();
     }
 
     public void onClickMountainsImageButton(View view) {
+        MainMenuActivity.playClickSound();
         disableForest();
         disableTundra();
         enableMountains();
@@ -116,10 +119,12 @@ public class ScenarioActivity extends AppCompatActivity {
     }
 
     public void onClickBackButton(View view) {
+        MainMenuActivity.playClickSound();
         startActivity(new Intent(ScenarioActivity.this, MainMenuActivity.class));
     }
 
     public void onClickForwardButton(View view) {
+        MainMenuActivity.playClickSound();
         Scenario scenario = new Scenario();
         if (isForestClicked) {
             scenario.setForestScenario();

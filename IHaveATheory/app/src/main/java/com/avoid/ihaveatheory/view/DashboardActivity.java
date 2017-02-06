@@ -63,30 +63,37 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickGatherButton(View view) {
+        MainMenuActivity.playClickSound();
         startActivity(new Intent(DashboardActivity.this, GatherActivity.class));
     }
 
     public void onClickCraftButton(View view) {
+        MainMenuActivity.playClickSound();
         startActivity(new Intent(DashboardActivity.this, CraftActivity.class));
     }
 
     public void onClickBackpackButton(View view) {
+        MainMenuActivity.playClickSound();
         startActivity(new Intent(DashboardActivity.this, BackpackActivity.class));
     }
 
     public void onClickShelterButton(View view) {
+        MainMenuActivity.playClickSound();
         startActivity(new Intent(DashboardActivity.this, ShelterActivity.class));
     }
 
     public void onClickJournalButton(View view) {
+        MainMenuActivity.playClickSound();
         startActivity(new Intent(DashboardActivity.this, JournalActivity.class));
     }
 
     public void onClickShopButton(View view) {
+        MainMenuActivity.playClickSound();
         startActivity(new Intent(DashboardActivity.this, StoreActivity.class));
     }
 
     public void onClickMapButton(View view) {
+        MainMenuActivity.playClickSound();
         startActivity(new Intent(DashboardActivity.this, MapActivity.class));
     }
 
@@ -95,6 +102,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickCookingPotButton(View view) {
+        MainMenuActivity.playClickSound();
         startActivity(new Intent(DashboardActivity.this, CookingPotActivity.class));
     }
 

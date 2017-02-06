@@ -43,9 +43,11 @@ public class CraftActivity extends AppCompatActivity implements PlaybleActivity{
     }
 
     public void onClickMakeButton(View view) {
+        MainMenuActivity.playClickSound();
     }
 
     public void onClickBackButton(View view) {
+        MainMenuActivity.playClickSound();
         startActivity(new Intent(CraftActivity.this, DashboardActivity.class));
     }
 
