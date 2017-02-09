@@ -5,6 +5,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.avoid.ihaveatheory.widget.BackpackItemButton;
+import com.avoid.ihaveatheory.widget.BackpackMixLayout;
+import com.avoid.ihaveatheory.widget.BackpackTileLayout;
 
 public class BackpackDragListener implements View.OnDragListener {
     @Override
@@ -17,15 +19,21 @@ public class BackpackDragListener implements View.OnDragListener {
             case DragEvent.ACTION_DRAG_EXITED:
                 break;
             case DragEvent.ACTION_DROP:
-                BackpackItemButton itemButton = (BackpackItemButton) event.getLocalState();
+                if (v instanceof BackpackTileLayout) {
+                    ViewGroup viewGroup = ((BackpackTileLayout) v);
 
-                ViewGroup owner = (ViewGroup) itemButton.getParent();
-                owner.removeView(itemButton);
+                    if (viewGroup.getChildCount() == 0) {
+                        BackpackItemButton itemButton = (BackpackItemButton) event.getLocalState();
 
-                ViewGroup vg = ((ViewGroup)v);
-                vg.addView(itemButton, itemButton.getWidth(), itemButton.getHeight());
+                        ViewGroup owner = (ViewGroup) itemButton.getParent();
+                        owner.removeView(itemButton);
 
-                itemButton.setVisibility(View.VISIBLE);
+                        viewGroup.addView(itemButton, itemButton.getWidth(), itemButton.getHeight());
+                    }
+                } else if (v instanceof BackpackMixLayout) {
+                    ViewGroup viewGroup = ((BackpackMixLayout) v);
+
+                }
 
                 return true;
             case DragEvent.ACTION_DRAG_ENDED:
