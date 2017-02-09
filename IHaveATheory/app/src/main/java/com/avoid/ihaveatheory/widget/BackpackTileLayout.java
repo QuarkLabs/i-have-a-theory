@@ -28,8 +28,6 @@ public class BackpackTileLayout extends FrameLayout {
         applyCustomDesign(context);
     }
 
-
-
     public void applyCustomDesign(Context context) {
         this.setBackgroundColor(Color.WHITE);
 

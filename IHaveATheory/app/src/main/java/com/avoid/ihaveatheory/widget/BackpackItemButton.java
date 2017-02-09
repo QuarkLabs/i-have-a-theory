@@ -3,6 +3,7 @@ package com.avoid.ihaveatheory.widget;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.listener.BackpackDragListener;
 import com.avoid.ihaveatheory.listener.BackpackTouchListener;
@@ -43,6 +44,10 @@ public class BackpackItemButton extends ImageButton {
     }
 
     private void setLayout(Context context){
-
+        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
+                RelativeLayout.LayoutParams.MATCH_PARENT);
+        params.addRule(RelativeLayout.CENTER_HORIZONTAL, RelativeLayout.TRUE);
+        params.addRule(RelativeLayout.CENTER_VERTICAL, RelativeLayout.TRUE);
+        this.setLayoutParams(params);
     }
 }
