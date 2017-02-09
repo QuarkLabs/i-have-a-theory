@@ -23,7 +23,7 @@ public class BackpackDragListener implements View.OnDragListener {
                 owner.removeView(itemButton);
 
                 ViewGroup vg = ((ViewGroup)v);
-                vg.addView(itemButton);
+                vg.addView(itemButton, itemButton.getWidth(), itemButton.getHeight());
 
                 itemButton.setVisibility(View.VISIBLE);
 

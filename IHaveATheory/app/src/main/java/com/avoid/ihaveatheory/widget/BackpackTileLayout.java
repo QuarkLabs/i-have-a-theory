@@ -1,7 +1,6 @@
 package com.avoid.ihaveatheory.widget;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Color;
 import android.util.AttributeSet;
 import android.util.TypedValue;
@@ -33,10 +32,10 @@ public class BackpackTileLayout extends FrameLayout {
 
         int margin_px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5,
                 context.getResources().getDisplayMetrics());
-        int height_px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 70,
+        int size_px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 70,
                 context.getResources().getDisplayMetrics());
 
-        LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, height_px);
+        LayoutParams params = new LayoutParams(size_px, size_px);
         params.setMargins(margin_px, margin_px, margin_px, margin_px);
         this.setLayoutParams(params);
     }

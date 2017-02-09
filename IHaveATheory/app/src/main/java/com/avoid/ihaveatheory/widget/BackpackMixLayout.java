@@ -2,11 +2,11 @@ package com.avoid.ihaveatheory.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.AbsoluteLayout;
+import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.listener.BackpackDragListener;
 
-public class BackpackMixLayout extends AbsoluteLayout {
+public class BackpackMixLayout extends RelativeLayout {
     public BackpackMixLayout(Context context) {
         super(context);
         this.setOnDragListener(new BackpackDragListener());

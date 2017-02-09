@@ -56,5 +56,25 @@ public class BackpackActivity extends AppCompatActivity implements PlaybleActivi
             }
             col1LinearLayout.addView(tileLayout);
         }
+
+        for(BackpackTile tile: Session.currentSaveFile.getBackpack().getCol2()){
+            BackpackTileLayout tileLayout = new BackpackTileLayout(BackpackActivity.this);
+            if(!tile.isEmpty()){
+                BackpackItemButton itemButton = new BackpackItemButton(BackpackActivity.this);
+                itemButton.setIcon(tile.getItem().getItemType().getItemImage());
+                tileLayout.addView(itemButton);
+            }
+            col2LinearLayout.addView(tileLayout);
+        }
+
+        for(BackpackTile tile: Session.currentSaveFile.getBackpack().getCol3()){
+            BackpackTileLayout tileLayout = new BackpackTileLayout(BackpackActivity.this);
+            if(!tile.isEmpty()){
+                BackpackItemButton itemButton = new BackpackItemButton(BackpackActivity.this);
+                itemButton.setIcon(tile.getItem().getItemType().getItemImage());
+                tileLayout.addView(itemButton);
+            }
+            col3LinearLayout.addView(tileLayout);
+        }
     }
 }

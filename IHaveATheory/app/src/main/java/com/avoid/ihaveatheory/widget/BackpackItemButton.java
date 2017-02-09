@@ -3,7 +3,6 @@ package com.avoid.ihaveatheory.widget;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageButton;
-import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.listener.BackpackDragListener;
 import com.avoid.ihaveatheory.listener.BackpackTouchListener;
@@ -16,21 +15,21 @@ public class BackpackItemButton extends ImageButton {
         super(context);
         this.setOnTouchListener(new BackpackTouchListener());
         this.setOnDragListener(new BackpackDragListener());
-        setLayout(context);
+        applyCustomLayout(context);
         applyCustomShape(context);
     }
 
     public BackpackItemButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.setOnTouchListener(new BackpackTouchListener());
-        setLayout(context);
+        applyCustomLayout(context);
         applyCustomShape(context);
     }
 
     public BackpackItemButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.setOnTouchListener(new BackpackTouchListener());
-        setLayout(context);
+        applyCustomLayout(context);
         applyCustomShape(context);
     }
 
@@ -43,11 +42,12 @@ public class BackpackItemButton extends ImageButton {
         setBackground(drawable);
     }
 
-    private void setLayout(Context context){
-        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
-                RelativeLayout.LayoutParams.MATCH_PARENT);
-        params.addRule(RelativeLayout.CENTER_HORIZONTAL, RelativeLayout.TRUE);
-        params.addRule(RelativeLayout.CENTER_VERTICAL, RelativeLayout.TRUE);
-        this.setLayoutParams(params);
+    private void applyCustomLayout(Context context){
+//        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
+//                FrameLayout.LayoutParams.MATCH_PARENT);
+//        params.addRule(FrameLayout.CENTER_HORIZONTAL, FrameLayout.TRUE);
+//        params.
+//        params.addRule(RelativeLayout.CENTER_VERTICAL, RelativeLayout.TRUE);
+//        this.setLayoutParams(params);
     }
 }

@@ -69,12 +69,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:background="@color/colorWhite">
+        android:background="@color/colorAccent">
 
-        <com.avoid.ihaveatheory.widget.BackpackItemButton
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/bread_image_button"/>
     </com.avoid.ihaveatheory.widget.BackpackMixLayout>
 
 
