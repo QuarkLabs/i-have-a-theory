@@ -33,6 +33,12 @@ public class BackpackDragListener implements View.OnDragListener {
                 } else if (v instanceof BackpackMixLayout) {
                     ViewGroup viewGroup = ((BackpackMixLayout) v);
 
+                    BackpackItemButton itemButton = (BackpackItemButton) event.getLocalState();
+
+                    ViewGroup owner = (ViewGroup) itemButton.getParent();
+                    owner.removeView(itemButton);
+
+                    viewGroup.addView(itemButton, itemButton.getWidth(), itemButton.getHeight());
                 }
 
                 return true;
