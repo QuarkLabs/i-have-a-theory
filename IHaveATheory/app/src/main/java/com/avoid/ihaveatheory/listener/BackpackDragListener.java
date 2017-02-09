@@ -1,6 +1,5 @@
 package com.avoid.ihaveatheory.listener;
 
-import android.util.Log;
 import android.view.DragEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,7 +22,9 @@ public class BackpackDragListener implements View.OnDragListener {
                 ViewGroup owner = (ViewGroup) itemButton.getParent();
                 owner.removeView(itemButton);
 
-                ((ViewGroup)v).addView(itemButton);
+                ViewGroup vg = ((ViewGroup)v);
+                vg.addView(itemButton);
+
                 itemButton.setVisibility(View.VISIBLE);
 
                 return true;

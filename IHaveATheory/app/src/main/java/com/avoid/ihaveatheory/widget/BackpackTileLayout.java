@@ -1,0 +1,45 @@
+package com.avoid.ihaveatheory.widget;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.util.AttributeSet;
+import android.util.TypedValue;
+import android.widget.FrameLayout;
+
+import com.avoid.ihaveatheory.listener.BackpackDragListener;
+
+public class BackpackTileLayout extends FrameLayout {
+    public BackpackTileLayout(Context context) {
+        super(context);
+        this.setOnDragListener(new BackpackDragListener());
+        applyCustomDesign(context);
+    }
+
+    public BackpackTileLayout(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        this.setOnDragListener(new BackpackDragListener());
+        applyCustomDesign(context);
+    }
+
+    public BackpackTileLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        this.setOnDragListener(new BackpackDragListener());
+        applyCustomDesign(context);
+    }
+
+
+
+    public void applyCustomDesign(Context context) {
+        this.setBackgroundColor(Color.WHITE);
+
+        int margin_px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5,
+                context.getResources().getDisplayMetrics());
+        int height_px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 70,
+                context.getResources().getDisplayMetrics());
+
+        LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, height_px);
+        params.setMargins(margin_px, margin_px, margin_px, margin_px);
+        this.setLayoutParams(params);
+    }
+}

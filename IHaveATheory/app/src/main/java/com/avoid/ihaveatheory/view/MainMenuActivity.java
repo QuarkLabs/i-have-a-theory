@@ -33,7 +33,7 @@ public class MainMenuActivity extends AppCompatActivity {
 
 
         // Start Background Music
-        Intent svc=new Intent(this, BackgroundMusic.class);
+        Intent svc = new Intent(this, BackgroundMusic.class);
         startService(svc);
 
         //Button Click Sound
@@ -60,12 +60,12 @@ public class MainMenuActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        if (this.isFinishing()){
+        if (this.isFinishing()) {
             stopService(new Intent(this, BackgroundMusic.class));
         }
     }
 
-    public static void playClickSound(){
+    public static void playClickSound() {
         mp.start();
     }
 }

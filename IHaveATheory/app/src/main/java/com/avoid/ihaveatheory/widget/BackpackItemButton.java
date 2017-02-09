@@ -15,18 +15,21 @@ public class BackpackItemButton extends ImageButton {
         super(context);
         this.setOnTouchListener(new BackpackTouchListener());
         this.setOnDragListener(new BackpackDragListener());
+        setLayout(context);
         applyCustomShape(context);
     }
 
     public BackpackItemButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.setOnTouchListener(new BackpackTouchListener());
+        setLayout(context);
         applyCustomShape(context);
     }
 
     public BackpackItemButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.setOnTouchListener(new BackpackTouchListener());
+        setLayout(context);
         applyCustomShape(context);
     }
 
@@ -37,5 +40,9 @@ public class BackpackItemButton extends ImageButton {
     private void applyCustomShape(Context context) {
         drawable = new HexButtonDrawable(context);
         setBackground(drawable);
+    }
+
+    private void setLayout(Context context){
+
     }
 }

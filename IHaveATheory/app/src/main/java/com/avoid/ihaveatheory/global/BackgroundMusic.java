@@ -3,17 +3,9 @@ package com.avoid.ihaveatheory.global;
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.os.Environment;
 import android.os.IBinder;
-import android.util.Log;
 
 import com.avoid.ihaveatheory.R;
-
-import java.io.IOException;
-
-/**
- * Created by sumedhe on 2/6/17.
- */
 
 public class BackgroundMusic extends Service{
     MediaPlayer player;
