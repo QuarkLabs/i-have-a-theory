@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
@@ -19,18 +20,6 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gather);
-
-        HexButton collectWaterButton = (HexButton) findViewById(R.id.gather_water_button);
-        collectWaterButton.setIcon(R.drawable.gather_water);
-
-        HexButton findBerriesButton = (HexButton)findViewById(R.id.gather_berries_button);
-        findBerriesButton.setIcon(R.drawable.gather_berry);
-
-        HexButton gatherWoodButton = (HexButton)findViewById(R.id.gather_wood_button);
-        gatherWoodButton.setIcon(R.drawable.gather_wood);
-
-        HexButton huntButton = (HexButton)findViewById(R.id.gather_hunt_button);
-        huntButton.setIcon(R.drawable.gather_hunt);
     }
 
     @Override
