@@ -1,11 +1,11 @@
 package com.avoid.ihaveatheory.widget;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.FrameLayout;
 
+import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.listener.BackpackDragListener;
 
 public class BackpackTileLayout extends FrameLayout {
@@ -28,8 +28,7 @@ public class BackpackTileLayout extends FrameLayout {
     }
 
     public void applyCustomDesign(Context context) {
-//        this.setBackgroundColor(Color.WHITE);
-
+        setBackgroundResource(R.drawable.backpack_rack_bg);
         int margin_px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5,
                 context.getResources().getDisplayMetrics());
         int size_px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 70,

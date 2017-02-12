@@ -35,25 +35,30 @@
 
     <com.avoid.ihaveatheory.widget.OptionButton
         android:id="@+id/make_button"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/backpackMixLayout"
         android:layout_alignStart="@+id/backpackMixLayout"
         android:layout_alignTop="@+id/back_button"
-        android:text="@string/make_button"
         android:onClick="onClickMakeButton"
-        android:layout_width="80dp" />
+        android:text="@string/make_button" />
 
     <ScrollView
         android:layout_width="240dp"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:background="@drawable/backpack_rack_border"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
 
             <LinearLayout
                 android:id="@+id/backpack_col1_linear_layout"
@@ -61,6 +66,13 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical">
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/backpack_col1_linear_layout"
+                android:background="@drawable/backpack_rack_bg"
+                >
 
             </LinearLayout>
 
@@ -70,6 +82,12 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical">
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/backpack_col2_linear_layout"
+                android:background="@drawable/backpack_rack_bg">
 
             </LinearLayout>
 
@@ -79,6 +97,12 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical">
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/backpack_col3_linear_layout"
+                android:background="@drawable/backpack_rack_bg">
 
             </LinearLayout>
         </LinearLayout>
