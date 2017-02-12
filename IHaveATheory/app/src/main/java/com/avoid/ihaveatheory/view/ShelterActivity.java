@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
@@ -12,18 +13,18 @@ import com.avoid.ihaveatheory.model.PlaybleActivity;
 import com.avoid.ihaveatheory.widget.HexButton;
 
 public class ShelterActivity extends AppCompatActivity implements PlaybleActivity {
-    HexButton restButton;
-    HexButton sleepButton;
-    HexButton campButton;
+    Button restButton;
+    Button sleepButton;
+    Button campButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shelter);
 
-        restButton = (HexButton) findViewById(R.id.shelter_rest_button);
-        sleepButton = (HexButton) findViewById(R.id.shelter_sleep_button);
-        campButton = (HexButton) findViewById(R.id.shelter_camp_button);
+        restButton = (Button) findViewById(R.id.shelter_rest_button);
+        sleepButton = (Button) findViewById(R.id.shelter_sleep_button);
+        campButton = (Button) findViewById(R.id.shelter_camp_button);
 
         setBackground();
         setIcons();
@@ -44,9 +45,7 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
 
     @Override
     public void setIcons() {
-        restButton.setIcon(R.drawable.shelter_resting);
-        sleepButton.setIcon(R.drawable.shelter_sleeping);
-        campButton.setIcon(R.drawable.shelter_camp);
+
     }
 
     public void onClickBackButton(View view) {
