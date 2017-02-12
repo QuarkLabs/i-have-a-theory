@@ -1,0 +1,1 @@
+for f in *_pressed.png; do convert -modulate 120,120 $f conv/$f; done
