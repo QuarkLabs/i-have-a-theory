@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.avoid.ihaveatheory.widget.BackpackItemButton;
-import com.avoid.ihaveatheory.widget.BackpackMixLayout;
+import com.avoid.ihaveatheory.widget.BackpackActionLayout;
 import com.avoid.ihaveatheory.widget.BackpackTileLayout;
 
 public class BackpackDragListener implements View.OnDragListener {
@@ -30,8 +30,8 @@ public class BackpackDragListener implements View.OnDragListener {
 
                         viewGroup.addView(itemButton, itemButton.getWidth(), itemButton.getHeight());
                     }
-                } else if (v instanceof BackpackMixLayout) {
-                    ViewGroup viewGroup = ((BackpackMixLayout) v);
+                } else if (v instanceof BackpackActionLayout) {
+                    ViewGroup viewGroup = ((BackpackActionLayout) v);
 
                     BackpackItemButton itemButton = (BackpackItemButton) event.getLocalState();
 

@@ -120,6 +120,9 @@
     <string name="item_meat_name">Meat</string>
     <string name="item_meat_des">Just a random meat.</string>
 
+    //Backpack
+    <string name="make_button">Make</string>
+
 
     <string name="send_an_sos_text">Send an SOS</string>
     <string name="preserve_meat_text">Find a way to Preserve Meat</string>

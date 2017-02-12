@@ -28,7 +28,7 @@ public class BackpackTileLayout extends FrameLayout {
     }
 
     public void applyCustomDesign(Context context) {
-        this.setBackgroundColor(Color.WHITE);
+//        this.setBackgroundColor(Color.WHITE);
 
         int margin_px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5,
                 context.getResources().getDisplayMetrics());
