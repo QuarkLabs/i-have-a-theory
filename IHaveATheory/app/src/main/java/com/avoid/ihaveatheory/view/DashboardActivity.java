@@ -10,14 +10,14 @@ import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
 import com.avoid.ihaveatheory.widget.LabelTextView;
-import com.avoid.ihaveatheory.widget.LinearProgressBar;
+import com.avoid.ihaveatheory.widget.StatusBar;
 
 public class DashboardActivity extends AppCompatActivity implements PlaybleActivity {
-    LinearProgressBar hungerProgressBar;
-    LinearProgressBar thirstProgressBar;
-    LinearProgressBar healthProgressBar;
-    LinearProgressBar staminaProgressBar;
-    LinearProgressBar heatProgressBar;
+    StatusBar hungerProgressBar;
+    StatusBar thirstProgressBar;
+    StatusBar healthProgressBar;
+    StatusBar staminaProgressBar;
+    StatusBar heatProgressBar;
 
     LabelTextView hungerValueTextView;
     LabelTextView thirstValueTextView;
@@ -33,11 +33,11 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
         setBackground();
         setIcons();
 
-        hungerProgressBar = (LinearProgressBar) findViewById(R.id.hunger_progress_bar);
-        thirstProgressBar = (LinearProgressBar) findViewById(R.id.thirst_progress_bar);
-        healthProgressBar = (LinearProgressBar) findViewById(R.id.health_progress_bar);
-        staminaProgressBar = (LinearProgressBar) findViewById(R.id.stamina_progress_bar);
-        heatProgressBar = (LinearProgressBar) findViewById(R.id.heat_progress_bar);
+        hungerProgressBar = (StatusBar) findViewById(R.id.hunger_progress_bar);
+        thirstProgressBar = (StatusBar) findViewById(R.id.thirst_progress_bar);
+        healthProgressBar = (StatusBar) findViewById(R.id.health_progress_bar);
+        staminaProgressBar = (StatusBar) findViewById(R.id.stamina_progress_bar);
+        heatProgressBar = (StatusBar) findViewById(R.id.heat_progress_bar);
 
         hungerValueTextView = (LabelTextView) findViewById(R.id.hunger_value_text_view);
         thirstValueTextView = (LabelTextView) findViewById(R.id.thirst_value_text_view);
@@ -127,6 +127,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     private void refreshHunger(){
         hungerProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_HUNGER());
         hungerProgressBar.setProgress(Session.currentSaveFile.getHunger());
+        hungerProgressBar.applyCustomDesign(DashboardActivity.this);
         hungerValueTextView.setText(String.valueOf(Session.currentSaveFile.getHunger()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_HUNGER()));
     }
@@ -134,6 +135,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     private void refreshThirst(){
         thirstProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_THIRST());
         thirstProgressBar.setProgress(Session.currentSaveFile.getThirst());
+        thirstProgressBar.applyCustomDesign(DashboardActivity.this);
         thirstValueTextView.setText(String.valueOf(Session.currentSaveFile.getThirst()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_THIRST()));
     }
@@ -141,6 +143,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     private void refreshHealth(){
         healthProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_HEALTH());
         healthProgressBar.setProgress(Session.currentSaveFile.getHealth());
+        healthProgressBar.applyCustomDesign(DashboardActivity.this);
         healthValueTextView.setText(String.valueOf(Session.currentSaveFile.getHealth()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_HEALTH()));
     }
@@ -148,6 +151,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     private void refreshStamina(){
         staminaProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_STAMINA());
         staminaProgressBar.setProgress(Session.currentSaveFile.getStamina());
+        staminaProgressBar.applyCustomDesign(DashboardActivity.this);
         staminaValueTextView.setText(String.valueOf(Session.currentSaveFile.getStamina()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_STAMINA()));
     }
@@ -155,6 +159,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     private void refreshHeat(){
         heatProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_HEAT());
         heatProgressBar.setProgress(Session.currentSaveFile.getHeat());
+        heatProgressBar.applyCustomDesign(DashboardActivity.this);
         heatValueTextView.setText(String.valueOf(Session.currentSaveFile.getHeat()) + "/"
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_HEAT()));
     }

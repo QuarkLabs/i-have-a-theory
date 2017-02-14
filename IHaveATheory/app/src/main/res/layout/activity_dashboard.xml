@@ -96,12 +96,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/dashboard_hunger" />
 
-            <com.avoid.ihaveatheory.widget.LinearProgressBar
+            <com.avoid.ihaveatheory.widget.StatusBar
                 android:id="@+id/hunger_progress_bar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_height="15dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp" />
 
@@ -123,12 +123,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/dashboard_thirst" />
 
-            <com.avoid.ihaveatheory.widget.LinearProgressBar
+            <com.avoid.ihaveatheory.widget.StatusBar
                 android:id="@+id/thirst_progress_bar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_height="15dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp" />
 
@@ -150,11 +150,11 @@
                 android:layout_height="wrap_content"
                 android:text="@string/dashboard_health" />
 
-            <com.avoid.ihaveatheory.widget.LinearProgressBar
+            <com.avoid.ihaveatheory.widget.StatusBar
                 android:id="@+id/health_progress_bar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="15dp"
                 android:layout_weight="1"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp" />
@@ -177,11 +177,11 @@
                 android:layout_height="wrap_content"
                 android:text="@string/dashboard_stamina" />
 
-            <com.avoid.ihaveatheory.widget.LinearProgressBar
+            <com.avoid.ihaveatheory.widget.StatusBar
                 android:id="@+id/stamina_progress_bar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="15dp"
                 android:layout_weight="1"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp" />
@@ -204,11 +204,11 @@
                 android:layout_height="wrap_content"
                 android:text="@string/dashboard_heat" />
 
-            <com.avoid.ihaveatheory.widget.LinearProgressBar
+            <com.avoid.ihaveatheory.widget.StatusBar
                 android:id="@+id/heat_progress_bar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="15dp"
                 android:layout_weight="1"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp" />
