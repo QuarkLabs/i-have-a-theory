@@ -1,14 +1,11 @@
 package com.avoid.ihaveatheory.widget;
 
 import android.content.Context;
-import android.graphics.Canvas;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.widget.ProgressBar;
 
 import com.avoid.ihaveatheory.R;
-import com.avoid.ihaveatheory.util.MyApp;
 
 public class StatusBar extends ProgressBar {
     public StatusBar(Context context) {

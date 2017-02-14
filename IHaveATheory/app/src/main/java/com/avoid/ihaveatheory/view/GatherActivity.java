@@ -12,6 +12,7 @@ import com.avoid.ihaveatheory.game.Gather;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.ItemType;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.util.Common;
 import com.avoid.ihaveatheory.widget.HexButton;
 
 public class GatherActivity extends AppCompatActivity implements PlaybleActivity{
@@ -44,7 +45,7 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
         int waterCount = Gather.getInstance().findWater();
         Session.currentSaveFile.getBackpack().addItem(ItemType.WATER_BOTTLE, waterCount);
 
-        startActivity(new Intent(GatherActivity.this, ProgressActivity.class));
+        Common.showProgressBar(GatherActivity.this, "Collecting water....", "15 minutes");
     }
 
     public void onClickGatherBerriesButton(View view) {
@@ -52,7 +53,7 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
         int berryCount = Gather.getInstance().findBerries();
         Session.currentSaveFile.getBackpack().addItem(ItemType.BERRIES, berryCount);
 
-        startActivity(new Intent(GatherActivity.this, ProgressActivity.class));
+        Common.showProgressBar(GatherActivity.this, "Finding berries....", "30 minutes");
     }
 
     public void onClickGatherWoodButton(View view) {
@@ -60,7 +61,7 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
         int woodCount = Gather.getInstance().findWood();
         Session.currentSaveFile.getBackpack().addItem(ItemType.WOOD, woodCount);
 
-        startActivity(new Intent(GatherActivity.this, ProgressActivity.class));
+        Common.showProgressBar(GatherActivity.this, "Gathering wood....", "30 minutes");
     }
 
     public void onClickHuntButton(View view) {
@@ -68,6 +69,6 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
         int rabbitCount = Gather.getInstance().findRabbits();
         Session.currentSaveFile.getBackpack().addItem(ItemType.MEAT, rabbitCount);
 
-        startActivity(new Intent(GatherActivity.this, ProgressActivity.class));
+        Common.showProgressBar(GatherActivity.this, "Hunting....", "2 hours");
     }
 }

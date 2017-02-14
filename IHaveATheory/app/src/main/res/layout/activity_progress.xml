@@ -11,11 +11,31 @@
     tools:context="com.avoid.ihaveatheory.view.ProgressActivity"
     android:background="@drawable/dashboard_background">
 
-    <ProgressBar
+    <com.avoid.ihaveatheory.widget.TaskProgressBar
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="300dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/working_progress_bar"
         android:layout_height="50dp" />
+
+    <com.avoid.ihaveatheory.widget.LabelTextView
+        android:text="Task title  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/working_progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp"
+        android:id="@+id/title_text_view"
+        android:textSize="35sp" />
+
+    <com.avoid.ihaveatheory.widget.LabelTextView
+        android:text="Task time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/working_progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:id="@+id/time_text_view"
+        android:textSize="25sp" />
 </RelativeLayout>

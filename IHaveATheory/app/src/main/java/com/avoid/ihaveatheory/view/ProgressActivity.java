@@ -3,26 +3,38 @@ package com.avoid.ihaveatheory.view;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.widget.LabelTextView;
+import com.avoid.ihaveatheory.widget.TaskProgressBar;
 
 public class ProgressActivity extends AppCompatActivity implements PlaybleActivity{
-    private ProgressBar workingProgressBar;
+    private TaskProgressBar workingProgressBar;
     private int progressStatusCounter = 0;
+
+    private LabelTextView titleTextView;
+    private LabelTextView timeTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress);
 
-        workingProgressBar = (ProgressBar) findViewById(R.id.working_progress_bar);
+        workingProgressBar = (TaskProgressBar) findViewById(R.id.working_progress_bar);
         workingProgressBar.setMax(100);
         workingProgressBar.setProgress(0);
 
+        titleTextView = (LabelTextView) findViewById(R.id.title_text_view);
+        timeTextView = (LabelTextView) findViewById(R.id.time_text_view);
+
+        String title = getIntent().getStringExtra("title");
+        String time = getIntent().getStringExtra("time");
+
+        titleTextView.setText(title);
+        timeTextView.setText(time);
 
         final Handler progressHandler = new Handler();
         new Thread(new Runnable() {
