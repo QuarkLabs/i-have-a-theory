@@ -1,6 +1,6 @@
 package com.avoid.ihaveatheory.model;
 
-import com.avoid.ihaveatheory.game.scene.forest.StartScene;
+import com.avoid.ihaveatheory.game.scene.start.ForestScene;
 
 public class Scenario {
     private int dayBackground;
@@ -9,11 +9,11 @@ public class Scenario {
     private double sceneIndex;
 
     public void setForestScenario(){
-        StartScene startScene = new StartScene();
+        ForestScene forestScene = new ForestScene();
 
-        sceneIndex = startScene.getSceneIndex();
-        dayBackground = startScene.getDayBackground();
-        nightBackground = startScene.getNightBackground();
+        sceneIndex = forestScene.getSceneIndex();
+        dayBackground = forestScene.getDayBackground();
+        nightBackground = forestScene.getNightBackground();
     }
 
     public int getDayBackground() {

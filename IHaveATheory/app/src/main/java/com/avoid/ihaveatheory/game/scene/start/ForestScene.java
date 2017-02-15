@@ -1,15 +1,15 @@
-package com.avoid.ihaveatheory.game.scene.forest;
+package com.avoid.ihaveatheory.game.scene.start;
 
 import com.avoid.ihaveatheory.R;
-import com.avoid.ihaveatheory.game.scene.ForestScene;
 
-public class StartScene extends ForestScene {
+public class ForestScene extends StartScene {
+
     private int dayBackground;
     private int nightBackground;
 
-    public StartScene() {
-        dayBackground = R.drawable.forest_background;
-        nightBackground = R.drawable.forest_background_night;
+    public ForestScene() {
+        dayBackground = R.drawable.forest_start_background;
+        nightBackground = R.drawable.forest_start_background_night;
     }
 
     @Override
@@ -32,5 +32,4 @@ public class StartScene extends ForestScene {
     public void setNightBackground(int nightBackground) {
         this.nightBackground = nightBackground;
     }
-
 }
