@@ -1,14 +1,19 @@
 package com.avoid.ihaveatheory.model;
 
-import com.avoid.ihaveatheory.R;
+import com.avoid.ihaveatheory.game.scene.forest.StartScene;
 
 public class Scenario {
     private int dayBackground;
     private int nightBackground;
 
+    private double sceneIndex;
+
     public void setForestScenario(){
-        dayBackground = R.drawable.forest_background;
-        nightBackground = R.drawable.forest_background_night;
+        StartScene startScene = new StartScene();
+
+        sceneIndex = startScene.getSceneIndex();
+        dayBackground = startScene.getDayBackground();
+        nightBackground = startScene.getNightBackground();
     }
 
     public int getDayBackground() {
@@ -25,5 +30,13 @@ public class Scenario {
 
     public void setNightBackground(int nightBackground) {
         this.nightBackground = nightBackground;
+    }
+
+    public double getSceneIndex() {
+        return sceneIndex;
+    }
+
+    public void setSceneIndex(double sceneIndex) {
+        this.sceneIndex = sceneIndex;
     }
 }
