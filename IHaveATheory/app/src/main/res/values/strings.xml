@@ -76,7 +76,7 @@
     <string name="item_bow_des">Unleash your full hunting potential with this hand made bow.</string>
 
     <string name="item_arrow_name">Arrow</string>
-    <string name="item_arrow_des">Well you can't just shoot nothing with your bow right?.</string>
+    <string name="item_arrow_des">Well you cant just shoot nothing with your bow right.</string>
 
     <string name="item_snare_name">Snare</string>
     <string name="item_snare_des">Just a random snare.</string>
@@ -88,7 +88,7 @@
     <string name="item_slippers_des">Just a random grass slippers.</string>
 
     <string name="item_hat_name">Grass hat</string>
-    <string name="item_hat_des">Too sunny? Be shady!.</string>
+    <string name="item_hat_des">Too sunny. Be shady.</string>
 
     <string name="item_walking_stick_name">Walking stick</string>
     <string name="item_walking_stick_des">Just a random walking stick.</string>
@@ -100,7 +100,7 @@
     <string name="item_pouch_des">A large pouch for all the hoarders out there.</string>
 
     <string name="item_blanket_name">Hay blanket</string>
-    <string name="item_blanket_des">This hay blanket provides extra warmth when taking a nap inside or outside a shelter. But beware! It doesn't protect you from the bites of tropical mosquitoes.</string>
+    <string name="item_blanket_des">This hay blanket provides extra warmth when taking a nap inside or outside a shelter. But beware. It doesnt protect you from the bites of tropical mosquitoes.</string>
 
     <string name="item_hook_name">Fish hook</string>
     <string name="item_hook_des">Be a piscary in the wood.</string>
