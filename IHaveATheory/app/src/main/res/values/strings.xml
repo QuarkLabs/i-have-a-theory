@@ -73,10 +73,11 @@
 
     //Items
     <string name="item_bow_name">Bow</string>
-    <string name="item_bow_des">Unleash the potential.</string>
+
+    <string name="item_bow_des">Unleash your full hunting potential with this hand made bow.</string>
 
     <string name="item_arrow_name">Arrow</string>
-    <string name="item_arrow_des">Make it kinetic.</string>
+    <string name="item_arrow_des">Well you cant just shoot nothing with your bow right.</string>
 
     <string name="item_snare_name">Snare</string>
     <string name="item_snare_des">Trap others without getting trapped.</string>
@@ -88,19 +89,22 @@
     <string name="item_slippers_des">Healthy foot for a wealthy journey.</string>
 
     <string name="item_hat_name">Grass hat</string>
-    <string name="item_hat_des">Too sunny? Be shady.</string>
+
+    <string name="item_hat_des">Too sunny. Be shady.</string>
 
     <string name="item_walking_stick_name">Walking stick</string>
     <string name="item_walking_stick_des">Never give up.</string>
 
     <string name="item_small_pouch_name">Small pouch</string>
-    <string name="item_small_pouch_des">Keep it protected.</string>
+
+    <string name="item_small_pouch_des">Extra space might come in handy in the wilderness. Even if it is a little bit.</string>
 
     <string name="item_pouch_name">Pouch</string>
-    <string name="item_pouch_des">Just a random pouch.</string>
+    <string name="item_pouch_des">A large pouch for all the hoarders out there.</string>
 
     <string name="item_blanket_name">Hay blanket</string>
-    <string name="item_blanket_des">Warmth for a nap.</string>
+
+    <string name="item_blanket_des">This hay blanket provides extra warmth when taking a nap inside or outside a shelter. But beware. It doesnt protect you from the bites of tropical mosquitoes.</string>
 
     <string name="item_hook_name">Fish hook</string>
     <string name="item_hook_des">Be a piscary in the wood.</string>
