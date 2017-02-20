@@ -4,16 +4,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.game.Gather;
 import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.ItemType;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.item.Berries;
+import com.avoid.ihaveatheory.model.item.Item;
+import com.avoid.ihaveatheory.model.item.Meat;
+import com.avoid.ihaveatheory.model.item.WaterBottle;
+import com.avoid.ihaveatheory.model.item.Wood;
 import com.avoid.ihaveatheory.util.Common;
-import com.avoid.ihaveatheory.widget.HexButton;
 
 public class GatherActivity extends AppCompatActivity implements PlaybleActivity{
 
@@ -43,7 +45,8 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
     public void onClickGatherWaterButton(View view) {
         MainMenuActivity.playClickSound();
         int waterCount = Gather.getInstance().findWater();
-        Session.currentSaveFile.getBackpack().addItem(ItemType.WATER_BOTTLE, waterCount);
+        Item waterBottle = new WaterBottle();
+        Session.currentSaveFile.getBackpack().addItem(waterBottle, waterCount);
 
         Common.showProgressBar(GatherActivity.this, "Collecting water....", "15 minutes");
     }
@@ -51,7 +54,8 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
     public void onClickGatherBerriesButton(View view) {
         MainMenuActivity.playClickSound();
         int berryCount = Gather.getInstance().findBerries();
-        Session.currentSaveFile.getBackpack().addItem(ItemType.BERRIES, berryCount);
+        Item berries = new Berries();
+        Session.currentSaveFile.getBackpack().addItem(berries, berryCount);
 
         Common.showProgressBar(GatherActivity.this, "Finding berries....", "30 minutes");
     }
@@ -59,7 +63,8 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
     public void onClickGatherWoodButton(View view) {
         MainMenuActivity.playClickSound();
         int woodCount = Gather.getInstance().findWood();
-        Session.currentSaveFile.getBackpack().addItem(ItemType.WOOD, woodCount);
+        Item wood = new Wood();
+        Session.currentSaveFile.getBackpack().addItem(wood, woodCount);
 
         Common.showProgressBar(GatherActivity.this, "Gathering wood....", "30 minutes");
     }
@@ -67,7 +72,8 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
     public void onClickHuntButton(View view) {
         MainMenuActivity.playClickSound();
         int rabbitCount = Gather.getInstance().findRabbits();
-        Session.currentSaveFile.getBackpack().addItem(ItemType.MEAT, rabbitCount);
+        Item meat = new Meat();
+        Session.currentSaveFile.getBackpack().addItem(meat, rabbitCount);
 
         Common.showProgressBar(GatherActivity.this, "Hunting....", "2 hours");
     }

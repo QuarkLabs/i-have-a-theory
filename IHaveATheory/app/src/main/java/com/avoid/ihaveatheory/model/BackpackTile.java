@@ -1,21 +1,57 @@
 package com.avoid.ihaveatheory.model;
 
-public class BackpackTile {
-    private Item item = null;
+import com.avoid.ihaveatheory.exception.ItemTypeMismatchException;
+import com.avoid.ihaveatheory.exception.NonExistingObjectCallException;
+import com.avoid.ihaveatheory.model.item.Item;
+import com.avoid.ihaveatheory.model.item.ItemType;
 
-    public Item getItem() {
-        return item;
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class BackpackTile implements Serializable {
+    private ArrayList<Item> itemArrayList = null;
+
+    public BackpackTile() {
+        itemArrayList = new ArrayList<>();
     }
 
-    public void setItem(Item item) {
-        this.item = item;
+    public void addItem(Item item) throws ItemTypeMismatchException {
+        if(isEmpty() || (!isEmpty() && item.getItemType() == item.getItemType())){
+            itemArrayList.add(item);
+        }else{
+            throw new ItemTypeMismatchException();
+        }
     }
 
-    public void removeItem() {
-        item = null;
+    public int getQty() {
+        return itemArrayList.size();
     }
 
-    public boolean isEmpty(){
-        return item == null;
+    public ItemType getItemType() throws NonExistingObjectCallException {
+        if (!isEmpty()) {
+            return itemArrayList.get(0).getItemType();
+        } else {
+            throw new NonExistingObjectCallException();
+        }
+    }
+
+    public void removeOneItem() throws NonExistingObjectCallException {
+        if (!isEmpty()) {
+            itemArrayList.remove(0);
+        } else {
+            throw new NonExistingObjectCallException();
+        }
+    }
+
+    public void removeAllItems() throws NonExistingObjectCallException {
+        if (!isEmpty()) {
+            itemArrayList.clear();
+        } else {
+            throw new NonExistingObjectCallException();
+        }
+    }
+
+    public boolean isEmpty() {
+        return getQty() == 0;
     }
 }

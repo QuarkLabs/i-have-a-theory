@@ -1,6 +1,8 @@
 package com.avoid.ihaveatheory.model;
 
-public class SaveFile {
+import java.io.Serializable;
+
+public class SaveFile implements Serializable{
     //----------------------------------------------------------------------------------------------
 
     private String name = "default";

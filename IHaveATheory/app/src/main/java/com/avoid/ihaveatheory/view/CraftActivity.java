@@ -2,7 +2,6 @@ package com.avoid.ihaveatheory.view;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
@@ -10,8 +9,8 @@ import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.ItemType;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.item.ItemType;
 import com.avoid.ihaveatheory.widget.DescriptionTextView;
 
 public class CraftActivity extends AppCompatActivity implements PlaybleActivity{
@@ -108,9 +107,9 @@ public class CraftActivity extends AppCompatActivity implements PlaybleActivity{
     }
 
     public void changeItem(ItemType itemType){
-        itemImageView.setImageDrawable(ResourcesCompat.getDrawable(getResources(), itemType.getItemImage(), null));
-        itemNameTextView.setText(getResources().getString(itemType.getName()));
-        itemDesTextView.setText(getResources().getString(itemType.getDescription()));
+//        itemImageView.setImageDrawable(ResourcesCompat.getDrawable(getResources(), itemType.getItemImage(), null));
+//        itemNameTextView.setText(getResources().getString(itemType.getName()));
+//        itemDesTextView.setText(getResources().getString(itemType.getDescription()));
 
         setSelectedItemType(itemType);
     }

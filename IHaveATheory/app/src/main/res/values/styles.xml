@@ -3,16 +3,16 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <XItem name="colorPrimary">@color/colorPrimary</XItem>
+        <XItem name="colorPrimaryDark">@color/colorPrimaryDark</XItem>
+        <XItem name="colorAccent">@color/colorAccent</XItem>
     </style>
 
     <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowContentOverlay">@null</item>
+        <XItem name="windowNoTitle">true</XItem>
+        <XItem name="windowActionBar">false</XItem>
+        <XItem name="android:windowFullscreen">true</XItem>
+        <XItem name="android:windowContentOverlay">@null</XItem>
     </style>
 
 </resources>

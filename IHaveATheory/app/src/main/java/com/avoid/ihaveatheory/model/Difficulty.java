@@ -1,6 +1,8 @@
 package com.avoid.ihaveatheory.model;
 
-public class Difficulty {
+import java.io.Serializable;
+
+public class Difficulty implements Serializable{
     private int MAX_HEALTH;
     private int MAX_STAMINA;
     private int MAX_HEAT;

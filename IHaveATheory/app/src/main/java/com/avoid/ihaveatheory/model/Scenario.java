@@ -2,7 +2,9 @@ package com.avoid.ihaveatheory.model;
 
 import com.avoid.ihaveatheory.game.scene.start.ForestScene;
 
-public class Scenario {
+import java.io.Serializable;
+
+public class Scenario implements Serializable{
     private int dayBackground;
     private int nightBackground;
 
