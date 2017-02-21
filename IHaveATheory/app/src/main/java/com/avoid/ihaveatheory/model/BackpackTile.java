@@ -15,10 +15,22 @@ public class BackpackTile implements Serializable {
         itemArrayList = new ArrayList<>();
     }
 
+    public ArrayList<Item> getItemArrayList() {
+        return itemArrayList;
+    }
+
+    public Item getItem() throws NonExistingObjectCallException {
+        if (!isEmpty()) {
+            return itemArrayList.get(0);
+        } else {
+            throw new NonExistingObjectCallException();
+        }
+    }
+
     public void addItem(Item item) throws ItemTypeMismatchException {
-        if(isEmpty() || (!isEmpty() && item.getItemType() == item.getItemType())){
+        if (isEmpty() || (!isEmpty() && item.getItemType() == item.getItemType())) {
             itemArrayList.add(item);
-        }else{
+        } else {
             throw new ItemTypeMismatchException();
         }
     }

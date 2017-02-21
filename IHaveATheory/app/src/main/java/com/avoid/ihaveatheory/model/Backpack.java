@@ -40,7 +40,7 @@ public class Backpack implements Serializable {
         items.put(ItemType.WATER_BOTTLE, 10);
         for (int i = 0; i < 10; i++) {
             try {
-                col1.get(0).addItem(new WaterBottle());
+                col2.get(0).addItem(new WaterBottle());
             } catch (ItemTypeMismatchException e) {
                 e.printStackTrace();
             }
@@ -50,7 +50,7 @@ public class Backpack implements Serializable {
         items.put(ItemType.WOOD, 8);
         for (int i = 0; i < 8; i++) {
             try {
-                col1.get(2).addItem(new Wood());
+                col3.get(2).addItem(new Wood());
             } catch (ItemTypeMismatchException e) {
                 e.printStackTrace();
             }

@@ -7,6 +7,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
+import com.avoid.ihaveatheory.exception.NonExistingObjectCallException;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.BackpackTile;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
@@ -50,7 +51,11 @@ public class BackpackActivity extends AppCompatActivity implements PlaybleActivi
             BackpackTileLayout tileLayout = new BackpackTileLayout(BackpackActivity.this);
             if(!tile.isEmpty()){
                 BackpackItemButton itemButton = new BackpackItemButton(BackpackActivity.this);
-                itemButton.setIcon(tile.getItem().getItemType().getItemImage());
+                try {
+                    itemButton.setIcon(tile.getItem().getImage());
+                } catch (NonExistingObjectCallException e) {
+                    e.printStackTrace();
+                }
                 tileLayout.addView(itemButton);
             }
             col1LinearLayout.addView(tileLayout);
@@ -60,7 +65,11 @@ public class BackpackActivity extends AppCompatActivity implements PlaybleActivi
             BackpackTileLayout tileLayout = new BackpackTileLayout(BackpackActivity.this);
             if(!tile.isEmpty()){
                 BackpackItemButton itemButton = new BackpackItemButton(BackpackActivity.this);
-                itemButton.setIcon(tile.getItem().getItemType().getItemImage());
+                try {
+                    itemButton.setIcon(tile.getItem().getImage());
+                } catch (NonExistingObjectCallException e) {
+                    e.printStackTrace();
+                }
                 tileLayout.addView(itemButton);
             }
             col2LinearLayout.addView(tileLayout);
@@ -70,7 +79,11 @@ public class BackpackActivity extends AppCompatActivity implements PlaybleActivi
             BackpackTileLayout tileLayout = new BackpackTileLayout(BackpackActivity.this);
             if(!tile.isEmpty()){
                 BackpackItemButton itemButton = new BackpackItemButton(BackpackActivity.this);
-                itemButton.setIcon(tile.getItem().getItemType().getItemImage());
+                try {
+                    itemButton.setIcon(tile.getItem().getImage());
+                } catch (NonExistingObjectCallException e) {
+                    e.printStackTrace();
+                }
                 tileLayout.addView(itemButton);
             }
             col3LinearLayout.addView(tileLayout);

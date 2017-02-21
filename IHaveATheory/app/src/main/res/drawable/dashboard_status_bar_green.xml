@@ -1,7 +1,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Background properties -->
-    <XItem android:id="@android:id/background">
+    <item android:id="@android:id/background">
         <shape>
             <size
                 android:minHeight="5dip"
@@ -16,10 +16,10 @@
                 android:endColor="#0d1522"
                 android:startColor="#000001" />
         </shape>
-    </XItem>
+    </item>
 
     <!-- Progress properties -->
-    <XItem android:id="@android:id/progress">
+    <item android:id="@android:id/progress">
         <clip>
             <shape>
                 <size
@@ -36,6 +36,6 @@
                     android:startColor="#b0f72c" />
             </shape>
         </clip>
-    </XItem>
+    </item>
 
 </layer-list>

@@ -16,6 +16,5 @@ public enum ItemType {
     WATER_BOTTLE,
     BERRIES,
     WOOD,
-    MEAT;
-
+    MEAT
 }

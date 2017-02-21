@@ -1,4 +1,6 @@
-package com.avoid.ihaveatheory.game.scene;
+package com.avoid.ihaveatheory.factory;
+
+import com.avoid.ihaveatheory.game.scene.Scene;
 
 public class SceneFactory {
     private static final SceneFactory instance = new SceneFactory();
