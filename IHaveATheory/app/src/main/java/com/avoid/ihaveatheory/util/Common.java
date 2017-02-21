@@ -2,9 +2,9 @@ package com.avoid.ihaveatheory.util;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 
-import com.avoid.ihaveatheory.game.choice.Choice;
+import com.avoid.ihaveatheory.game.choice.Situation;
+import com.avoid.ihaveatheory.view.ChoiceActivity;
 import com.avoid.ihaveatheory.view.ProgressActivity;
 import com.avoid.ihaveatheory.view.StoryActivity;
 
@@ -16,14 +16,16 @@ public class Common {
         context.startActivity(intent);
     }
 
-    public static void showStory(Context context, String message, String ok_text) {
-        Intent intent = new Intent(context, StoryActivity.class);
-        intent.putExtra("title", message);
-        intent.putExtra("time", ok_text);
+    public static void showSituation(Context context, Situation situation) {
+        Intent intent = new Intent(context, ChoiceActivity.class);
+        intent.putExtra("situation", situation);
         context.startActivity(intent);
     }
 
-    public static void showChoices(Choice choice){
-        Log.d(">>>>>>>>", "Implement the choices.");
+    public static void showStory(Context context, String message, String okText) {
+        Intent intent = new Intent(context, StoryActivity.class);
+        intent.putExtra("message", message);
+        intent.putExtra("okText", okText);
+        context.startActivity(intent);
     }
 }

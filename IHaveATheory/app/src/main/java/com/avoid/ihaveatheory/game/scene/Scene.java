@@ -1,5 +1,7 @@
 package com.avoid.ihaveatheory.game.scene;
 
-public interface Scene {
+import java.io.Serializable;
+
+public interface Scene extends Serializable{
 
 }

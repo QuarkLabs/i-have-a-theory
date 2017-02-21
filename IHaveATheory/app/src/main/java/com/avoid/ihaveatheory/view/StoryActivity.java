@@ -15,14 +15,13 @@ public class StoryActivity extends AppCompatActivity implements PlaybleActivity{
         setContentView(R.layout.activity_story);
 
         String message = getIntent().getStringExtra("message");
-        String ok_text = getIntent().getStringExtra("ok_text");
+        String ok_text = getIntent().getStringExtra("okText");
 
         TextView storyTextView = (TextView) findViewById(R.id.story_text_view);
         Button okButton = (Button) findViewById(R.id.ok_button);
 
         storyTextView.setText(message);
         okButton.setText(ok_text);
-
     }
 
     @Override
