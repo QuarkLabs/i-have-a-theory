@@ -83,7 +83,8 @@
             android:name=".view.ProgressActivity"
             android:screenOrientation="sensorLandscape" />
         <activity android:name=".view.ChoiceActivity" />
-        <activity android:name=".view.SceneActivity"></activity>
+        <activity android:name=".view.SceneActivity" />
+        <activity android:name=".view.StoryActivity"></activity>
     </application>
 
 </manifest>
