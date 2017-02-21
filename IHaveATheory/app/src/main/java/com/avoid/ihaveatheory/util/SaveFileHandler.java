@@ -2,46 +2,74 @@ package com.avoid.ihaveatheory.util;
 
 
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.util.Log;
 
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.SaveFile;
-import com.google.gson.Gson;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 public class SaveFileHandler {
-    private SharedPreferences preferences;
-    private Gson gson;
+    private Context context;
+    private FileOutputStream fileOutputStream;
+    private ObjectOutputStream objectOutputStream;
+
+    private FileInputStream fileInputStream;
+    private ObjectInputStream objectInputStream;
 
     public SaveFileHandler(Context context) {
-        preferences = context.getSharedPreferences("IHaveATheoryPrefs", 0);
-        gson = new Gson();
+        this.context = context;
     }
 
     public void newGame() {
-        preferences.edit().remove("save_file").commit();
         Session.currentSaveFile = new SaveFile();
     }
 
     public void loadGame() {
-        String json = preferences.getString("save_file", "");
-        Session.currentSaveFile = gson.fromJson(json, SaveFile.class);
+        try {
+            fileInputStream = context.openFileInput("saveFile");
+            objectInputStream = new ObjectInputStream(fileInputStream);
 
-        Log.d("<<load>>",json);
+            Session.currentSaveFile = (SaveFile) objectInputStream.readObject();
+
+            objectInputStream.close();
+            fileInputStream.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
-    public void saveGame(){
-        SharedPreferences.Editor prefsEditor = preferences.edit();
-        String json = gson.toJson(Session.currentSaveFile);
-        prefsEditor.putString("save_file", json);
-        prefsEditor.commit();
+    public void saveGame() {
+        try {
+            fileOutputStream = context.openFileOutput("saveFile", Context.MODE_PRIVATE);
+            objectOutputStream = new ObjectOutputStream(fileOutputStream);
 
-        Log.d("<<save>>",json);
+            objectOutputStream.writeObject(Session.currentSaveFile);
+
+            objectOutputStream.close();
+            fileOutputStream.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
-    public boolean saveExists(){
-        String json = preferences.getString("save_file", "");
-
-        return !json.equals("");
+    public boolean saveExists() {
+        try {
+            fileInputStream = context.openFileInput("saveFile");
+            return fileInputStream != null;
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 }

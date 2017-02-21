@@ -100,28 +100,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickExploreButton(View view) {
-        Intent intent = new Intent(DashboardActivity.this, SceneActivity.class);
 
-
-        int sceneIndex = (int)Session.currentSaveFile.getScenario().getSceneIndex();
-        switch (sceneIndex){
-            case 0:
-                Scene lake = new LakeScene();
-                Session.currentSaveFile.getScenario().setSceneIndex(lake.getSceneIndex());
-                Session.currentSaveFile.getScenario().setDayBackground(((LocationScene)lake).getDayBackground());
-                intent.putExtra("introText", "You find a new lake after walking for few hours on the bank");
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
-        }
-        startActivity(intent);
-//        finish();
-//        startActivity(getIntent());
     }
 
     public void onClickCookingPotButton(View view) {

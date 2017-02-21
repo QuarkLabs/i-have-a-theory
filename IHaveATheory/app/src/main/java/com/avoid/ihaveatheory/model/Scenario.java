@@ -1,19 +1,21 @@
 package com.avoid.ihaveatheory.model;
 
+import com.avoid.ihaveatheory.game.scene.Scene;
+import com.avoid.ihaveatheory.game.scene.location.LocationScene;
 import com.avoid.ihaveatheory.game.scene.start.ForestScene;
+import com.avoid.ihaveatheory.game.scene.start.StartScene;
 
-public class Scenario {
+import java.io.Serializable;
+
+public class Scenario implements Serializable{
     private int dayBackground;
     private int nightBackground;
 
-    private double sceneIndex;
+    private Scene scene;
 
     public void setForestScenario(){
         ForestScene forestScene = new ForestScene();
-
-        sceneIndex = forestScene.getSceneIndex();
-        dayBackground = forestScene.getDayBackground();
-        nightBackground = forestScene.getNightBackground();
+        setScene(forestScene);
     }
 
     public int getDayBackground() {
@@ -32,11 +34,20 @@ public class Scenario {
         this.nightBackground = nightBackground;
     }
 
-    public double getSceneIndex() {
-        return sceneIndex;
+    public Scene getScene() {
+        return scene;
     }
 
-    public void setSceneIndex(double sceneIndex) {
-        this.sceneIndex = sceneIndex;
+    public void setScene(Scene scene) {
+        this.scene = scene;
+
+        if (scene instanceof StartScene){
+            dayBackground = ((StartScene)scene).getDayBackground();
+            nightBackground = ((StartScene)scene).getNightBackground();
+        }
+        else if(scene instanceof LocationScene){
+            dayBackground = ((LocationScene)scene).getDayBackground();
+            nightBackground = ((LocationScene)scene).getNightBackground();
+        }
     }
 }
