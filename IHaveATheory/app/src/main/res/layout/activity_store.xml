@@ -14,84 +14,81 @@
 
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-        <ScrollView
-            android:layout_width="185dp"
-            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
-        </ScrollView>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/store_water"
+                android:id="@+id/water_image"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/store_rope"
+                android:id="@+id/rope_image"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/store_fire"
+                android:id="@+id/fire_image"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/store_backpack"
+                android:id="@+id/backpack_image"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/store_food"
+                android:id="@+id/food_image"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/store_beer"
+                android:id="@+id/beer_image"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+
     </LinearLayout>
-
-
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/store_water"
-        android:id="@+id/water_image"
-        android:layout_alignTop="@+id/beer_image"
-        android:layout_alignLeft="@+id/backpack_image"
-        android:layout_alignStart="@+id/backpack_image" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/store_rope"
-        android:id="@+id/rope_image"
-        android:layout_alignTop="@+id/backpack_image"
-        android:layout_alignLeft="@+id/food_image"
-        android:layout_alignStart="@+id/food_image" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/store_fire"
-        android:id="@+id/fire_image"
-        android:layout_alignTop="@+id/rope_image"
-        android:layout_alignLeft="@+id/beer_image"
-        android:layout_alignStart="@+id/beer_image" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/store_backpack"
-        android:id="@+id/backpack_image"
-        android:layout_marginBottom="31dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/rope_image"
-        android:layout_toEndOf="@+id/rope_image"
-        android:layout_marginLeft="54dp"
-        android:layout_marginStart="54dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/store_food"
-        android:id="@+id/food_image"
-        android:layout_marginBottom="59dp"
-        android:layout_above="@+id/rope_image"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/store_beer"
-        android:id="@+id/beer_image"
-        android:layout_marginLeft="60dp"
-        android:layout_marginStart="60dp"
-        android:layout_alignTop="@+id/food_image"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
