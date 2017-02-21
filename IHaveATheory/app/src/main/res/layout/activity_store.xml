@@ -28,29 +28,76 @@
             android:orientation="horizontal"
             android:gravity="center">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:srcCompat="@drawable/store_water"
-                android:id="@+id/water_image"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:srcCompat="@drawable/store_rope"
-                android:id="@+id/rope_image"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/store_water"
+                    android:id="@+id/water_image"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:srcCompat="@drawable/store_fire"
-                android:id="@+id/fire_image"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+                <com.avoid.ihaveatheory.widget.LabelTextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:text="RS. 5" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/store_rope"
+                    android:id="@+id/rope_image"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+                <com.avoid.ihaveatheory.widget.LabelTextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:text="RS. 15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/store_fire"
+                    android:id="@+id/fire_image"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+                <com.avoid.ihaveatheory.widget.LabelTextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:text="RS. 5" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
 
@@ -61,29 +108,74 @@
             android:orientation="horizontal"
             android:gravity="center">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:srcCompat="@drawable/store_backpack"
-                android:id="@+id/backpack_image"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:srcCompat="@drawable/store_food"
-                android:id="@+id/food_image"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/store_backpack"
+                    android:id="@+id/backpack_image"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:srcCompat="@drawable/store_beer"
-                android:id="@+id/beer_image"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+                <com.avoid.ihaveatheory.widget.LabelTextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:text="RS. 20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/store_food"
+                    android:id="@+id/food_image"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+                <com.avoid.ihaveatheory.widget.LabelTextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:text="RS. 10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/store_beer"
+                    android:id="@+id/beer_image"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+                <com.avoid.ihaveatheory.widget.LabelTextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:text="RS. 15" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
