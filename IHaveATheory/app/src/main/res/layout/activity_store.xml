@@ -34,13 +34,13 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <ImageView
+                <Button
+                    android:id="@+id/water_button"
+                    android:background="@drawable/store_water"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    app:srcCompat="@drawable/store_water"
-                    android:id="@+id/water_image"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
 
                 <com.avoid.ihaveatheory.widget.LabelTextView
                     android:layout_width="60dp"
@@ -58,13 +58,13 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <ImageView
+                <Button
+                    android:id="@+id/rope_button"
+                    android:background="@drawable/store_rope"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    app:srcCompat="@drawable/store_rope"
-                    android:id="@+id/rope_image"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
 
                 <com.avoid.ihaveatheory.widget.LabelTextView
                     android:layout_width="60dp"
@@ -81,13 +81,13 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <ImageView
+                <Button
+                    android:id="@+id/fire_button"
+                    android:background="@drawable/store_fire"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    app:srcCompat="@drawable/store_fire"
-                    android:id="@+id/fire_image"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
 
                 <com.avoid.ihaveatheory.widget.LabelTextView
                     android:layout_width="60dp"
@@ -114,13 +114,13 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <ImageView
+                <Button
+                    android:id="@+id/backpack_button"
+                    android:background="@drawable/store_backpack"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    app:srcCompat="@drawable/store_backpack"
-                    android:id="@+id/backpack_image"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
 
                 <com.avoid.ihaveatheory.widget.LabelTextView
                     android:layout_width="60dp"
@@ -137,13 +137,13 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <ImageView
+                <Button
+                    android:id="@+id/food_button"
+                    android:background="@drawable/store_food"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    app:srcCompat="@drawable/store_food"
-                    android:id="@+id/food_image"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
 
                 <com.avoid.ihaveatheory.widget.LabelTextView
                     android:layout_width="60dp"
@@ -160,13 +160,13 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <ImageView
+                <Button
+                    android:id="@+id/beer_button"
+                    android:background="@drawable/store_beer"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    app:srcCompat="@drawable/store_beer"
-                    android:id="@+id/beer_image"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
 
                 <com.avoid.ihaveatheory.widget.LabelTextView
                     android:layout_width="60dp"
