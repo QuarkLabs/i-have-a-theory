@@ -5,8 +5,16 @@ import com.avoid.ihaveatheory.game.scene.Scene;
 public abstract class LocationScene implements Scene {
 
     public enum LocationSceneType {
-        LAKE_LOCATION_SCENE,
-        MOONLIGHT_SCENE
+        FOREST_ARCH_LOCATION_SCENE,
+        FOREST_BLUE_LOCATION_SCENE,
+        FOREST_BRIDGE_LOCATION_SCENE,
+        FOREST_DAWN_LOCATION_SCENE,
+        FOREST_FLOWER_LOCATION_SCENE,
+        FOREST_LAKE_LOCATION_SCENE,
+        FOREST_MAGICAL_LOCATION_SCENE,
+        FOREST_MOONLIGHT_LOCATION_SCENE,
+        FOREST_MOSS_LOCATION_SCENE,
+        FOREST_SCARY_LOCATION_SCENE
     }
 
     private LocationSceneType locationSceneType;

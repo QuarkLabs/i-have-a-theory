@@ -7,13 +7,8 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
-import com.avoid.ihaveatheory.game.choice.AcidLakeSituation;
-import com.avoid.ihaveatheory.game.scene.Scene;
-import com.avoid.ihaveatheory.game.scene.location.LakeScene;
-import com.avoid.ihaveatheory.game.scene.location.LocationScene;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
-import com.avoid.ihaveatheory.util.Common;
 import com.avoid.ihaveatheory.widget.LabelTextView;
 import com.avoid.ihaveatheory.widget.StatusBar;
 
