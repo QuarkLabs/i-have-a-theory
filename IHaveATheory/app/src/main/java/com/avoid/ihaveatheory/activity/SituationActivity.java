@@ -22,8 +22,8 @@ public class SituationActivity extends AppCompatActivity implements PlaybleActiv
         TextView storyTextView = (TextView) findViewById(R.id.story_text_view);
         Button okButton = (Button) findViewById(R.id.ok_button);
 
-        storyTextView.setText(message);
-        okButton.setText(ok_text);
+        storyTextView.setText(situation.getDescription());
+        okButton.setText(situation.getOkButtonText());
     }
 
     @Override
