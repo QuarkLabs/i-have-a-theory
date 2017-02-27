@@ -2,11 +2,9 @@ package com.avoid.ihaveatheory.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.view.View;
 import android.widget.Button;
 
 import com.avoid.ihaveatheory.R;
-import com.avoid.ihaveatheory.view.MainMenuActivity;
 
 public class BackButton extends Button {
     public BackButton(Context context) {

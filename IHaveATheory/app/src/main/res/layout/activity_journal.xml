@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.avoid.ihaveatheory.view.JournalActivity"
+    tools:context="com.avoid.ihaveatheory.activity.JournalActivity"
 
     android:background="@drawable/scenario_forest"
     >

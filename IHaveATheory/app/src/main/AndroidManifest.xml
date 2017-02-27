@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
         <activity
-            android:name=".view.MainMenuActivity"
+            android:name=".activity.MainMenuActivity"
             android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,68 +23,68 @@
             android:enabled="true" />
 
         <activity
-            android:name=".view.DifficultyActivity"
+            android:name=".activity.DifficultyActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.ScenarioActivity"
+            android:name=".activity.ScenarioActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.StoreActivity"
+            android:name=".activity.StoreActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.PurchaseActivity"
+            android:name=".activity.PurchaseActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.LeaderboardActivity"
+            android:name=".activity.LeaderboardActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.DashboardActivity"
+            android:name=".activity.DashboardActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.CreditsActivity"
+            android:name=".activity.CreditsActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.CraftActivity"
+            android:name=".activity.CraftActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.BackpackActivity"
+            android:name=".activity.BackpackActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.ProfileActivity"
+            android:name=".activity.ProfileActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.SettingsActivity"
+            android:name=".activity.SettingsActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.ShelterActivity"
+            android:name=".activity.ShelterActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.IntroActivity"
+            android:name=".activity.IntroActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.MapActivity"
+            android:name=".activity.MapActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.JournalActivity"
+            android:name=".activity.JournalActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.GatherActivity"
+            android:name=".activity.GatherActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.CookingPotActivity"
+            android:name=".activity.CookingPotActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.GameOverActivity"
+            android:name=".activity.GameOverActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.HelpActivity"
+            android:name=".activity.HelpActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.ProgressActivity"
+            android:name=".activity.ProgressActivity"
             android:screenOrientation="sensorLandscape" />
-        <activity android:name=".view.ChoiceActivity" />
-        <activity android:name=".view.SceneActivity" />
-        <activity android:name=".view.StoryActivity"></activity>
+        <activity android:name=".activity.ChoiceActivity" />
+        <activity android:name=".activity.SceneActivity" />
+        <activity android:name=".activity.StoryActivity"></activity>
     </application>
 
 </manifest>

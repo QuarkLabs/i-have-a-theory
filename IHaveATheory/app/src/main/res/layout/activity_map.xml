@@ -8,6 +8,6 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.avoid.ihaveatheory.view.MapActivity">
+    tools:context="com.avoid.ihaveatheory.activity.MapActivity">
 
 </RelativeLayout>

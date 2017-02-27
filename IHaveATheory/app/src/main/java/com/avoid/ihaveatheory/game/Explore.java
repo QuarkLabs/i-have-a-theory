@@ -10,5 +10,7 @@ public class Explore {
         return instance;
     }
 
+    public void explore(){
 
+    }
 }

@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.avoid.ihaveatheory.view.StoreActivity"
+    tools:context="com.avoid.ihaveatheory.activity.StoreActivity"
     android:background="@drawable/store_bg">
 
     <LinearLayout

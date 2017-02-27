@@ -3,10 +3,10 @@ package com.avoid.ihaveatheory.util;
 import android.content.Context;
 import android.content.Intent;
 
-import com.avoid.ihaveatheory.game.choice.Situation;
-import com.avoid.ihaveatheory.view.ChoiceActivity;
-import com.avoid.ihaveatheory.view.ProgressActivity;
-import com.avoid.ihaveatheory.view.StoryActivity;
+import com.avoid.ihaveatheory.game.choice.Choice;
+import com.avoid.ihaveatheory.activity.ChoiceActivity;
+import com.avoid.ihaveatheory.activity.ProgressActivity;
+import com.avoid.ihaveatheory.activity.StoryActivity;
 
 public class Common {
     public static void showProgressBar(Context context, String title, String time) {
@@ -16,9 +16,9 @@ public class Common {
         context.startActivity(intent);
     }
 
-    public static void showSituation(Context context, Situation situation) {
+    public static void showSituation(Context context, Choice choice) {
         Intent intent = new Intent(context, ChoiceActivity.class);
-        intent.putExtra("situation", situation);
+        intent.putExtra("choice", choice);
         context.startActivity(intent);
     }
 

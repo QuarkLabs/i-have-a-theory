@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.avoid.ihaveatheory.view.GatherActivity"
+    tools:context="com.avoid.ihaveatheory.activity.GatherActivity"
     android:background="@drawable/dashboard_background">
 
 
