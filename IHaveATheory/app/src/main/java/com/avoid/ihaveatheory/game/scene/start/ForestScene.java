@@ -8,6 +8,12 @@ public class ForestScene extends StartScene {
 
         dayBackground = R.drawable.forest_start_background;
         nightBackground = R.drawable.forest_start_background_night;
+
+        addChoices();
     }
 
+    @Override
+    public void addChoices() {
+
+    }
 }

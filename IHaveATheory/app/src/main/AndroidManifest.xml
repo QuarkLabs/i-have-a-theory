@@ -84,7 +84,7 @@
             android:screenOrientation="sensorLandscape" />
         <activity android:name=".activity.ChoiceActivity" />
         <activity android:name=".activity.SceneActivity" />
-        <activity android:name=".activity.StoryActivity"></activity>
+        <activity android:name=".activity.SituationActivity"></activity>
     </application>
 
 </manifest>

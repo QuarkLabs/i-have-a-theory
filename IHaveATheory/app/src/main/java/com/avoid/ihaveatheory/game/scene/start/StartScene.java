@@ -2,7 +2,7 @@ package com.avoid.ihaveatheory.game.scene.start;
 
 import com.avoid.ihaveatheory.game.scene.Scene;
 
-public abstract class StartScene implements Scene {
+public abstract class StartScene extends Scene {
 
     public enum StartSceneType{
         FOREST_START_SCENE,

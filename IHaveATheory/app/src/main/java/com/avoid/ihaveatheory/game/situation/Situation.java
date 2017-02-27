@@ -1,4 +1,7 @@
 package com.avoid.ihaveatheory.game.situation;
 
-public interface Situation {
+import android.os.Parcelable;
+
+public interface Situation extends Parcelable{
+
 }

@@ -9,6 +9,12 @@ public class ForestMoonlightScene extends LocationScene {
 
         dayBackground = R.drawable.forest_moonlight_background;
         nightBackground = R.drawable.forest_moonlight_background;
+
+        addChoices();
     }
 
+    @Override
+    public void addChoices() {
+
+    }
 }

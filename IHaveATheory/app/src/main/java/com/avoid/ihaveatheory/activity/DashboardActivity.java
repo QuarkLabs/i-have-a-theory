@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
+import com.avoid.ihaveatheory.game.Explore;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
 import com.avoid.ihaveatheory.widget.LabelTextView;
@@ -97,7 +98,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
     }
 
     public void onClickExploreButton(View view) {
-
+        Explore.getInstance().explore(DashboardActivity.this);
     }
 
     public void onClickCookingPotButton(View view) {
@@ -124,7 +125,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
         refreshHeat();
     }
 
-    private void refreshHunger(){
+    private void refreshHunger() {
         hungerProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_HUNGER());
         hungerProgressBar.setProgress(Session.currentSaveFile.getHunger());
         hungerProgressBar.applyCustomDesign(DashboardActivity.this);
@@ -132,7 +133,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_HUNGER()));
     }
 
-    private void refreshThirst(){
+    private void refreshThirst() {
         thirstProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_THIRST());
         thirstProgressBar.setProgress(Session.currentSaveFile.getThirst());
         thirstProgressBar.applyCustomDesign(DashboardActivity.this);
@@ -140,7 +141,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_THIRST()));
     }
 
-    private void refreshHealth(){
+    private void refreshHealth() {
         healthProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_HEALTH());
         healthProgressBar.setProgress(Session.currentSaveFile.getHealth());
         healthProgressBar.applyCustomDesign(DashboardActivity.this);
@@ -148,7 +149,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_HEALTH()));
     }
 
-    private void refreshStamina(){
+    private void refreshStamina() {
         staminaProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_STAMINA());
         staminaProgressBar.setProgress(Session.currentSaveFile.getStamina());
         staminaProgressBar.applyCustomDesign(DashboardActivity.this);
@@ -156,7 +157,7 @@ public class DashboardActivity extends AppCompatActivity implements PlaybleActiv
                 + String.valueOf(Session.currentSaveFile.getDifficulty().getMAX_STAMINA()));
     }
 
-    private void refreshHeat(){
+    private void refreshHeat() {
         heatProgressBar.setMax(Session.currentSaveFile.getDifficulty().getMAX_HEAT());
         heatProgressBar.setProgress(Session.currentSaveFile.getHeat());
         heatProgressBar.applyCustomDesign(DashboardActivity.this);

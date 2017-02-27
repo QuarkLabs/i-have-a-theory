@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
-import com.avoid.ihaveatheory.util.Common;
+import com.avoid.ihaveatheory.util.Controller;
 
 public class ShelterActivity extends AppCompatActivity implements PlaybleActivity {
     Button restButton;
@@ -57,7 +57,7 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
         Session.currentSaveFile.setHunger(Session.currentSaveFile.getHunger() - 10);
         Session.currentSaveFile.setThirst(Session.currentSaveFile.getThirst() - 20);
 
-        Common.showProgressBar(ShelterActivity.this, "Resting....", "1 hour");
+        Controller.showProgress(ShelterActivity.this, "Resting....", "1 hour");
     }
 
     public void onClickShelterSleepButton(View view) {
@@ -66,7 +66,7 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
         Session.currentSaveFile.setHunger(Session.currentSaveFile.getHunger() - 20);
         Session.currentSaveFile.setThirst(Session.currentSaveFile.getThirst() - 35);
 
-        Common.showProgressBar(ShelterActivity.this, "Sleeping....", "4 hour");
+        Controller.showProgress(ShelterActivity.this, "Sleeping....", "4 hour");
     }
 
     public void onClickShelterCampButton(View view) {
@@ -75,6 +75,6 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
         Session.currentSaveFile.setHunger(Session.currentSaveFile.getHunger() - 50);
         Session.currentSaveFile.setThirst(Session.currentSaveFile.getThirst() - 100);
 
-        Common.showProgressBar(ShelterActivity.this, "Making a camp....", "4 hours");
+        Controller.showProgress(ShelterActivity.this, "Making a camp....", "4 hours");
     }
 }

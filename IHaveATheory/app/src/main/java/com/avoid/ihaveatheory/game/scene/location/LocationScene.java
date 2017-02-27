@@ -2,7 +2,7 @@ package com.avoid.ihaveatheory.game.scene.location;
 
 import com.avoid.ihaveatheory.game.scene.Scene;
 
-public abstract class LocationScene implements Scene {
+public abstract class LocationScene extends Scene {
 
     public enum LocationSceneType {
         FOREST_ARCH_LOCATION_SCENE,

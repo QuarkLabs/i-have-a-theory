@@ -8,5 +8,12 @@ public class ForestMagicalScene extends LocationScene {
 
         dayBackground = R.drawable.forest_magical_background;
         nightBackground = R.drawable.forest_magical_background;
+
+        addChoices();
+    }
+
+    @Override
+    public void addChoices() {
+
     }
 }

@@ -9,4 +9,9 @@ public class ForestBridgeScene extends LocationScene {
         dayBackground = R.drawable.forest_bridge_background;
         nightBackground = R.drawable.forest_bridge_background;
     }
+
+    @Override
+    public void addChoices() {
+
+    }
 }

@@ -8,5 +8,12 @@ public class ForestScaryScene extends LocationScene {
 
         dayBackground = R.drawable.forest_scary_background;
         nightBackground = R.drawable.forest_scary_background;
+
+        addChoices();
+    }
+
+    @Override
+    public void addChoices() {
+
     }
 }

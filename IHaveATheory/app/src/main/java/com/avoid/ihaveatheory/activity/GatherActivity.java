@@ -15,7 +15,7 @@ import com.avoid.ihaveatheory.model.item.Item;
 import com.avoid.ihaveatheory.model.item.Meat;
 import com.avoid.ihaveatheory.model.item.WaterBottle;
 import com.avoid.ihaveatheory.model.item.Wood;
-import com.avoid.ihaveatheory.util.Common;
+import com.avoid.ihaveatheory.util.Controller;
 
 public class GatherActivity extends AppCompatActivity implements PlaybleActivity{
 
@@ -48,7 +48,7 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
         Item waterBottle = new WaterBottle();
         Session.currentSaveFile.getBackpack().addItem(waterBottle, waterCount);
 
-        Common.showProgressBar(GatherActivity.this, "Collecting water....", "15 minutes");
+        Controller.showProgress(GatherActivity.this, "Collecting water....", "15 minutes");
     }
 
     public void onClickGatherBerriesButton(View view) {
@@ -57,7 +57,7 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
         Item berries = new Berries();
         Session.currentSaveFile.getBackpack().addItem(berries, berryCount);
 
-        Common.showProgressBar(GatherActivity.this, "Finding berries....", "30 minutes");
+        Controller.showProgress(GatherActivity.this, "Finding berries....", "30 minutes");
     }
 
     public void onClickGatherWoodButton(View view) {
@@ -66,7 +66,7 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
         Item wood = new Wood();
         Session.currentSaveFile.getBackpack().addItem(wood, woodCount);
 
-        Common.showProgressBar(GatherActivity.this, "Gathering wood....", "30 minutes");
+        Controller.showProgress(GatherActivity.this, "Gathering wood....", "30 minutes");
     }
 
     public void onClickHuntButton(View view) {
@@ -75,6 +75,6 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
         Item meat = new Meat();
         Session.currentSaveFile.getBackpack().addItem(meat, rabbitCount);
 
-        Common.showProgressBar(GatherActivity.this, "Hunting....", "2 hours");
+        Controller.showProgress(GatherActivity.this, "Hunting....", "2 hours");
     }
 }
