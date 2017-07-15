@@ -1,3 +1,10 @@
 # i-have-a-theory
-A science based adventure-survival game.
-![Image](https://github.com/OshanIvantha/i-have-a-theory/blob/master/Air%20for%20Android%20(Original%20version)/Resources/Resized%20-%202560x1440_135px/bg_name.jpg)
+Chemistry based adventure-survival game.
+
+![alt Main](https://github.com/OshanIvantha/i-have-a-theory/blob/master/Project/Screenshots/Screenshot_1488532682.png)
+
+![alt Dashboard](https://github.com/OshanIvantha/i-have-a-theory/blob/master/Project/Screenshots/Screenshot_1488532954.png)
+
+![alt Gather interface](https://github.com/OshanIvantha/i-have-a-theory/blob/master/Project/Screenshots/Screenshot_1488532983.png)
+
+![alt Inventory](https://github.com/OshanIvantha/i-have-a-theory/blob/master/Project/Screenshots/Screenshot_1488533009.png)
