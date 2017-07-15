@@ -1,6 +1,7 @@
 package com.avoid.ihaveatheory.game.scene.start;
 
 import com.avoid.ihaveatheory.R;
+import com.avoid.ihaveatheory.game.choice.AcidLakeChoice;
 
 public class ForestScene extends StartScene {
     public ForestScene() {
@@ -14,6 +15,6 @@ public class ForestScene extends StartScene {
 
     @Override
     public void addChoices() {
-
+        getChoices().add(new AcidLakeChoice());
     }
 }
