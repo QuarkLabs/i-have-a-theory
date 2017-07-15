@@ -1,8 +1,11 @@
 package com.avoid.ihaveatheory.game.choice;
 
+import android.content.Intent;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.avoid.ihaveatheory.activity.MainMenuActivity;
+import com.avoid.ihaveatheory.activity.ScenarioActivity;
 import com.avoid.ihaveatheory.global.Session;
 
 public class AcidLakeChoice extends Choice {

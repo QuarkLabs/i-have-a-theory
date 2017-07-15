@@ -12,9 +12,9 @@ import java.util.Random;
 
 public class Explore {
     private enum ExploreType {
-        CHOICE,
-        SCENE,
-        SITUATION
+        CHOICE
+//        SCENE,
+//        SITUATION
     }
 
     private static final Explore instance = new Explore();
@@ -45,13 +45,14 @@ public class Explore {
         ExploreType exploreType = getExploreType();
         if (exploreType == ExploreType.CHOICE) {
             Controller.showChoice(context, Session.currentSaveFile.getScenario().getScene().getRandomChoice());
-        } else if (exploreType == ExploreType.SCENE) {
-            Scene currentScene = Session.currentSaveFile.getScenario().getScene();
-            if (currentScene instanceof ForestScene){
-                Controller.showScene(context, new ForestLakeScene());
-            }
-        } else if (exploreType == ExploreType.SITUATION) {
-            Controller.showSituation(context, Session.currentSaveFile.getScenario().getScene().getRandomSituation());
         }
+//        } else if (exploreType == ExploreType.SCENE) {
+//            Scene currentScene = Session.currentSaveFile.getScenario().getScene();
+//            if (currentScene instanceof ForestScene){
+//                Controller.showScene(context, new ForestLakeScene());
+//            }
+//        } else if (exploreType == ExploreType.SITUATION) {
+//            Controller.showSituation(context, Session.currentSaveFile.getScenario().getScene().getRandomSituation());
+//        }
     }
 }
