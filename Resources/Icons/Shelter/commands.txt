@@ -1,1 +1,0 @@
-for f in *.png; do convert -modulate 120,120 $f conv/${f%_*}_pressed.png; done
