@@ -8,14 +8,84 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <activity
+            android:name=".activity.MainMenuActivity"
+            android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".global.BackgroundMusic"
+            android:enabled="true" />
+
+        <activity
+            android:name=".activity.DifficultyActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.ScenarioActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.StoreActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.PurchaseActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.LeaderboardActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.DashboardActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.CreditsActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.CraftActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.BackpackActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.ShelterActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.IntroActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.MapActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.JournalActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.GatherActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.CookingPotActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.GameOverActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.HelpActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.ProgressActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity android:name=".activity.ChoiceActivity" />
+        <activity android:name=".activity.SceneActivity" />
+        <activity android:name=".activity.SituationActivity"></activity>
     </application>
 
 </manifest>

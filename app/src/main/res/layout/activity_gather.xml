@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.avoid.ihaveatheory.activity.GatherActivity"
+    android:background="@drawable/dashboard_background">
+
+
+    <com.avoid.ihaveatheory.widget.LabelTextView
+        android:text="@string/gather_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gather_text_view"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <com.avoid.ihaveatheory.widget.BackButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/back_button"
+        android:onClick="onClickBackButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="34dp">
+
+        <Button
+            android:id="@+id/gather_wood_button"
+            android:background="@drawable/gather_wood"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:onClick="onClickGatherWoodButton"
+            android:layout_marginTop="16dp" />
+
+        <com.avoid.ihaveatheory.widget.LabelTextView
+            android:text="@string/gather_wood_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gather_wood_title"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout6"
+        android:layout_alignBottom="@+id/linearLayout5"
+        android:layout_alignLeft="@+id/linearLayout7"
+        android:layout_alignStart="@+id/linearLayout7"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp">
+
+        <Button
+            android:id="@+id/shelter_hunt_button"
+            android:background="@drawable/gather_hunt"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:onClick="onClickHuntButton" />
+
+        <com.avoid.ihaveatheory.widget.LabelTextView
+            android:text="@string/gather_hunt_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gather_hunt_title"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout7"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_below="@+id/gather_text_view"
+        android:layout_toRightOf="@+id/back_button"
+        android:layout_toEndOf="@+id/back_button">
+
+        <Button
+            android:id="@+id/gather_water_button"
+            android:background="@drawable/gather_water"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:onClick="onClickGatherWaterButton" />
+
+        <com.avoid.ihaveatheory.widget.LabelTextView
+            android:text="Collect water\n(15m)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gather_rest_title"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout9"
+        android:layout_alignTop="@+id/linearLayout7"
+        android:layout_alignLeft="@+id/linearLayout5"
+        android:layout_alignStart="@+id/linearLayout5">
+
+        <Button
+            android:id="@+id/gather_berries_button"
+            android:background="@drawable/gather_berry"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:onClick="onClickGatherBerriesButton" />
+
+        <com.avoid.ihaveatheory.widget.LabelTextView
+            android:text="@string/gather_berries_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gather_berries_title"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

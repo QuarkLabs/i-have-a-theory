@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shelter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.avoid.ihaveatheory.activity.ShelterActivity"
+
+    android:background="@drawable/dashboard_background">
+
+
+    <com.avoid.ihaveatheory.widget.BackButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/back_button"
+        android:onClick="onClickBackButton" />
+
+
+    <Button
+        android:id="@+id/shelter_sleep_button"
+        android:background="@drawable/shelter_sleep"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:onClick="onClickShelterSleepButton"
+        android:layout_below="@+id/shelter_title"
+        android:layout_toRightOf="@+id/shelter_rest_button"
+        android:layout_toEndOf="@+id/shelter_rest_button" />
+
+    <Button
+        android:id="@+id/shelter_rest_button"
+        android:background="@drawable/shelter_rest"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:onClick="onClickShelterRestButton"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_below="@+id/shelter_sleep_button"
+        android:layout_toRightOf="@+id/back_button"
+        android:layout_toEndOf="@+id/back_button" />
+
+    <com.avoid.ihaveatheory.widget.LabelTextView
+        android:text="@string/shelter_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shelter_title"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/back_button"
+        android:layout_toEndOf="@+id/back_button" />
+
+    <Button
+        android:id="@+id/shelter_camp_button"
+        android:background="@drawable/shelter_camp"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:onClick="onClickShelterCampButton"
+        android:layout_alignTop="@+id/shelter_sleep_text"
+        android:layout_toRightOf="@+id/shelter_sleep_button"
+        android:layout_toEndOf="@+id/shelter_sleep_button" />
+
+    <com.avoid.ihaveatheory.widget.LabelTextView
+        android:text="Rest (1H)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shelter_rest_text"
+        android:textSize="20sp"
+        android:layout_below="@+id/shelter_rest_button"
+        android:layout_alignRight="@+id/shelter_rest_button"
+        android:layout_alignEnd="@+id/shelter_rest_button"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+
+    <com.avoid.ihaveatheory.widget.LabelTextView
+        android:text="Make a Camp (4H)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shelter_camp_text"
+        android:textSize="20sp"
+        android:layout_marginRight="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_below="@+id/shelter_camp_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.avoid.ihaveatheory.widget.LabelTextView
+        android:text="Sleep (4H)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shelter_sleep_text"
+        android:textSize="20sp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/shelter_sleep_button"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

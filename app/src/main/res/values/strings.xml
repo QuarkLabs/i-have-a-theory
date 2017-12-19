@@ -1,3 +1,140 @@
 <resources>
     <string name="app_name">I Have A Theory</string>
+    <string name="title_activity_credits">CreditsActivity</string>
+
+    <string name="forward_button_text">Forward</string>
+    <string name="back_button_text">Back</string>
+
+    //Main menu
+    <string name="new_game_button">New game</string>
+    <string name="continue_button">Continue</string>
+    <string name="options_button">Options</string>
+
+    //Difficulty
+    <string name="easy_button">Spoon feed me</string>
+    <string name="medium_button">Ill manage</string>
+    <string name="hard_button">Im alone</string>
+
+    //Scenario
+    <string name="forest_text_view">Forest</string>
+    <string name="tundra_text_view">Tundra</string>
+    <string name="mountains_text_view">Mountains</string>
+    <string name="forest_con_des">Forest scenario</string>
+    <string name="tundra_con_des">Tundra scenario</string>
+    <string name="mountains_con_des">Mountains scenario</string>
+
+    //Dashboard hex buttons
+    <string name="dashboard_gather">Gather</string>
+    <string name="dashboard_craft">Craft</string>
+    <string name="dashboard_backpack">Backpack</string>
+    <string name="dashboard_shop">Shop</string>
+    <string name="dashboard_map">Map</string>
+    <string name="dashboard_explore">Explore</string>
+    <string name="dashboard_cooking_pot">Cooking pot</string>
+    <string name="dashboard_shelter">Shelter</string>
+    <string name="dashboard_journal">Journal</string>
+
+    //Dashboard HUD
+    <string name="dashboard_health">Health</string>
+    <string name="dashboard_stamina">Stamina</string>
+    <string name="dashboard_heat">Heat</string>
+    <string name="dashboard_hunger">Hunger</string>
+    <string name="dashboard_thirst">Thirst</string>
+
+    //Shelter
+    <string name="shelter_label">Shelter</string>
+    <string name="shelter_rest">Rest (1h)</string>
+    <string name="shelter_sleep">Sleep (4h)</string>
+    <string name="shelter_make_camp">Make a camp (2h)</string>
+
+    //Gather
+    <string name="gather_label">Gather</string>
+    <string name="gather_berries_button">Find berries (30m)</string>
+    <string name="gather_water_button">Collect water (15m)</string>
+    <string name="gather_hunt_button">Hunt (2h)</string>
+    <string name="gather_wood_button">Gather wood (30m)</string>
+
+    //Craft
+    <string name="craft_label">Craft</string>
+    <string name="craft_bow_button">Bow</string>
+    <string name="craft_arrow_button">Arrow set</string>
+    <string name="craft_snare_button">Snare</string>
+    <string name="craft_knife_button">Stone knife</string>
+    <string name="craft_slippers_button">Grass slippers</string>
+    <string name="craft_hat_button">Grass hat</string>
+    <string name="craft_walking_stick_button">Walking stick</string>
+    <string name="craft_small_pouch_button">Small pouch</string>
+    <string name="craft_pouch_button">Pouch</string>
+    <string name="craft_blanket_button">Hay blanket</string>
+    <string name="craft_hook_button">Fish hook</string>
+    <string name="craft_rope_button">Grass rope</string>
+
+    <string name="craft_make_button">Make</string>
+
+    //Items
+    <string name="item_bow_name">Bow</string>
+
+    <string name="item_bow_des">Unleash your full hunting potential with this hand made bow.</string>
+
+    <string name="item_arrow_name">Arrow</string>
+    <string name="item_arrow_des">Well you cant just shoot nothing with your bow right.</string>
+
+    <string name="item_snare_name">Snare</string>
+    <string name="item_snare_des">Trap others without getting trapped.</string>
+
+    <string name="item_knife_name">Stone knife</string>
+    <string name="item_knife_des">Never be unprepared.</string>
+
+    <string name="item_slippers_name">Grass slippers</string>
+    <string name="item_slippers_des">Healthy foot for a wealthy journey.</string>
+
+    <string name="item_hat_name">Grass hat</string>
+
+    <string name="item_hat_des">Too sunny. Be shady.</string>
+
+    <string name="item_walking_stick_name">Walking stick</string>
+    <string name="item_walking_stick_des">Never give up.</string>
+
+    <string name="item_small_pouch_name">Small pouch</string>
+
+    <string name="item_small_pouch_des">Extra space might come in handy in the wilderness. Even if it is a little bit.</string>
+
+    <string name="item_pouch_name">Pouch</string>
+    <string name="item_pouch_des">A large pouch for all the hoarders out there.</string>
+
+    <string name="item_blanket_name">Hay blanket</string>
+
+    <string name="item_blanket_des">This hay blanket provides extra warmth when taking a nap inside or outside a shelter. But beware. It doesnt protect you from the bites of tropical mosquitoes.</string>
+
+    <string name="item_hook_name">Fish hook</string>
+    <string name="item_hook_des">Be a piscary in the wood.</string>
+
+    <string name="item_rope_name">Grass rope</string>
+    <string name="item_rope_des">Just a random grass rope.</string>
+
+    <string name="item_water_name">Water bottle</string>
+    <string name="item_water_des">Just a random water bottle.</string>
+
+    <string name="item_berries_name">Berries</string>
+    <string name="item_berries_des">Just a random berries.</string>
+
+    <string name="item_wood_name">Wood</string>
+    <string name="item_wood_des">Just a random wood.</string>
+
+    <string name="item_meat_name">Meat</string>
+    <string name="item_meat_des">Just a random meat.</string>
+
+    //Backpack
+    <string name="make_button">Make</string>
+
+
+    <string name="send_an_sos_text">Send an SOS</string>
+    <string name="preserve_meat_text">Find a way to Preserve Meat</string>
+
+    <string name="send_an_sos_des">It has to come to my attention that all the extra meat that I find is getting wasted.\n
+            I need some kind of preservative to save it for later.</string>
+    <string name="preserve_meat_des">The only chance of survival is if someone finds out that I am lost there.\n
+            If only I could send a message...\n\n
+            HINT: What about a balloon?"></string>
+
 </resources>

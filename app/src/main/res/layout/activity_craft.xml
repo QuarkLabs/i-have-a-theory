@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_crafting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.avoid.ihaveatheory.activity.CraftActivity"
+    android:background="@drawable/dashboard_background">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="500dp"
+        app:srcCompat="@drawable/app_listitem_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/listitem_bar_left"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="500dp"
+        app:srcCompat="@drawable/app_listitem_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="145dp"
+        android:id="@+id/listitem_bar_right"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.avoid.ihaveatheory.widget.ListItemButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/craft_bow_button"
+                    android:id="@+id/craft_bow_button"
+                    android:onClick="onClickCraftBowButton" />
+
+                <com.avoid.ihaveatheory.widget.ListItemButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/craft_arrow_button"
+                    android:id="@+id/craft_arrow_button"
+                    android:onClick="onClickCraftArrowButton" />
+
+                <com.avoid.ihaveatheory.widget.ListItemButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/craft_snare_button"
+                    android:id="@+id/craft_snare_button"
+                    android:onClick="onClickCraftSnareButton" />
+
+                <com.avoid.ihaveatheory.widget.ListItemButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/craft_knife_button"
+                    android:id="@+id/craft_knife_button"
+                    android:onClick="onClickCraftKnifeButton" />
+
+                <com.avoid.ihaveatheory.widget.ListItemButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/craft_slippers_button"
+                    android:id="@+id/craft_slippers_button"
+                    android:onClick="onClickCraftSlippersButton" />
+
+                <com.avoid.ihaveatheory.widget.ListItemButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/craft_hat_button"
+                    android:id="@+id/craft_hat_button"
+                    android:onClick="onClickCraftHatButton" />
+
+                <com.avoid.ihaveatheory.widget.ListItemButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/craft_walking_stick_button"
+                    android:id="@+id/craft_walking_stick_button"
+                    android:onClick="onClickCraftWalkingStickButton" />
+
+                <com.avoid.ihaveatheory.widget.ListItemButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/craft_small_pouch_button"
+                    android:id="@+id/craft_small_pouch_button"
+                    android:onClick="onClickCraftSmallPouchButton" />
+
+                <com.avoid.ihaveatheory.widget.ListItemButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/craft_pouch_button"
+                    android:id="@+id/craft_pouch_button"
+                    android:onClick="onClickCraftPouchButton" />
+
+                <com.avoid.ihaveatheory.widget.ListItemButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/craft_blanket_button"
+                    android:id="@+id/craft_blanket_button"
+                    android:onClick="onClickCraftBlanketButton" />
+
+                <com.avoid.ihaveatheory.widget.ListItemButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/craft_hook_button"
+                    android:id="@+id/craft_hook_button"
+                    android:onClick="onClickCraftHookButton" />
+
+                <com.avoid.ihaveatheory.widget.ListItemButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/craft_rope_button"
+                    android:id="@+id/craft_rope_button"
+                    android:onClick="onClickCraftRopeButton" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp" >
+
+
+            <com.avoid.ihaveatheory.widget.OptionButton
+                android:text="@string/craft_make_button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/make_button"
+                android:onClick="onClickMakeButton" />
+
+            <com.avoid.ihaveatheory.widget.BackButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/back_button"
+                android:onClick="onClickBackButton" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/default_icon_png"
+                    android:id="@+id/item_image_view"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <com.avoid.ihaveatheory.widget.DescriptionTextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/item_name_text_view" />
+
+                <com.avoid.ihaveatheory.widget.DescriptionTextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:id="@+id/item_des_text_view" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <XItem android:state_focused="true"
+        android:color="@color/colorWhite" />
+    <XItem android:state_pressed="true"
+        android:state_enabled="false"
+        android:color="@color/colorWhite" />
+    <XItem android:state_enabled="false"
+        android:color="@color/colorWhite" />
+    <XItem android:color="@color/colorWhite" />
+</selector>
