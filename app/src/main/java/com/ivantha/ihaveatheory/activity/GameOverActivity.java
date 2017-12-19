@@ -2,7 +2,8 @@ package com.avoid.ihaveatheory.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.avoid.ihaveatheory.R;
+
+import com.ivantha.ihaveatheory.R;
 
 public class GameOverActivity extends AppCompatActivity {
 

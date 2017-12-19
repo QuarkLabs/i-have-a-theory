@@ -5,8 +5,8 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.FrameLayout;
 
-import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.listener.BackpackDragListener;
+import com.ivantha.ihaveatheory.R;
 
 public class BackpackTileLayout extends FrameLayout {
     public BackpackTileLayout(Context context) {

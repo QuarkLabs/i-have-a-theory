@@ -1,6 +1,5 @@
 package com.avoid.ihaveatheory.model.item;
 
-import com.avoid.ihaveatheory.R;
 
 public class Hat extends Item {
     public Hat() {

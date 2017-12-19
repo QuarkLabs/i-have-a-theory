@@ -1,6 +1,5 @@
 package com.avoid.ihaveatheory.game.scene.location;
 
-import com.avoid.ihaveatheory.R;
 
 public class ForestBridgeScene extends LocationScene {
     public ForestBridgeScene() {

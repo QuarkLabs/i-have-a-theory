@@ -1,6 +1,5 @@
 package com.avoid.ihaveatheory.model.item;
 
-import com.avoid.ihaveatheory.R;
 
 public class Wood extends Item{
     public Wood() {

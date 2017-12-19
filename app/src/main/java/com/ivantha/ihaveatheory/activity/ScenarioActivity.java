@@ -9,11 +9,11 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Font;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.Scenario;
 import com.avoid.ihaveatheory.util.FontCache;
+import com.ivantha.ihaveatheory.R;
 
 public class ScenarioActivity extends AppCompatActivity {
     private boolean isForestClicked = false;

@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.game.situation.Situation;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.ivantha.ihaveatheory.R;
 
 public class SituationActivity extends AppCompatActivity implements PlaybleActivity{
     @Override

@@ -5,7 +5,8 @@ import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.widget.ProgressBar;
 
-import com.avoid.ihaveatheory.R;
+import com.ivantha.ihaveatheory.R;
+
 
 public class TaskProgressBar extends ProgressBar {
     public TaskProgressBar(Context context) {

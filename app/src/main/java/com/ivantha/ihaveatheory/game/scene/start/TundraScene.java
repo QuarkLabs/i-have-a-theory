@@ -1,6 +1,5 @@
 package com.avoid.ihaveatheory.game.scene.start;
 
-import com.avoid.ihaveatheory.R;
 
 public class TundraScene extends  StartScene{
     public TundraScene() {

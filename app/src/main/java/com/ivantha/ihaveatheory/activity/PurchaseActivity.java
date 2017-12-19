@@ -3,8 +3,8 @@ package com.avoid.ihaveatheory.activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
+import com.ivantha.ihaveatheory.R;
 
 public class PurchaseActivity extends AppCompatActivity {
 

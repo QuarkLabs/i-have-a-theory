@@ -6,9 +6,9 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.Button;
 
-import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Font;
 import com.avoid.ihaveatheory.util.FontCache;
+import com.ivantha.ihaveatheory.R;
 
 public class OptionButton extends Button {
     public OptionButton(Context context) {

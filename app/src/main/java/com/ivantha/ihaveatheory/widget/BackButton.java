@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.Button;
 
-import com.avoid.ihaveatheory.R;
+import com.ivantha.ihaveatheory.R;
 
 public class BackButton extends Button {
     public BackButton(Context context) {

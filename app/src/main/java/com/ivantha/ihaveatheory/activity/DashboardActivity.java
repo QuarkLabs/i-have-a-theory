@@ -6,12 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.game.Explore;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
 import com.avoid.ihaveatheory.widget.LabelTextView;
 import com.avoid.ihaveatheory.widget.StatusBar;
+import com.ivantha.ihaveatheory.R;
 
 public class DashboardActivity extends AppCompatActivity implements PlaybleActivity {
     StatusBar hungerProgressBar;

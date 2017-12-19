@@ -1,6 +1,5 @@
 package com.avoid.ihaveatheory.game.scene.start;
 
-import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.game.choice.AcidLakeChoice;
 
 public class ForestScene extends StartScene {

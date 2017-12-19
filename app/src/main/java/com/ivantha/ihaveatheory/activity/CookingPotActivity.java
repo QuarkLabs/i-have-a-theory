@@ -4,9 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.RelativeLayout;
 
-import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.ivantha.ihaveatheory.R;
 
 public class CookingPotActivity extends AppCompatActivity implements PlaybleActivity{
 
