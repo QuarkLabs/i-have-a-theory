@@ -1,7 +1,9 @@
-package com.avoid.ihaveatheory.game.scene.start;
+package com.ivantha.ihaveatheory.game.scene.start;
 
 
-public class TundraScene extends  StartScene{
+import com.ivantha.ihaveatheory.R;
+
+public class TundraScene extends StartScene {
     public TundraScene() {
         super(StartScene.StartSceneType.TUNDRA_START_SCENE);
 

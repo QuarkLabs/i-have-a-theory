@@ -1,9 +1,9 @@
-package com.avoid.ihaveatheory.model;
+package com.ivantha.ihaveatheory.model;
 
 import com.avoid.ihaveatheory.game.scene.Scene;
-import com.avoid.ihaveatheory.game.scene.location.LocationScene;
-import com.avoid.ihaveatheory.game.scene.start.ForestScene;
-import com.avoid.ihaveatheory.game.scene.start.StartScene;
+import com.ivantha.ihaveatheory.game.scene.location.LocationScene;
+import com.ivantha.ihaveatheory.game.scene.start.ForestScene;
+import com.ivantha.ihaveatheory.game.scene.start.StartScene;
 
 import java.io.Serializable;
 

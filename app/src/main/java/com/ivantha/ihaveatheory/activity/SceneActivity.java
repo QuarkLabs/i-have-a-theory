@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.activity;
+package com.ivantha.ihaveatheory.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,11 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.PlaybleActivity;
 import com.avoid.ihaveatheory.widget.ForwardButton;
 import com.avoid.ihaveatheory.widget.LabelTextView;
+import com.ivantha.ihaveatheory.R;
 
 public class SceneActivity extends AppCompatActivity implements PlaybleActivity{
     private LabelTextView introTextView;

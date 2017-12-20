@@ -1,11 +1,12 @@
-package com.avoid.ihaveatheory.global;
+package com.ivantha.ihaveatheory.global;
 
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 
-import com.avoid.ihaveatheory.R;
+import com.ivantha.ihaveatheory.R;
+
 
 public class BackgroundMusic extends Service{
     MediaPlayer player;

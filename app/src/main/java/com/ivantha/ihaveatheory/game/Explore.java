@@ -1,12 +1,9 @@
-package com.avoid.ihaveatheory.game;
+package com.ivantha.ihaveatheory.game;
 
 import android.content.Context;
 
-import com.avoid.ihaveatheory.game.scene.Scene;
-import com.avoid.ihaveatheory.game.scene.location.ForestLakeScene;
-import com.avoid.ihaveatheory.game.scene.start.ForestScene;
 import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.util.Controller;
+import com.ivantha.ihaveatheory.util.Controller;
 
 import java.util.Random;
 

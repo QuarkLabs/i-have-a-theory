@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.game.scene.start;
+package com.ivantha.ihaveatheory.game.scene.start;
 
 import com.avoid.ihaveatheory.game.scene.Scene;
 

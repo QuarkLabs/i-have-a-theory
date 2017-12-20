@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.global;
+package com.ivantha.ihaveatheory.global;
 
 public class Font {
     public static String KOMIKAX_FONT = "fonts/Komikax.ttf";

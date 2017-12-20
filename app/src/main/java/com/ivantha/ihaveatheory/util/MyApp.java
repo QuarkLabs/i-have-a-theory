@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.util;
+package com.ivantha.ihaveatheory.util;
 
 import android.app.Application;
 import android.content.Context;

@@ -1,12 +1,12 @@
-package com.avoid.ihaveatheory.game.scene.location;
+package com.ivantha.ihaveatheory.game.scene.location;
 
-import com.avoid.ihaveatheory.R;
-import com.avoid.ihaveatheory.game.choice.AcidLakeChoice;
+import com.ivantha.ihaveatheory.R;
+import com.ivantha.ihaveatheory.game.choice.AcidLakeChoice;
 
 public class ForestLakeScene extends LocationScene {
 
     public ForestLakeScene() {
-        super(LocationSceneType.FOREST_LAKE_LOCATION_SCENE);
+        super(LocationScene.LocationSceneType.FOREST_LAKE_LOCATION_SCENE);
 
         dayBackground = R.drawable.forest_lake_background;
         nightBackground = R.drawable.forest_lake_background;

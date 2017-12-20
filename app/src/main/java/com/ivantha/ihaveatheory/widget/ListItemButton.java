@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.widget;
+package com.ivantha.ihaveatheory.widget;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -8,8 +8,7 @@ import android.widget.Button;
 
 import com.avoid.ihaveatheory.global.Font;
 import com.avoid.ihaveatheory.util.FontCache;
-
-import com.avoid.ihaveatheory.R;
+import com.ivantha.ihaveatheory.R;
 
 public class ListItemButton extends Button {
     public ListItemButton(Context context) {

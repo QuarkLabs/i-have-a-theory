@@ -1,6 +1,6 @@
-package com.avoid.ihaveatheory.game.scene.location;
+package com.ivantha.ihaveatheory.game.scene.location;
 
-import com.avoid.ihaveatheory.R;
+import com.ivantha.ihaveatheory.R;
 
 public class ForestArchScene extends LocationScene {
     public ForestArchScene() {

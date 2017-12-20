@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.exception;
+package com.ivantha.ihaveatheory.exception;
 
 public class ItemTypeMismatchException extends Exception {
 

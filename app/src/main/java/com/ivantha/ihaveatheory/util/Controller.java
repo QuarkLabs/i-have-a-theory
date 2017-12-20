@@ -1,14 +1,14 @@
-package com.avoid.ihaveatheory.util;
+package com.ivantha.ihaveatheory.util;
 
 import android.content.Context;
 import android.content.Intent;
 
-import com.avoid.ihaveatheory.game.choice.Choice;
 import com.avoid.ihaveatheory.activity.ChoiceActivity;
 import com.avoid.ihaveatheory.activity.ProgressActivity;
 import com.avoid.ihaveatheory.activity.SituationActivity;
 import com.avoid.ihaveatheory.game.scene.Scene;
 import com.avoid.ihaveatheory.game.situation.Situation;
+import com.ivantha.ihaveatheory.game.choice.Choice;
 
 public class Controller {
     public static void showProgress(Context context, String title, String time) {

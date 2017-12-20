@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.model.item;
+package com.ivantha.ihaveatheory.model.item;
 
 public enum ItemType {
     BOW,

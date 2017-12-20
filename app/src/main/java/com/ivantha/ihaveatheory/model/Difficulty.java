@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.model;
+package com.ivantha.ihaveatheory.model;
 
 import java.io.Serializable;
 

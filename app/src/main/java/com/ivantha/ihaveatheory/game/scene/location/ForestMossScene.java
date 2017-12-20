@@ -1,8 +1,9 @@
-package com.avoid.ihaveatheory.game.scene.location;
+package com.ivantha.ihaveatheory.game.scene.location;
 
-import com.avoid.ihaveatheory.R;
 
-public class ForestMossScene extends LocationScene{
+import com.ivantha.ihaveatheory.R;
+
+public class ForestMossScene extends LocationScene {
     public ForestMossScene() {
         super(LocationSceneType.FOREST_MOSS_LOCATION_SCENE);
 

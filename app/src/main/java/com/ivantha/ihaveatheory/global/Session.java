@@ -1,9 +1,9 @@
-package com.avoid.ihaveatheory.global;
+package com.ivantha.ihaveatheory.global;
 
-import com.avoid.ihaveatheory.model.SaveFile;
-import com.avoid.ihaveatheory.model.Settings;
-import com.avoid.ihaveatheory.util.SaveFileHandler;
-import com.avoid.ihaveatheory.util.SettingsHandler;
+import com.ivantha.ihaveatheory.model.SaveFile;
+import com.ivantha.ihaveatheory.model.Settings;
+import com.ivantha.ihaveatheory.util.SaveFileHandler;
+import com.ivantha.ihaveatheory.util.SettingsHandler;
 
 public class Session {
     //Save files

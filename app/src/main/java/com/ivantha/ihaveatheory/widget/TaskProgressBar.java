@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.widget;
+package com.ivantha.ihaveatheory.widget;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;

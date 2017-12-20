@@ -1,7 +1,9 @@
-package com.avoid.ihaveatheory.game.scene.location;
+package com.ivantha.ihaveatheory.game.scene.location;
 
 
-public class ForestBlueScene extends LocationScene{
+import com.ivantha.ihaveatheory.R;
+
+public class ForestBlueScene extends LocationScene {
     public ForestBlueScene() {
         super(LocationSceneType.FOREST_BLUE_LOCATION_SCENE);
 

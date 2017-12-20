@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.game.choice;
+package com.ivantha.ihaveatheory.game.choice;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -1,9 +1,10 @@
-package com.avoid.ihaveatheory.activity;
+package com.ivantha.ihaveatheory.activity;
 
 import android.os.Bundle;
 import android.app.Activity;
 
-import com.avoid.ihaveatheory.R;
+import com.ivantha.ihaveatheory.R;
+
 
 public class CreditsActivity extends Activity {
 

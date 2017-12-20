@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.activity;
+package com.ivantha.ihaveatheory.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,15 +6,15 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.avoid.ihaveatheory.exception.NonExistingObjectCallException;
-import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.BackpackTile;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
 import com.avoid.ihaveatheory.widget.BackpackItemButton;
 import com.avoid.ihaveatheory.widget.BackpackTileLayout;
 import com.ivantha.ihaveatheory.R;
+import com.ivantha.ihaveatheory.exception.NonExistingObjectCallException;
+import com.ivantha.ihaveatheory.global.Session;
+import com.ivantha.ihaveatheory.model.BackpackTile;
+import com.ivantha.ihaveatheory.model.PlaybleActivity;
 
-public class BackpackActivity extends AppCompatActivity implements PlaybleActivity{
+public class BackpackActivity extends AppCompatActivity implements PlaybleActivity {
     private LinearLayout col1LinearLayout = null;
     private LinearLayout col2LinearLayout = null;
     private LinearLayout col3LinearLayout = null;

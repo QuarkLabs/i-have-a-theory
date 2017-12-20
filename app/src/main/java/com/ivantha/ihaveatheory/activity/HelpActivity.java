@@ -1,8 +1,9 @@
-package com.avoid.ihaveatheory.activity;
+package com.ivantha.ihaveatheory.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.avoid.ihaveatheory.R;
+
+import com.ivantha.ihaveatheory.R;
 
 public class HelpActivity extends AppCompatActivity {
 

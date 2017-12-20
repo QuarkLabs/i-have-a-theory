@@ -1,12 +1,13 @@
-package com.avoid.ihaveatheory.model;
+package com.ivantha.ihaveatheory.model;
 
-import com.avoid.ihaveatheory.exception.ItemTypeMismatchException;
-import com.avoid.ihaveatheory.exception.NonExistingObjectCallException;
-import com.avoid.ihaveatheory.model.item.Item;
-import com.avoid.ihaveatheory.model.item.ItemType;
-import com.avoid.ihaveatheory.model.item.Meat;
-import com.avoid.ihaveatheory.model.item.WaterBottle;
-import com.avoid.ihaveatheory.model.item.Wood;
+import com.ivantha.ihaveatheory.exception.ItemTypeMismatchException;
+import com.ivantha.ihaveatheory.exception.NonExistingObjectCallException;
+import com.ivantha.ihaveatheory.model.BackpackTile;
+import com.ivantha.ihaveatheory.model.item.Item;
+import com.ivantha.ihaveatheory.model.item.ItemType;
+import com.ivantha.ihaveatheory.model.item.Meat;
+import com.ivantha.ihaveatheory.model.item.WaterBottle;
+import com.ivantha.ihaveatheory.model.item.Wood;
 
 import java.io.Serializable;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.listener;
+package com.ivantha.ihaveatheory.listener;
 
 import android.view.MotionEvent;
 import android.view.View;

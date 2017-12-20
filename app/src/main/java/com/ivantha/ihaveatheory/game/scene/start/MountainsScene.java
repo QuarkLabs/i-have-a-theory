@@ -1,8 +1,8 @@
-package com.avoid.ihaveatheory.game.scene.start;
+package com.ivantha.ihaveatheory.game.scene.start;
 
-import com.avoid.ihaveatheory.R;
+import com.ivantha.ihaveatheory.R;
 
-public class MountainsScene extends StartScene{
+public class MountainsScene extends StartScene {
     public MountainsScene() {
         super(StartSceneType.MOUNTAINS_START_SCENE);
 

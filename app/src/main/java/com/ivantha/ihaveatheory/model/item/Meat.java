@@ -1,6 +1,6 @@
-package com.avoid.ihaveatheory.model.item;
+package com.ivantha.ihaveatheory.model.item;
 
-import com.avoid.ihaveatheory.R;
+import com.ivantha.ihaveatheory.R;
 
 public class Meat extends Item {
     public Meat() {

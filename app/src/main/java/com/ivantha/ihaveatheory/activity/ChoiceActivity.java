@@ -1,14 +1,14 @@
-package com.avoid.ihaveatheory.activity;
+package com.ivantha.ihaveatheory.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.avoid.ihaveatheory.R;
-import com.avoid.ihaveatheory.game.choice.Choice;
-import com.avoid.ihaveatheory.widget.ChoiceButton;
-import com.avoid.ihaveatheory.widget.LabelTextView;
+import com.ivantha.ihaveatheory.R;
+import com.ivantha.ihaveatheory.game.choice.Choice;
+import com.ivantha.ihaveatheory.widget.ChoiceButton;
+import com.ivantha.ihaveatheory.widget.LabelTextView;
 
 public class ChoiceActivity extends AppCompatActivity {
     private LabelTextView situationTextView;
@@ -23,7 +23,7 @@ public class ChoiceActivity extends AppCompatActivity {
         Intent intent = getIntent();
         final Choice choice = intent.getParcelableExtra("choice");
 
-        situationTextView = (LabelTextView) findViewById(R.id.situation_text_view);
+        situationTextView = findViewById(R.id.situation_text_view);
         aChoiceButton = (ChoiceButton) findViewById(R.id.a_choice_button);
         bChoiceButton = (ChoiceButton) findViewById(R.id.b_choice_button);
 
