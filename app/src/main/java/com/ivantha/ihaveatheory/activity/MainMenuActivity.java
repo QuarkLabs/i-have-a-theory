@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.activity;
+package com.ivantha.ihaveatheory.activity;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -7,11 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import com.avoid.ihaveatheory.R;
-import com.avoid.ihaveatheory.global.BackgroundMusic;
-import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.util.SaveFileHandler;
-import com.avoid.ihaveatheory.widget.MainButton;
+import com.ivantha.ihaveatheory.R;
+import com.ivantha.ihaveatheory.global.BackgroundMusic;
+import com.ivantha.ihaveatheory.global.Session;
+import com.ivantha.ihaveatheory.util.SaveFileHandler;
+import com.ivantha.ihaveatheory.widget.MainButton;
 
 
 public class MainMenuActivity extends AppCompatActivity {

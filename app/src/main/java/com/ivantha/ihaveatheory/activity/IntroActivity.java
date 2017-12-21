@@ -1,9 +1,9 @@
-package com.avoid.ihaveatheory.activity;
+package com.ivantha.ihaveatheory.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.avoid.ihaveatheory.global.Session;
 import com.ivantha.ihaveatheory.R;
+import com.ivantha.ihaveatheory.global.Session;
 
 public class IntroActivity extends AppCompatActivity {
 

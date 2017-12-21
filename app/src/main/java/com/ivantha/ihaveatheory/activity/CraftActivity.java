@@ -9,8 +9,14 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.ivantha.ihaveatheory.R;
+import com.ivantha.ihaveatheory.factory.ItemFactory;
+import com.ivantha.ihaveatheory.global.Session;
+import com.ivantha.ihaveatheory.model.PlaybleActivity;
+import com.ivantha.ihaveatheory.model.item.Item;
+import com.ivantha.ihaveatheory.model.item.ItemType;
+import com.ivantha.ihaveatheory.widget.DescriptionTextView;
 
-public class CraftActivity extends AppCompatActivity implements PlaybleActivity{
+public class CraftActivity extends AppCompatActivity implements PlaybleActivity {
     private ImageView itemImageView;
     private DescriptionTextView itemNameTextView;
     private DescriptionTextView itemDesTextView;

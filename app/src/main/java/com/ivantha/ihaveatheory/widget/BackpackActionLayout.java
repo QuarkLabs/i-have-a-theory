@@ -1,10 +1,11 @@
-package com.avoid.ihaveatheory.widget;
+package com.ivantha.ihaveatheory.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
-import com.avoid.ihaveatheory.listener.BackpackDragListener;
+import com.ivantha.ihaveatheory.listener.BackpackDragListener;
+
 
 public class BackpackActionLayout extends LinearLayout {
     public BackpackActionLayout(Context context) {

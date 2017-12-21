@@ -6,9 +6,9 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.Button;
 
-import com.avoid.ihaveatheory.global.Font;
-import com.avoid.ihaveatheory.util.FontCache;
 import com.avoid.ihaveatheory.widget.draw.HexButtonDrawable;
+import com.ivantha.ihaveatheory.global.Font;
+import com.ivantha.ihaveatheory.util.FontCache;
 
 public class HexButton extends Button{
     private HexButtonDrawable drawable;

@@ -3,8 +3,9 @@ package com.ivantha.ihaveatheory.util;
 
 import android.content.Context;
 
-import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.SaveFile;
+
+import com.ivantha.ihaveatheory.global.Session;
+import com.ivantha.ihaveatheory.model.SaveFile;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

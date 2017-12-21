@@ -1,6 +1,6 @@
 package com.ivantha.ihaveatheory.model;
 
-import com.avoid.ihaveatheory.game.scene.Scene;
+import com.ivantha.ihaveatheory.game.scene.Scene;
 import com.ivantha.ihaveatheory.game.scene.location.LocationScene;
 import com.ivantha.ihaveatheory.game.scene.start.ForestScene;
 import com.ivantha.ihaveatheory.game.scene.start.StartScene;

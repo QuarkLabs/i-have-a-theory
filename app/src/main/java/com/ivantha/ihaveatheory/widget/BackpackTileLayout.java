@@ -1,12 +1,12 @@
-package com.avoid.ihaveatheory.widget;
+package com.ivantha.ihaveatheory.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.FrameLayout;
 
-import com.avoid.ihaveatheory.listener.BackpackDragListener;
 import com.ivantha.ihaveatheory.R;
+import com.ivantha.ihaveatheory.listener.BackpackDragListener;
 
 public class BackpackTileLayout extends FrameLayout {
     public BackpackTileLayout(Context context) {

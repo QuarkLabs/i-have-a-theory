@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.activity;
+package com.ivantha.ihaveatheory.activity;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -9,11 +9,11 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.avoid.ihaveatheory.global.Font;
-import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.Scenario;
-import com.avoid.ihaveatheory.util.FontCache;
 import com.ivantha.ihaveatheory.R;
+import com.ivantha.ihaveatheory.global.Font;
+import com.ivantha.ihaveatheory.global.Session;
+import com.ivantha.ihaveatheory.model.Scenario;
+import com.ivantha.ihaveatheory.util.FontCache;
 
 public class ScenarioActivity extends AppCompatActivity {
     private boolean isForestClicked = false;

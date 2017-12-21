@@ -4,9 +4,10 @@ import android.view.DragEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.avoid.ihaveatheory.widget.BackpackItemButton;
-import com.avoid.ihaveatheory.widget.BackpackActionLayout;
-import com.avoid.ihaveatheory.widget.BackpackTileLayout;
+import com.ivantha.ihaveatheory.widget.BackpackActionLayout;
+import com.ivantha.ihaveatheory.widget.BackpackItemButton;
+import com.ivantha.ihaveatheory.widget.BackpackTileLayout;
+
 
 public class BackpackDragListener implements View.OnDragListener {
     @Override

@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.activity;
+package com.ivantha.ihaveatheory.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

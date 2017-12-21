@@ -1,7 +1,7 @@
-package com.avoid.ihaveatheory.game.scene;
+package com.ivantha.ihaveatheory.game.scene;
 
-import com.avoid.ihaveatheory.game.choice.Choice;
 import com.avoid.ihaveatheory.game.situation.Situation;
+import com.ivantha.ihaveatheory.game.choice.Choice;
 
 import java.io.Serializable;
 import java.util.ArrayList;

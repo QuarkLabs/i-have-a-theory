@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.activity;
+package com.ivantha.ihaveatheory.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,10 +7,10 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.avoid.ihaveatheory.game.situation.Situation;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
 import com.ivantha.ihaveatheory.R;
+import com.ivantha.ihaveatheory.model.PlaybleActivity;
 
-public class SituationActivity extends AppCompatActivity implements PlaybleActivity{
+public class SituationActivity extends AppCompatActivity implements PlaybleActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

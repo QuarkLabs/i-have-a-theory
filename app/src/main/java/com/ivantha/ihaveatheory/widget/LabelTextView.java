@@ -6,8 +6,8 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.avoid.ihaveatheory.global.Font;
-import com.avoid.ihaveatheory.util.FontCache;
+import com.ivantha.ihaveatheory.global.Font;
+import com.ivantha.ihaveatheory.util.FontCache;
 
 public class LabelTextView extends TextView {
     public LabelTextView(Context context) {

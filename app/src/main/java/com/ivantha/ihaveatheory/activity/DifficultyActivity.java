@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.activity;
+package com.ivantha.ihaveatheory.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,10 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import com.avoid.ihaveatheory.R;
-import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.Backpack;
-import com.avoid.ihaveatheory.model.Difficulty;
+import com.ivantha.ihaveatheory.R;
+import com.ivantha.ihaveatheory.global.Session;
+import com.ivantha.ihaveatheory.model.Backpack;
+import com.ivantha.ihaveatheory.model.Difficulty;
+
 
 public class DifficultyActivity extends AppCompatActivity {
 

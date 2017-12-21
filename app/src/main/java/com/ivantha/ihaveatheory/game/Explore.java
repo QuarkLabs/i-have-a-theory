@@ -2,7 +2,7 @@ package com.ivantha.ihaveatheory.game;
 
 import android.content.Context;
 
-import com.avoid.ihaveatheory.global.Session;
+import com.ivantha.ihaveatheory.global.Session;
 import com.ivantha.ihaveatheory.util.Controller;
 
 import java.util.Random;

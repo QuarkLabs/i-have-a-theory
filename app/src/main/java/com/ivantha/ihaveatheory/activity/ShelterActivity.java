@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 import com.ivantha.ihaveatheory.R;
 import com.ivantha.ihaveatheory.global.Session;
 import com.ivantha.ihaveatheory.model.PlaybleActivity;
+import com.ivantha.ihaveatheory.util.Controller;
 
 public class ShelterActivity extends AppCompatActivity implements PlaybleActivity {
     Button restButton;

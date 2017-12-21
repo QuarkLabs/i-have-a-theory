@@ -1,6 +1,6 @@
 package com.ivantha.ihaveatheory.game.scene.start;
 
-import com.avoid.ihaveatheory.game.scene.Scene;
+import com.ivantha.ihaveatheory.game.scene.Scene;
 
 public abstract class StartScene extends Scene {
 

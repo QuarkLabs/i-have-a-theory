@@ -6,13 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
-import com.avoid.ihaveatheory.widget.ForwardButton;
-import com.avoid.ihaveatheory.widget.LabelTextView;
 import com.ivantha.ihaveatheory.R;
+import com.ivantha.ihaveatheory.global.Session;
+import com.ivantha.ihaveatheory.model.PlaybleActivity;
+import com.ivantha.ihaveatheory.widget.ForwardButton;
+import com.ivantha.ihaveatheory.widget.LabelTextView;
 
-public class SceneActivity extends AppCompatActivity implements PlaybleActivity{
+public class SceneActivity extends AppCompatActivity implements PlaybleActivity {
     private LabelTextView introTextView;
     private ForwardButton confirmButton;
 

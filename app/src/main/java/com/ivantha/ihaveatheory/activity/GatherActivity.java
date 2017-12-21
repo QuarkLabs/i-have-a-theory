@@ -1,4 +1,4 @@
-package com.avoid.ihaveatheory.activity;
+package com.ivantha.ihaveatheory.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,17 +7,17 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.game.Gather;
-import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
-import com.avoid.ihaveatheory.model.item.Berries;
-import com.avoid.ihaveatheory.model.item.Item;
-import com.avoid.ihaveatheory.model.item.Meat;
-import com.avoid.ihaveatheory.model.item.WaterBottle;
-import com.avoid.ihaveatheory.model.item.Wood;
-import com.avoid.ihaveatheory.util.Controller;
 import com.ivantha.ihaveatheory.R;
+import com.ivantha.ihaveatheory.global.Session;
+import com.ivantha.ihaveatheory.model.PlaybleActivity;
+import com.ivantha.ihaveatheory.model.item.Berries;
+import com.ivantha.ihaveatheory.model.item.Item;
+import com.ivantha.ihaveatheory.model.item.Meat;
+import com.ivantha.ihaveatheory.model.item.WaterBottle;
+import com.ivantha.ihaveatheory.model.item.Wood;
+import com.ivantha.ihaveatheory.util.Controller;
 
-public class GatherActivity extends AppCompatActivity implements PlaybleActivity{
+public class GatherActivity extends AppCompatActivity implements PlaybleActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -3,7 +3,7 @@ package com.ivantha.ihaveatheory.game.choice;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.avoid.ihaveatheory.global.Session;
+import com.ivantha.ihaveatheory.global.Session;
 
 public class AcidLakeChoice extends Choice {
 

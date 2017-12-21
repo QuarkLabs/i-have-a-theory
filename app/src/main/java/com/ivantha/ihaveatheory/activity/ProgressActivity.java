@@ -1,17 +1,17 @@
-package com.avoid.ihaveatheory.activity;
+package com.ivantha.ihaveatheory.activity;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.RelativeLayout;
 
-import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
-import com.avoid.ihaveatheory.widget.LabelTextView;
-import com.avoid.ihaveatheory.widget.TaskProgressBar;
 import com.ivantha.ihaveatheory.R;
+import com.ivantha.ihaveatheory.global.Session;
+import com.ivantha.ihaveatheory.model.PlaybleActivity;
+import com.ivantha.ihaveatheory.widget.LabelTextView;
+import com.ivantha.ihaveatheory.widget.TaskProgressBar;
 
-public class ProgressActivity extends AppCompatActivity implements PlaybleActivity{
+public class ProgressActivity extends AppCompatActivity implements PlaybleActivity {
     private TaskProgressBar workingProgressBar;
     private int progressStatusCounter = 0;
 
