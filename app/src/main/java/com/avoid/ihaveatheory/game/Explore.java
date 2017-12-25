@@ -44,7 +44,7 @@ public class Explore {
     public void explore(Context context) {
         ExploreType exploreType = getExploreType();
         if (exploreType == ExploreType.CHOICE) {
-            Controller.showChoice(context, Session.currentSaveFile.getScenario().getScene().getRandomChoice());
+            Controller.INSTANCE.showChoice(context, Session.currentSaveFile.getScenario().getScene().getRandomChoice());
         }
 //        } else if (exploreType == ExploreType.SCENE) {
 //            Scene currentScene = Session.currentSaveFile.getScenario().getScene();

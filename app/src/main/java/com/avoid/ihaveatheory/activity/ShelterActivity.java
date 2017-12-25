@@ -57,7 +57,7 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
         Session.currentSaveFile.setHunger(Session.currentSaveFile.getHunger() - 10);
         Session.currentSaveFile.setThirst(Session.currentSaveFile.getThirst() - 20);
 
-        Controller.showProgress(ShelterActivity.this, "Resting....", "1 hour");
+        Controller.INSTANCE.showProgress(ShelterActivity.this, "Resting....", "1 hour");
     }
 
     public void onClickShelterSleepButton(View view) {
@@ -66,7 +66,7 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
         Session.currentSaveFile.setHunger(Session.currentSaveFile.getHunger() - 20);
         Session.currentSaveFile.setThirst(Session.currentSaveFile.getThirst() - 35);
 
-        Controller.showProgress(ShelterActivity.this, "Sleeping....", "4 hour");
+        Controller.INSTANCE.showProgress(ShelterActivity.this, "Sleeping....", "4 hour");
     }
 
     public void onClickShelterCampButton(View view) {
@@ -75,6 +75,6 @@ public class ShelterActivity extends AppCompatActivity implements PlaybleActivit
         Session.currentSaveFile.setHunger(Session.currentSaveFile.getHunger() - 50);
         Session.currentSaveFile.setThirst(Session.currentSaveFile.getThirst() - 100);
 
-        Controller.showProgress(ShelterActivity.this, "Making a camp....", "4 hours");
+        Controller.INSTANCE.showProgress(ShelterActivity.this, "Making a camp....", "4 hours");
     }
 }

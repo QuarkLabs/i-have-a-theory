@@ -48,7 +48,7 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
         Item waterBottle = new WaterBottle();
         Session.currentSaveFile.getBackpack().addItem(waterBottle, waterCount);
 
-        Controller.showProgress(GatherActivity.this, "Collecting water....", "15 minutes");
+        Controller.INSTANCE.showProgress(GatherActivity.this, "Collecting water....", "15 minutes");
     }
 
     public void onClickGatherBerriesButton(View view) {
@@ -57,7 +57,7 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
         Item berries = new Berries();
         Session.currentSaveFile.getBackpack().addItem(berries, berryCount);
 
-        Controller.showProgress(GatherActivity.this, "Finding berries....", "30 minutes");
+        Controller.INSTANCE.showProgress(GatherActivity.this, "Finding berries....", "30 minutes");
     }
 
     public void onClickGatherWoodButton(View view) {
@@ -66,7 +66,7 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
         Item wood = new Wood();
         Session.currentSaveFile.getBackpack().addItem(wood, woodCount);
 
-        Controller.showProgress(GatherActivity.this, "Gathering wood....", "30 minutes");
+        Controller.INSTANCE.showProgress(GatherActivity.this, "Gathering wood....", "30 minutes");
     }
 
     public void onClickHuntButton(View view) {
@@ -75,6 +75,6 @@ public class GatherActivity extends AppCompatActivity implements PlaybleActivity
         Item meat = new Meat();
         Session.currentSaveFile.getBackpack().addItem(meat, rabbitCount);
 
-        Controller.showProgress(GatherActivity.this, "Hunting....", "2 hours");
+        Controller.INSTANCE.showProgress(GatherActivity.this, "Hunting....", "2 hours");
     }
 }
