@@ -19,7 +19,7 @@ import com.avoid.ihaveatheory.model.item.Wood;
 
 public class ItemFactory {
     public static Item getItem(ItemType itemType){
-        Item item;
+        Item item = null;
         switch (itemType){
             case BOW:
                 item = new Bow();
@@ -69,8 +69,6 @@ public class ItemFactory {
             case MEAT:
                 item = new Meat();
                 break;
-            default:
-                item = new Item() {};
         }
 
         return item;

@@ -1,6 +1,6 @@
-package com.avoid.ihaveatheory.model.item;
+package com.avoid.ihaveatheory.model.item
 
-public enum ItemType {
+enum class ItemType {
     BOW,
     ARROW,
     SNARE,
