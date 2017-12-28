@@ -10,11 +10,11 @@ import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.exception.NonExistingObjectCallException;
 import com.avoid.ihaveatheory.global.Session;
 import com.avoid.ihaveatheory.model.BackpackTile;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.PlayableActivity;
 import com.avoid.ihaveatheory.widget.BackpackItemButton;
 import com.avoid.ihaveatheory.widget.BackpackTileLayout;
 
-public class BackpackActivity extends AppCompatActivity implements PlaybleActivity{
+public class BackpackActivity extends AppCompatActivity implements PlayableActivity {
     private LinearLayout col1LinearLayout = null;
     private LinearLayout col2LinearLayout = null;
     private LinearLayout col3LinearLayout = null;

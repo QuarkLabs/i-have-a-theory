@@ -8,10 +8,10 @@ import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.PlayableActivity;
 import com.avoid.ihaveatheory.util.Controller;
 
-public class ShelterActivity extends AppCompatActivity implements PlaybleActivity {
+public class ShelterActivity extends AppCompatActivity implements PlayableActivity {
     Button restButton;
     Button sleepButton;
     Button campButton;

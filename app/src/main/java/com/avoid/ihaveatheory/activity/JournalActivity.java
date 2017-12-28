@@ -6,9 +6,9 @@ import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.PlayableActivity;
 
-public class JournalActivity extends AppCompatActivity implements PlaybleActivity{
+public class JournalActivity extends AppCompatActivity implements PlayableActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

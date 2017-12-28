@@ -33,7 +33,7 @@ public class MainButton extends Button {
     }
 
     private void applyCustomFont(Context context){
-        Typeface customFont = FontCache.getTypeface(Font.KOMIKAX_FONT, context);
+        Typeface customFont = FontCache.getTypeface(Font.INSTANCE.getKOMIKAX_FONT(), context);
         setTypeface(customFont);
         setTextSize(20);
 

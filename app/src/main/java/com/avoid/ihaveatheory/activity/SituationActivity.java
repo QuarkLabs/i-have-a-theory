@@ -8,9 +8,9 @@ import android.widget.TextView;
 
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.game.situation.Situation;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.PlayableActivity;
 
-public class SituationActivity extends AppCompatActivity implements PlaybleActivity{
+public class SituationActivity extends AppCompatActivity implements PlayableActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

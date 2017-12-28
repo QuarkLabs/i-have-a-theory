@@ -7,11 +7,11 @@ import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.PlayableActivity;
 import com.avoid.ihaveatheory.widget.LabelTextView;
 import com.avoid.ihaveatheory.widget.TaskProgressBar;
 
-public class ProgressActivity extends AppCompatActivity implements PlaybleActivity{
+public class ProgressActivity extends AppCompatActivity implements PlayableActivity {
     private TaskProgressBar workingProgressBar;
     private int progressStatusCounter = 0;
 

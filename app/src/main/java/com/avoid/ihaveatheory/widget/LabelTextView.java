@@ -33,7 +33,7 @@ public class LabelTextView extends TextView {
     }
 
     private void applyCustomFont(Context context) {
-        Typeface customFont = FontCache.getTypeface(Font.ACTION_MAN_BOLD_FONT, context);
+        Typeface customFont = FontCache.getTypeface(Font.INSTANCE.getACTION_MAN_BOLD_FONT(), context);
         setTypeface(customFont);
 
         setTextColor(Color.WHITE);

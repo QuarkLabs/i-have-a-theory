@@ -11,12 +11,12 @@ import android.widget.RelativeLayout;
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.factory.ItemFactory;
 import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.PlayableActivity;
 import com.avoid.ihaveatheory.model.item.Item;
 import com.avoid.ihaveatheory.model.item.ItemType;
 import com.avoid.ihaveatheory.widget.DescriptionTextView;
 
-public class CraftActivity extends AppCompatActivity implements PlaybleActivity{
+public class CraftActivity extends AppCompatActivity implements PlayableActivity {
     private ImageView itemImageView;
     private DescriptionTextView itemNameTextView;
     private DescriptionTextView itemDesTextView;

@@ -34,7 +34,7 @@ public class ChoiceButton extends Button {
     }
 
     private void applyCustomFont(Context context) {
-        Typeface customFont = FontCache.getTypeface(Font.KOMIKAX_FONT, context);
+        Typeface customFont = FontCache.getTypeface(Font.INSTANCE.getKOMIKAX_FONT(), context);
         setTypeface(customFont);
 
         setTextColor(Color.parseColor("#331F00"));

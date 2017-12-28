@@ -9,11 +9,11 @@ import android.widget.RelativeLayout;
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.game.Explore;
 import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.PlayableActivity;
 import com.avoid.ihaveatheory.widget.LabelTextView;
 import com.avoid.ihaveatheory.widget.StatusBar;
 
-public class DashboardActivity extends AppCompatActivity implements PlaybleActivity {
+public class DashboardActivity extends AppCompatActivity implements PlayableActivity {
     StatusBar hungerProgressBar;
     StatusBar thirstProgressBar;
     StatusBar healthProgressBar;

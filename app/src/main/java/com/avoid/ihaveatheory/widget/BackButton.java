@@ -9,22 +9,20 @@ import com.avoid.ihaveatheory.R;
 public class BackButton extends Button {
     public BackButton(Context context) {
         super(context);
-        applyCustomShape(context);
+        applyCustomShape();
     }
 
     public BackButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        applyCustomShape(context);
+        applyCustomShape();
     }
 
     public BackButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        applyCustomShape(context);
+        applyCustomShape();
     }
 
-    private void applyCustomShape(Context context){
+    private void applyCustomShape(){
         setBackgroundResource(R.drawable.app_back_button);
     }
-
-
 }

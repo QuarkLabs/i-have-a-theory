@@ -1,12 +1,12 @@
 package com.avoid.ihaveatheory.game.choice;
 
-import android.content.Intent;
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.support.annotation.NonNull;
 
-import com.avoid.ihaveatheory.activity.MainMenuActivity;
-import com.avoid.ihaveatheory.activity.ScenarioActivity;
 import com.avoid.ihaveatheory.global.Session;
+
+import org.jetbrains.annotations.Contract;
 
 public class AcidLakeChoice extends Choice {
 
@@ -23,11 +23,14 @@ public class AcidLakeChoice extends Choice {
     }
 
     public static final Parcelable.Creator<AcidLakeChoice> CREATOR = new Creator<AcidLakeChoice>() {
+        @NonNull
         @Override
         public AcidLakeChoice createFromParcel(Parcel source) {
             return new AcidLakeChoice(source);
         }
 
+        @NonNull
+        @Contract(pure = true)
         @Override
         public AcidLakeChoice[] newArray(int size) {
             return new AcidLakeChoice[0];

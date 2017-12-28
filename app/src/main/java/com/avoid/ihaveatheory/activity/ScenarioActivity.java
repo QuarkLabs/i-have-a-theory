@@ -30,7 +30,7 @@ public class ScenarioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scenario);
 
-        Typeface acmanBoldFont = FontCache.getTypeface(Font.KOMIKAX_FONT, this);
+        Typeface acmanBoldFont = FontCache.getTypeface(Font.INSTANCE.getKOMIKAX_FONT(), this);
         TextView forestTextView = (TextView) findViewById(R.id.forest_text_view);
         forestTextView.setTypeface(acmanBoldFont);
         TextView tundraTextView = (TextView) findViewById(R.id.tundra_text_view);

@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.game.Gather;
 import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.PlayableActivity;
 import com.avoid.ihaveatheory.model.item.Berries;
 import com.avoid.ihaveatheory.model.item.Item;
 import com.avoid.ihaveatheory.model.item.Meat;
@@ -17,7 +17,7 @@ import com.avoid.ihaveatheory.model.item.WaterBottle;
 import com.avoid.ihaveatheory.model.item.Wood;
 import com.avoid.ihaveatheory.util.Controller;
 
-public class GatherActivity extends AppCompatActivity implements PlaybleActivity{
+public class GatherActivity extends AppCompatActivity implements PlayableActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

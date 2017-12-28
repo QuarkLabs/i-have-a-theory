@@ -8,11 +8,11 @@ import android.widget.RelativeLayout;
 
 import com.avoid.ihaveatheory.R;
 import com.avoid.ihaveatheory.global.Session;
-import com.avoid.ihaveatheory.model.PlaybleActivity;
+import com.avoid.ihaveatheory.model.PlayableActivity;
 import com.avoid.ihaveatheory.widget.ForwardButton;
 import com.avoid.ihaveatheory.widget.LabelTextView;
 
-public class SceneActivity extends AppCompatActivity implements PlaybleActivity{
+public class SceneActivity extends AppCompatActivity implements PlayableActivity {
     private LabelTextView introTextView;
     private ForwardButton confirmButton;
 
