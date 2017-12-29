@@ -44,7 +44,7 @@ public class GatherActivity extends AppCompatActivity implements PlayableActivit
 
     public void onClickGatherWaterButton(View view) {
         MainMenuActivity.playClickSound();
-        int waterCount = Gather.getInstance().findWater();
+        int waterCount = Gather.findWater();
         Item waterBottle = new WaterBottle();
         Session.currentSaveFile.getBackpack().addItem(waterBottle, waterCount);
 
@@ -53,7 +53,7 @@ public class GatherActivity extends AppCompatActivity implements PlayableActivit
 
     public void onClickGatherBerriesButton(View view) {
         MainMenuActivity.playClickSound();
-        int berryCount = Gather.getInstance().findBerries();
+        int berryCount = Gather.findBerries();
         Item berries = new Berries();
         Session.currentSaveFile.getBackpack().addItem(berries, berryCount);
 
@@ -62,7 +62,7 @@ public class GatherActivity extends AppCompatActivity implements PlayableActivit
 
     public void onClickGatherWoodButton(View view) {
         MainMenuActivity.playClickSound();
-        int woodCount = Gather.getInstance().findWood();
+        int woodCount = Gather.findWood();
         Item wood = new Wood();
         Session.currentSaveFile.getBackpack().addItem(wood, woodCount);
 
@@ -71,7 +71,7 @@ public class GatherActivity extends AppCompatActivity implements PlayableActivit
 
     public void onClickHuntButton(View view) {
         MainMenuActivity.playClickSound();
-        int rabbitCount = Gather.getInstance().findRabbits();
+        int rabbitCount = Gather.findRabbits();
         Item meat = new Meat();
         Session.currentSaveFile.getBackpack().addItem(meat, rabbitCount);
 

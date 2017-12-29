@@ -42,11 +42,11 @@ public class DifficultyActivity extends AppCompatActivity {
         Backpack backpack = new Backpack();
         Session.currentSaveFile.setBackpack(backpack);
 
-        Session.currentSaveFile.setHunger(Session.currentSaveFile.getDifficulty().getMAX_HUNGER());
-        Session.currentSaveFile.setThirst(Session.currentSaveFile.getDifficulty().getMAX_THIRST() / 5);
-        Session.currentSaveFile.setHealth(Session.currentSaveFile.getDifficulty().getMAX_HEALTH() / 8 * 3);
-        Session.currentSaveFile.setStamina(Session.currentSaveFile.getDifficulty().getMAX_STAMINA() / 2);
-        Session.currentSaveFile.setHeat(Session.currentSaveFile.getDifficulty().getMAX_HEAT() / 5 * 3);
+        Session.currentSaveFile.setHunger(Session.currentSaveFile.getDifficulty().getMaX_HUNGER());
+        Session.currentSaveFile.setThirst(Session.currentSaveFile.getDifficulty().getMaX_THIRST() / 5);
+        Session.currentSaveFile.setHealth(Session.currentSaveFile.getDifficulty().getMaX_HEALTH() / 8 * 3);
+        Session.currentSaveFile.setStamina(Session.currentSaveFile.getDifficulty().getMaX_STAMINA() / 2);
+        Session.currentSaveFile.setHeat(Session.currentSaveFile.getDifficulty().getMaX_HEAT() / 5 * 3);
     }
 
     public void onClickBackButton(View view) {
