@@ -24,16 +24,16 @@ public class BackpackActivity extends AppCompatActivity implements PlayableActiv
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_backpack);
 
-        col1LinearLayout = (LinearLayout) findViewById(R.id.backpack_col1_linear_layout);
-        col2LinearLayout = (LinearLayout) findViewById(R.id.backpack_col2_linear_layout);
-        col3LinearLayout = (LinearLayout) findViewById(R.id.backpack_col3_linear_layout);
+        col1LinearLayout = findViewById(R.id.backpack_col1_linear_layout);
+        col2LinearLayout = findViewById(R.id.backpack_col2_linear_layout);
+        col3LinearLayout = findViewById(R.id.backpack_col3_linear_layout);
 
         arrangeBackpack();
     }
 
     @Override
     public void setBackground() {
-        RelativeLayout layout =(RelativeLayout)findViewById(R.id.activity_backpack);
+        RelativeLayout layout = findViewById(R.id.activity_backpack);
         layout.setBackgroundResource(Session.currentSaveFile.getScenario().getDayBackground());
     }
 
